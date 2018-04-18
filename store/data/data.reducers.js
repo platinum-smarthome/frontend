@@ -1,13 +1,23 @@
-import { GET_DATA_SUCCESS, GET_DATA_LOADING } from './data.actionType'
+import { 
+  GET_DATA_SUCCESS,
+  GET_DATA_LOADING,
+  DEVICE_PIN_INPUT_UPDATE,
+  DEVICE_PIN_INPUT_REMOVE,
+  USER_LOGIN_SUCCESS
+} from './data.actionType'
+import { devicePinUpdate } from './data.actions';
 
 const initialState = {
   loading: false,
   error: false,
-  data: []
+  data: [],
+  userLogin: false,
+  devicePin: ['','', '', '', '', ''],
+  housePin: []
 }
 
-export const reducers = (state=initialState, action) => {
-  switch(action.type) {
+const reducers = (state=initialState, action) => {
+  switch (action.type) {
     case GET_DATA_SUCCESS:
       return {
         ...state,
@@ -19,7 +29,24 @@ export const reducers = (state=initialState, action) => {
         ...state,
         loading: true
       }
+    case DEVICE_PIN_INPUT_UPDATE:
+      return {
+        ...state,
+        devicePin: action.key
+      }
+    case DEVICE_PIN_INPUT_REMOVE:
+      return {
+        ...state,
+        devicePin: ['','', '', '', '', '']
+      }
+    case USER_LOGIN_SUCCESS:
+      return {
+        ...state,
+        userLogin: true
+      }
     default:
       return state
   }
 }
+
+export default reducers
