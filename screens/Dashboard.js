@@ -33,8 +33,8 @@ class Dashboard extends Component {
           text={ 'Add New User' }
           onPress={ () => this.props.navigation.navigate('AddNewUser') }
         />
-
-      </View> */}
+      */}
+      </View> 
       </ScrollView>
     )
   }
