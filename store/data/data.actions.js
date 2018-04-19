@@ -13,7 +13,7 @@ export const getData = () => {
   return dispatch => {
     console.log('masuk')
     dispatch(getDataLoading())
-    database().ref(`/smarthome`).on('value', (snap) => {
+    database().ref(`/smarthome`).once('value', (snap) => {
       let data = snap.val()
       console.log(data)
       dispatch(getDataSuccess(data))
