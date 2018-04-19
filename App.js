@@ -4,6 +4,9 @@ import { StyleSheet, Text, View } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 import Home from './screens/Home'
 import Dashboard from './screens/Dashboard'
+import Bell from './components/Bell'
+import LogoHead from './components/LogoHead'
+import Drawer from './components/Drawer'
 
 const styles = StyleSheet.create({
   header: {
@@ -23,11 +26,13 @@ const RootStack = StackNavigator({
     screen: Dashboard,
     navigationOptions: {
       headerStyle: styles.header,
-      headerLeft: null
+      headerLeft: <Drawer/>,
+      headerRight: <Bell/>,
+      title: <LogoHead/>
     }
   }
 }, {
-  initialRouteName: 'Home',
+  initialRouteName: 'Dashboard',
 })
 
 export default class App extends React.Component {

@@ -17,7 +17,6 @@ class Home extends Component {
         <PinText text={'Enter Your PIN Device'} />
         <Bullet/>
         <ForgotText text={'Forgot Password?'} />
-        {/* <Text> { JSON.stringify(this.props.data) } </Text> */}
         <View style={styles.end}>
           <Keypad/>
         </View>
@@ -55,4 +54,3 @@ function mapDispatchToProps (dispatch) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
-// export default connect(null, null)(Home)
