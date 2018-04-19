@@ -1,42 +1,57 @@
 import React, { Component } from 'react'
-import { Text, View, Image, ScrollView, StyleSheet } from 'react-native'
+import { Text, View, Image, ScrollView, StyleSheet, Alert, TouchableOpacity } from 'react-native'
 import CardTitle from '../components/CardTitle'
 import AlarmType from '../components/AlarmType'
+import SwitchType from '../components/SwitchType'
 import Cctv from '../components/Cctv'
 import TouchAbleText from '../components/TouchAbleText'
+import Bell from '../components/Bell'
+import { connect } from 'react-redux'
+import { getSensorStatus } from '../store/sensors/sensor.actions'
 
 class Dashboard extends Component {
+  static navigationOptions = ({navigation}) => ({
+    headerRight: (
+      <TouchableOpacity onPress={ () => navigation.navigate('Notify') }>
+        <Bell/>
+      </TouchableOpacity>
+    )
+  })
+
   render() {
     return (
-
       <ScrollView>
-      <View style={styles.body}>
-        <View style={styles.card}>
-          <CardTitle imgLogo={require('../components/assets/cctv.png')} text={'Monitor'} />
-          <Cctv imgLogo={require('../components/assets/watchhouse.png')} text={'Watch House'} />
-          <AlarmType imgLogo={require('../components/assets/co2icon.png')} type={'gas'} text={'Carbon Dioxide Sensor'} status={true} />
-          <AlarmType imgLogo={require('../components/assets/garage.png')} type={'garage'} text={'Garage'} status={true} />
-        </View>
-        <View style={styles.card}>
-          <CardTitle imgLogo={require('../components/assets/megaphone.png')} text={'Alarms'} />
-          <AlarmType imgLogo={require('../components/assets/access.png')} type={'door'} text={'Main Door'} status={true} />
-          <AlarmType imgLogo={require('../components/assets/motion.png')} type={'door'} text={'Motion'} status={true} />
-        </View>
-        <View style={styles.card}>
-          <CardTitle imgLogo={require('../components/assets/sensors.png')} text={'Sensors'} />
-          <AlarmType imgLogo={require('../components/assets/motionsensor.png')} type={'door'} text={'Motion Detection'} status={true} />
-          <AlarmType imgLogo={require('../components/assets/presion.png')} type={'door'} text={'Gas'} status={true} />
-        </View>
-      {/* <View>
-        <Text> Dashboard </Text>
-        <TouchAbleText
-          text={ 'Add New User' }
-          onPress={ () => this.props.navigation.navigate('AddNewUser') }
-        />
-      */}
-      </View> 
+        <View style={styles.body}>
+          <View style={styles.card}>
+            <CardTitle imgLogo={require('../components/assets/cctv.png')} text={'Monitor'} />
+            <Cctv imgLogo={require('../components/assets/watchhouse.png')} text={'Watch House'} />
+            <AlarmType imgLogo={require('../components/assets/co2icon.png')} type={'gas'} text={'Carbon Dioxide Sensor'} status={true} />
+            <AlarmType imgLogo={require('../components/assets/garage.png')} type={'garage'} text={'Garage'} status={false} />
+            <AlarmType imgLogo={require('../components/assets/motion.png')} type={'door'} text={'Motion'} status={true} />
+          </View>
+          <View style={styles.card}>
+            <CardTitle imgLogo={require('../components/assets/megaphone.png')} text={'Alarms'} />
+            <AlarmType imgLogo={require('../components/assets/access.png')} type={'door'} text={'Main Door'} status={false} />
+          </View>
+            { !this.props.sensors.length && 
+              (<View style={styles.card}>
+                <CardTitle imgLogo={require('../components/assets/sensors.png')} text={'Sensors'} />
+                  <SwitchType imgLogo={require('../components/assets/motionsensor.png')} type={'door'} text={'Motion: Door'} status={this.props.sensors.sensors.door} />
+                  <SwitchType imgLogo={require('../components/assets/motionsensor.png')} type={'garage'} text={'Motion: Garage'} status={this.props.sensors.sensors.garage} />
+                  <SwitchType imgLogo={require('../components/assets/presion.png')} type={'gas'} text={'Gas'} status={this.props.sensors.sensors.gas} />
+              </View>) 
+            }
+          <Text> Dashboard </Text>
+          <TouchAbleText
+            text={ 'Add New User' }
+            onPress={ () => this.props.navigation.navigate('AddNewUser') }
+          />       
+        </View> 
       </ScrollView>
     )
+  }
+  componentDidMount () {
+    this.props.getSensorStatus()
   }
 }
 
@@ -54,4 +69,16 @@ const styles = StyleSheet.create({
   },
 })
 
-export default Dashboard
+function mapStateToProps (state) {
+  return {
+    sensors: state.sensors
+  }
+}
+
+function mapDispatchToProps (dispatch) {
+  return {
+    getSensorStatus: () => dispatch(getSensorStatus())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard)
