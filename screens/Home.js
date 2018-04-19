@@ -24,7 +24,6 @@ class Home extends Component {
           text={ 'Create New Home' }
           onPress={ () => this.props.navigation.navigate('CreateNewHome') }
         />
-        {/* <Text> { JSON.stringify(this.props.data) } </Text> */}
         <View style={styles.end}>
           <Keypad/>
         </View>
