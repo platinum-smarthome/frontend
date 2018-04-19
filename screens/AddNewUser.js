@@ -4,14 +4,15 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import IMEI from 'react-native-imei';
 
-import { createNewHomeHandleInputChange, createNewHome } from '../store/createNewHome/createNewHome.actions'
+// import { createNewHome } from '../store/createNewHome/createNewHome.actions';
+import { createNewUser } from '../store/addNewUser/addNewUser.actions'
 import InputTextForm from '../components/InputTextForm';
-import NewUserForm from '../components/NewUserForm'
+import NewUserForm from '../components/NewUserForm';
 
-class CreateNewHome extends Component {
-  saveNewHome = () => {
+class AddNewUser extends Component {
+  saveNewUser = () => {
     let payload = {
-      homeName: this.props.homeName,
+      home: this.props.home || '-LAQreC3C-kaK2jjw6vD',
       user: {
         email: this.props.email,
         username: this.props.username,
@@ -19,20 +20,14 @@ class CreateNewHome extends Component {
         deviceId: IMEI.getImei()
       }
     }
-    this.props.createNewHome(payload)
+    this.props.createNewUser(payload)
   }
 
   render () {
     return (
       <View style={styles.container}>
-        <InputTextForm
-          name={ 'homeName' }
-          placeholder={ 'Home Name' }
-          onChangeText={ this.props.createNewHomeHandleInputChange }
-          value={ this.props.homeName }
-        />
         <NewUserForm />
-        <Button title={ 'create' } onPress={ this.saveNewHome }/>
+        <Button title={ 'Add New User' } onPress={ this.saveNewUser }/>
       </View>
     )
   }
@@ -54,13 +49,11 @@ function mapStateToProps (state) {
     email: state.addNewUserReducer.email,
     username: state.addNewUserReducer.username,
     pin: state.addNewUserReducer.pin,
-    homeName: state.CreateNewHomeReducer.homeName
   }
 }
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  createNewHomeHandleInputChange,
-  createNewHome
+  createNewUser
 }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(CreateNewHome)
+export default connect(mapStateToProps, mapDispatchToProps)(AddNewUser)
