@@ -7,6 +7,7 @@ import PinText from '../components/PinText'
 import Keypad from '../components/Keypad'
 import Bullet from '../components/Bullet'
 import ForgotText from '../components/ForgotText'
+import TouchAbleText from '../components/TouchAbleText'
 
 class Home extends Component {
   render () {
@@ -17,6 +18,10 @@ class Home extends Component {
         <PinText text={'Enter Your PIN Device'} />
         <Bullet/>
         <ForgotText text={'Forgot Password?'} />
+        <TouchAbleText
+          text={ 'Create New Home' }
+          onPress={ () => this.props.navigation.navigate('CreateNewHome') }
+        />
         <View style={styles.end}>
           <Keypad/>
         </View>

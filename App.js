@@ -7,6 +7,9 @@ import Dashboard from './screens/Dashboard'
 import Bell from './components/Bell'
 import LogoHead from './components/LogoHead'
 import Drawer from './components/Drawer'
+import CreateNewHome from './screens/CreateNewHome'
+import AddNewUser from './screens/AddNewUser'
+
 
 const styles = StyleSheet.create({
   header: {
@@ -22,6 +25,12 @@ const RootStack = StackNavigator({
       headerStyle: styles.header,
     }
   },
+  CreateNewHome: {
+    screen: CreateNewHome,
+    navigationOptions: {
+      headerStyle: styles.header,
+    }
+  },
   Dashboard: {
     screen: Dashboard,
     navigationOptions: {
@@ -29,6 +38,12 @@ const RootStack = StackNavigator({
       headerLeft: <Drawer/>,
       headerRight: <Bell/>,
       title: <LogoHead/>
+    }
+  },
+  AddNewUser: {
+    screen: AddNewUser,
+    navigationOptions: {
+      headerStyle: styles.header,
     }
   }
 }, {
