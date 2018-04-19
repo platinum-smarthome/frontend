@@ -183,6 +183,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-imei/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e26c5a747be65a14d8760235e02f00f098dcd432">
+        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/frontend-react-native-imei-unspecified_b8bc27c8a6a8bd26807b9de844c5a985863f4087.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/ervan/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
         jumboMode="false"
         optimize="true"

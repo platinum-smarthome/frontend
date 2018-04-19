@@ -65,6 +65,7 @@ ADDED from /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/andr
 		ADDED from /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/src/main/AndroidManifest.xml:23:17-81
 uses-sdk
 INJECTED from /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [frontend:react-native-imei:unspecified] /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-imei/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.54.0] /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.0.1] /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
@@ -82,9 +83,11 @@ MERGED from [com.facebook.soloader:soloader:0.1.0] /home/ervan/Documents/Hacktiv
 	android:minSdkVersion
 		INJECTED from /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from [frontend:react-native-imei:unspecified] /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-imei/unspecified/AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from [frontend:react-native-imei:unspecified] /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-imei/unspecified/AndroidManifest.xml:11:22-72
 android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_PHONE_STATE
 IMPLIED from /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
 IMPLIED from /home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

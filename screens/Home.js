@@ -17,6 +17,10 @@ class Home extends Component {
         <PinText text={'Enter Your PIN Device'} />
         <Bullet/>
         <ForgotText text={'Forgot Password?'} />
+        <Text style={{color: 'blue'}}
+              onPress={() => this.props.navigation.navigate('CreateNewHome')}>
+          CreateNewHome
+        </Text>
         {/* <Text> { JSON.stringify(this.props.data) } </Text> */}
         <View style={styles.end}>
           <Keypad/>

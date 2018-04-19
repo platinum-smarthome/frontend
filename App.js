@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 import Home from './screens/Home'
 import Dashboard from './screens/Dashboard'
+import CreateNewHome from './screens/CreateNewHome'
 
 const styles = StyleSheet.create({
   header: {
@@ -15,6 +16,12 @@ const styles = StyleSheet.create({
 const RootStack = StackNavigator({
   Home: {
     screen: Home,
+    navigationOptions: {
+      headerStyle: styles.header,
+    }
+  },
+  CreateNewHome: {
+    screen: CreateNewHome,
     navigationOptions: {
       headerStyle: styles.header,
     }
