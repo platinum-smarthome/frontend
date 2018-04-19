@@ -37,7 +37,7 @@ const RootStack = StackNavigator({
       headerStyle: styles.header,
       headerLeft: <Drawer/>,
       headerRight: <Bell/>,
-      title: <LogoHead/>
+      headerTitle: <LogoHead/>
     }
   },
   AddNewUser: {

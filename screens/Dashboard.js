@@ -10,7 +10,6 @@ import TouchAbleText from '../components/TouchAbleText'
 class Dashboard extends Component {
   render() {
     return (
-
       <ScrollView>
       <View style={styles.body}>
         <View style={styles.card}>
@@ -29,15 +28,11 @@ class Dashboard extends Component {
           <AlarmType imgLogo={require('../components/assets/motionsensor.png')} type={'door'} text={'Motion Detection'} status={true} />
           <AlarmType imgLogo={require('../components/assets/presion.png')} type={'door'} text={'Gas'} status={true} />
         </View>
-      {/* <View>
-        <Text> Dashboard </Text>
-
         <TouchAbleText
           text={ 'Add New User' }
           onPress={ () => this.props.navigation.navigate('AddNewUser') }
         />
-
-      </View> */}
+      </View>
       </ScrollView>
     )
   }
