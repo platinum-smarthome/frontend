@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import { Text, View, Image, ScrollView, StyleSheet, Alert, TouchableOpacity } from 'react-native'
 import CardTitle from '../components/CardTitle'
@@ -71,6 +72,7 @@ const styles = StyleSheet.create({
 
 function mapStateToProps (state) {
   return {
+    homeId: state.HomeData,
     sensors: state.sensors
   }
 }

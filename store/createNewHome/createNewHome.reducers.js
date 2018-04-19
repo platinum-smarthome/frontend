@@ -7,6 +7,7 @@ import {
 
 const initialState = {
   homeName:'',
+  homePin:'',
   createNewHomeLoading: false,
   createNewHomeError: false,
 }

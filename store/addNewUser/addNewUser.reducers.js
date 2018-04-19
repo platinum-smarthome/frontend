@@ -9,6 +9,7 @@ const initialState = {
   username: '',
   email: '',
   pin: '',
+  deviceId: '',
   addNewUserLoading: false,
   addNewUserError: false,
 }
