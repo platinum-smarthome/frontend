@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { connect } from 'react-redux'
+
 import { getData } from '../store/data/data.actions'
+import { fetchHomeData } from '../store/homeData/homeData.actions'
 
 import PinText from '../components/PinText'
 import Keypad from '../components/Keypad'
@@ -31,7 +33,9 @@ class Home extends Component {
   }
 
   componentDidMount () {
-    this.props.getData()
+    let payload = ''
+    // this.props.getData()
+    this.props.fetchHomeData(payload)
   }
 }
 
@@ -55,9 +59,9 @@ function mapStateToProps (state) {
 
 function mapDispatchToProps (dispatch) {
   return {
-    getData: () => dispatch(getData())
+    // getData: () => dispatch(getData()),
+    fetchHomeData: () => dispatch(fetchHomeData())
   }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
-// export default connect(null, null)(Home)

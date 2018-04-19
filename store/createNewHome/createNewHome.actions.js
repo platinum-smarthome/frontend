@@ -21,15 +21,19 @@ export const createNewHome = (payload) => {
   return dispatch => {
     dispatch(createNewHomeLoading())
     key  = database().ref(`/smarthome`).push().key;
+    payload.user.LastSeen = database.ServerValue.TIMESTAMP
     let newHome = {
+      homeId: key,
       homeName: payload.homeName,
+      homePin: payload.homePin,
       owner: payload.user.deviceId,
-      panels: [],
+      sensors: [],
       users: {
         [payload.user.deviceId]: payload.user
-      }
+      },
+      logs: []
     }
-    database().ref(`/smarthome/${key}`).set(newHome)
+    database().ref(`/smarthome`).set(newHome)
     .then(() => {
       dispatch(createNewHomeSuccess());
       dispatch(createNewUserSuccess())

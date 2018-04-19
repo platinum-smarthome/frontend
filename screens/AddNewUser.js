@@ -2,22 +2,19 @@ import React, { Component } from 'react';
 import { View, Button, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import IMEI from 'react-native-imei';
 
-// import { createNewHome } from '../store/createNewHome/createNewHome.actions';
-import { createNewUser } from '../store/addNewUser/addNewUser.actions'
+import { createNewUser, createNewUserHandleInputChange } from '../store/addNewUser/addNewUser.actions'
 import InputTextForm from '../components/InputTextForm';
 import NewUserForm from '../components/NewUserForm';
 
 class AddNewUser extends Component {
   saveNewUser = () => {
     let payload = {
-      home: this.props.home || '-LAQreC3C-kaK2jjw6vD',
       user: {
         email: this.props.email,
         username: this.props.username,
         pin: this.props.pin,
-        deviceId: IMEI.getImei()
+        deviceId: this.props.deviceId
       }
     }
     this.props.createNewUser(payload)
@@ -27,6 +24,12 @@ class AddNewUser extends Component {
     return (
       <View style={styles.container}>
         <NewUserForm />
+        <InputTextForm
+          name={ 'deviceId' }
+          placeholder={ 'User Device Id' }
+          onChangeText={ this.props.createNewUserHandleInputChange }
+          value={ this.props.deviceId }
+        />
         <Button title={ 'Add New User' } onPress={ this.saveNewUser }/>
       </View>
     )
@@ -49,11 +52,13 @@ function mapStateToProps (state) {
     email: state.addNewUserReducer.email,
     username: state.addNewUserReducer.username,
     pin: state.addNewUserReducer.pin,
+    deviceId: state.addNewUserReducer.deviceId,
   }
 }
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  createNewUser
+  createNewUser,
+  createNewUserHandleInputChange
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddNewUser)

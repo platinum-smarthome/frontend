@@ -9,7 +9,6 @@ import {
 import { database } from '../../firebase/firebase';
 
 export const createNewUserHandleInputChange = (payload) => {
-  console.log('actions', payload)
   return {
     type: CREATE_NEW_USER_HANDLE_INPUT_CHANGE,
     payload: payload
@@ -19,7 +18,8 @@ export const createNewUserHandleInputChange = (payload) => {
 export const createNewUser = (payload) => {
   return dispatch => {
     dispatch(createNewUserLoading())
-    database().ref(`/smarthome/${payload.home}/users/${payload.user.deviceId}`).set(payload.user)
+    payload.user.lastSeen = database.ServerValue.TIMESTAMP;
+    database().ref(`/smarthome/users/${payload.user.deviceId}`).set(payload.user)
     .then(() => { dispatch(createNewUserSuccess()); })
     .catch((err) => { dispatch(createNewUserError()) });
   }
