@@ -1,5 +1,7 @@
+
 import React, { Component } from 'react'
 import { Text, View, Image, ScrollView, StyleSheet } from 'react-native'
+import { connect } from 'react-redux';
 import CardTitle from '../components/CardTitle'
 import AlarmType from '../components/AlarmType'
 import Cctv from '../components/Cctv'
@@ -29,6 +31,7 @@ class Dashboard extends Component {
         </View>
       {/* <View>
         <Text> Dashboard </Text>
+
         <TouchAbleText
           text={ 'Add New User' }
           onPress={ () => this.props.navigation.navigate('AddNewUser') }
@@ -37,6 +40,20 @@ class Dashboard extends Component {
       </View> */}
       </ScrollView>
     )
+  }
+}
+
+
+function mapStateToProps (state) {
+  return {
+    homeId: state.HomeData
+  }
+}
+
+function mapDispatchToProps (dispatch) {
+  return {
+    // getData: () => dispatch(getData()),
+    // fetchHomeData: () => dispatch(fetchHomeData())
   }
 }
 
@@ -54,4 +71,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default Dashboard
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard)

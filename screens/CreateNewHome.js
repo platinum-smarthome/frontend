@@ -12,6 +12,7 @@ class CreateNewHome extends Component {
   saveNewHome = () => {
     let payload = {
       homeName: this.props.homeName,
+      homePin: this.props.homePin,
       user: {
         email: this.props.email,
         username: this.props.username,
@@ -19,6 +20,7 @@ class CreateNewHome extends Component {
         deviceId: IMEI.getImei()
       }
     }
+    // console.log(payload)
     this.props.createNewHome(payload)
   }
 
@@ -30,6 +32,15 @@ class CreateNewHome extends Component {
           placeholder={ 'Home Name' }
           onChangeText={ this.props.createNewHomeHandleInputChange }
           value={ this.props.homeName }
+        />
+        <InputTextForm
+          name={ 'homePin' }
+          placeholder={ 'Home Pin' }
+          secureTextEntry={ true }
+          onChangeText={ this.props.createNewHomeHandleInputChange }
+          keyboardType={ 'numeric' }
+          maxLength={ 6 }
+          value={this.props.homePin }
         />
         <NewUserForm />
         <Button title={ 'create' } onPress={ this.saveNewHome }/>
@@ -54,7 +65,8 @@ function mapStateToProps (state) {
     email: state.addNewUserReducer.email,
     username: state.addNewUserReducer.username,
     pin: state.addNewUserReducer.pin,
-    homeName: state.CreateNewHomeReducer.homeName
+    homeName: state.CreateNewHomeReducer.homeName,
+    homePin: state.CreateNewHomeReducer.homePin
   }
 }
 

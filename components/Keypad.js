@@ -8,20 +8,25 @@ class Keypad extends Component {
     let newPin = [...this.props.devicePin]
     let index = newPin.indexOf('')
     newPin.splice(index, 1, e)
-    console.log(newPin)
-    this.props.devicePinUpdate(newPin)
+    let payload = {
+      userPin: this.props.userPin,
+      input: newPin
+    }
+    this.props.devicePinUpdate(payload)
   }
   removePin () {
     let newPin = [...this.props.devicePin]
     if (newPin.lastIndexOf('') != -1) {
       let index = newPin.indexOf('') - 1
       newPin.splice(index, 1, '')
-      console.log(newPin)
-      this.props.devicePinUpdate(newPin)
     } else {
       newPin.splice(5, 1, '')
-      this.props.devicePinUpdate(newPin)
     }
+    let payload = {
+      userPin: this.props.userPin,
+      input: newPin
+    }
+    this.props.devicePinUpdate(newPin)
   }
   render() {
     return (
@@ -61,7 +66,8 @@ const styles = StyleSheet.create({
 
 function mapStateToProps (state) {
   return {
-    devicePin: state.data.devicePin
+    devicePin: state.data.devicePin,
+    userPin: state.UserData.pin
   }
 }
 
