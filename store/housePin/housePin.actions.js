@@ -33,6 +33,12 @@ export const homeLock = () => {
   }
 }
 
+export const homeUnlock = () => {
+  return dispatch => {
+    dispatch(homePinAccessSuccess())
+  }
+}
+
 const getHomePinSuccess = () => {
   return {
     type: GET_HOMEPIN
@@ -50,7 +56,7 @@ const homePinRemove = () => ({
   type: HOMEPIN_REMOVE
 })
 
-const homePinAccessSuccess = () => ({
+export const homePinAccessSuccess = () => ({
   type: HOMEPIN_ACCESS_UNLOCK
 })
 
