@@ -20,7 +20,6 @@ class CreateNewHome extends Component {
         deviceId: IMEI.getImei()
       }
     }
-    // console.log(payload)
     this.props.createNewHome(payload)
   }
 

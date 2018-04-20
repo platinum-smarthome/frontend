@@ -6,6 +6,7 @@ import {
 import firebase from 'firebase'
 import { database } from '../../firebase/firebase';
 import { searchUser } from '../userData/userData.actions'
+import { fetchNotificationLogsSuccess } from '../notificationLogs/notificationLogs.actions'
 
 export const fetchHomeData = (payload) => {
   return dispatch => {
@@ -14,6 +15,7 @@ export const fetchHomeData = (payload) => {
       let data = snap.val()
       dispatch(fetchHomeDataSuccess(data))
       dispatch(searchUser(data.users))
+      dispatch(fetchNotificationLogsSuccess(Object.values(data.logs).reverse()))
     }, (err) => { dispatch(fetchHomeDataError()) })
   }
 }
