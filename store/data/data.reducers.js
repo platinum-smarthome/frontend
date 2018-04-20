@@ -3,7 +3,7 @@ import {
   GET_DATA_LOADING,
   DEVICE_PIN_INPUT_UPDATE,
   DEVICE_PIN_INPUT_REMOVE,
-  USER_LOGIN_SUCCESS
+  USER_LOGIN_SUCCESS,
 } from './data.actionType'
 import { devicePinUpdate } from './data.actions';
 
@@ -13,7 +13,7 @@ const initialState = {
   data: [],
   userLogin: false,
   devicePin: ['','', '', '', '', ''],
-  housePin: []
+
 }
 
 const reducers = (state=initialState, action) => {
@@ -44,6 +44,7 @@ const reducers = (state=initialState, action) => {
         ...state,
         userLogin: true
       }
+  
     default:
       return state
   }

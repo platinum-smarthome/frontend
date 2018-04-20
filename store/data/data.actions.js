@@ -4,18 +4,16 @@ import {
   GET_DATA_ERROR,
   DEVICE_PIN_INPUT_UPDATE,
   DEVICE_PIN_INPUT_REMOVE,
-  USER_LOGIN_SUCCESS
+  USER_LOGIN_SUCCESS,
 } from './data.actionType'
 import firebase from 'firebase'
 import { database } from '../../firebase/firebase'
 
 export const getData = () => {
   return dispatch => {
-    console.log('masuk')
     dispatch(getDataLoading())
     database().ref(`/smarthome`).once('value', (snap) => {
       let data = snap.val()
-      console.log(data)
       dispatch(getDataSuccess(data))
     }, (err) => {
       dispatch(getDataError())
@@ -29,6 +27,8 @@ export const devicePinUpdate = (payload) => {
     if (payload.input.join('') === payload.userPin ) {
       dispatch(devicePinRemove())
       dispatch(userLoginSuccess())
+    } else if ( payload.input[5]) {
+      dispatch(devicePinRemove())
     }
   }
 }

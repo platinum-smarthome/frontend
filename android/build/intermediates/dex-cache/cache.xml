@@ -3,327 +3,201 @@
 
     <item
         is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_5a75c0ba4f54704a1b47ff33453540d6e8153985.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_371131e3a0b811827910febc2c8930038ec99de5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_137b252c83c72b686a465be16630f054949cd8d8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_76f5c39a2b6c6e9af26a89370107dcbb4a7ca996.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_fa610b9afe05a2145026ef8f30c0d549429f3ef8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_0fdbfdbf9a2c8af2b9047b32e825f7e607f250fc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_b8c8fcc48925fe1317681bebea9f826a9a543495.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/libs/infer-annotations-4.0.jar"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/libs/infer-annotations-4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_e9e8eea8880a9caac4b37195e279f196254238f7.jar" />
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_e5115ebffdd60fbf47ed1ea397995c346a5d8be5.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_8ebd03631daef38a9cf30cb0bd177e9c6038fc00.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_0e337620e6cfa50ed9df45c9d0feed2c73c802eb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_5a70e2d4d4c5f4553bf8891b4928ff5cd64ecf04.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_de963272925334e628c6d0a970d2dd4f87ea0bf8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_5aca5b643ac4b4f6501c76664a73d3ef34afc592.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9bc5c658348a96fc5110ac2a8785920bb9417c07">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.54.0_264711cf3fffca38160fbd8b0bdce56ff7fcb444.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_f9319da512d66b323dca4f12376126099d021fe4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_91f2d04f4c59f2a3719ee4a308683b493f20f0c7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_ce6787506ad746a887d767675713e5f9c9b2271b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_1b28450aec85da95dae9c7a5427d1f1367c615cd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_73cb28e23ba4c72188f6a0750ad7c22c65300732.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_624aa095671b36a9e08107146ca6de72eb05f137.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_90934468ee511056794598e853b8934e102d751b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_4738aab368c5f75c6cf11f5f0b94fb2b52230b10.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-imei/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e26c5a747be65a14d8760235e02f00f098dcd432">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/frontend-react-native-imei-unspecified_bf4b043b50c6382e6ff096a2b50bbeee735e9536.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9bc5c658348a96fc5110ac2a8785920bb9417c07">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.54.0_3f7da88ae04f97d7caf22e700e7a66284a7700e6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_1ab872020dcee428905a9cb9cef5a47599a7b83f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_8dd1ad260bd70d618df4db7c6211adfce18047b7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_7fa5b230835db9f09b156140d0855c79efa61eec.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_d648b309d59794706618e7760aed401dbcb8075e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ervan/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_02d94e6a9ccb43206d87672c35d0a27582104b15.jar" />
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_37e310bf4558aeebedb91631e49c9b8e50b5d6ea.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_f1eb7e52d8d0395e9233f67a20013664e896d60f.jar" />
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_7bcb24832de4f3562c8072d716424c606aa0d344.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/ervan/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_c5820ab27eb44c188b42e704ac3bbe296ca29235.jar" />
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_31995aadad552352d791c0ad9e997e4d6c83d424.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_9d4c609b35c7f8045523abd06b260c8bdc048a71.jar" />
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_157e9d731c2a22b1b07012dab9a23f50c76b45d2.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/ervan/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jar="/Users/herby/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_31b8780a0c01a8b6a686c420f5d006388f4aef41.jar" />
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_1f41d27ad4f9da3d302134424eb67f4dd134c907.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/ervan/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_255dec95702fa0303efcddd7c8afd4d30f901651.jar" />
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_e33265efe05d56eee42615100c3a134b9d6827fb.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_379e41b26a17de43ca108ba0011dda9a300eaa62.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_f82370547cfdb69ed4b2f4c491455d48f34b1396.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_6d0f68aa1e214bd6dac0df865ea0fd042f47dcf0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_0b7b36455db98ae6cb89a0748b2c94b508b19014.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_1d38ab170d67c00891cba8e26b48ac33f58fbc70.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_2b9e1107d3a90f08c35c0b6c0955ed8bea32249e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9bc5c658348a96fc5110ac2a8785920bb9417c07">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.54.0_f47882fa342034299e3e9e9d8bed8eadd70dde28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_72124d0984232ddd925e3c8bd2145d0e46912ced.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_5090f27aa0d4d23611a080a3b28387e389c48d17.jar" />
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_9c0952dfe108c36def161d57675d325dcc1639d4.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-imei/unspecified/jars/classes.jar"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-imei/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="e26c5a747be65a14d8760235e02f00f098dcd432">
-        <dex dex="/home/ervan/Documents/Hacktiv8/Phase_3/backup/smartHome/frontend/android/app/build/intermediates/pre-dexed/debug/frontend-react-native-imei-unspecified_b8bc27c8a6a8bd26807b9de844c5a985863f4087.jar" />
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/frontend-react-native-imei-unspecified_79ca7b107e7e962979d0d29f9ca8cd42532ddf7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_0e0aab7307078a69cf087453627054b737c5cea5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_eb0ebc8e3cacd5dc37a1fe11b8fdf902d50dd98c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6505cae0601b3bf666df5fd7de81069e98a71040.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_8345dc3a734ac5911c87f178c6bc95d8aa5bee88.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_d5580681ac2cd97b4b9ccdbeffae9d0f3278d8de.jar" />
     </item>
 
 </items>
