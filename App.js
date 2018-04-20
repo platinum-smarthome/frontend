@@ -1,7 +1,7 @@
 console.disableYellowBox = true
 import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { StackNavigator } from 'react-navigation'
+import { StackNavigator, DrawerNavigator } from 'react-navigation'
 import Home from './screens/Home'
 import Dashboard from './screens/Dashboard'
 import Bell from './components/Bell'
@@ -10,6 +10,7 @@ import Drawer from './components/Drawer'
 import CreateNewHome from './screens/CreateNewHome'
 import AddNewUser from './screens/AddNewUser'
 import Notify from './screens/Notify'
+import Logout from './screens/Logout'
 
 
 const styles = StyleSheet.create({
@@ -18,6 +19,12 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0,
     borderBottomColor: 'transparent'
   }
+})
+
+const DrawerNav = DrawerNavigator({
+  Dashboard: { screen: Dashboard },
+  ["Add New User"]: { screen: AddNewUser},
+  ["Logout"]: { screen: Logout }
 })
 
 const RootStack = StackNavigator({
@@ -36,7 +43,11 @@ const RootStack = StackNavigator({
     }
   },
   Dashboard: {
-    screen: Dashboard,
+    screen: DrawerNavigator({
+      Dashboard: { screen: Dashboard },
+      ["Add New User"]: { screen: AddNewUser},
+      ["Logout"]: { screen: Logout }
+    }),
     navigationOptions: {
       headerStyle: styles.header,
       headerLeft: <Drawer/>,
@@ -44,23 +55,21 @@ const RootStack = StackNavigator({
     }
   },
   Notify: {
-    screen: Notify,
+    screen: DrawerNavigator({
+      ["House Notifications"]: { screen: Notify },
+      ["Add New User"]: { screen: AddNewUser},
+      ["Logout"]: { screen: Logout }
+    }),
     navigationOptions: {
       headerStyle: styles.header,
       headerTitle: 'Notification',
       headerTintColor: '#fff'
     }
-  },
-  AddNewUser: {
-    screen: AddNewUser,
-    navigationOptions: {
-      headerStyle: styles.header,
-      headerTitle: <LogoHead/>
-    }
   }
 }, {
   initialRouteName: 'Home',
 })
+
 
 export default class App extends React.Component {
   render() {

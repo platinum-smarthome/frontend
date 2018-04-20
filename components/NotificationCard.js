@@ -1,41 +1,30 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, FlatList } from 'react-native'
+import { Text, View, StyleSheet, Image, Button, TouchableHighlight } from 'react-native'
 import { connect } from 'react-redux'
 import { updateLastSeen } from '../store/userData/userData.actions'
-import NotificationCard from '../components/NotificationCard'
+import { dateDisplayFormater } from '../helpers/date.helpers'
 
-
-class Notify extends Component {
-  
-  renderItem = ({ item }) => {
-    return <NotificationCard
-      data={ item }
-    />
-  }
-  
-  keyExtractor = (item, index) => `notif-${item.createdAt}`
-  
+export default class NotificationCard extends Component {
   render() {
+    const { title, description, createdAt } = this.props.data
     return (
-      <View style={styles.body}>
-        <FlatList
-          data={ this.props.logs }
-          keyExtractor={ this.keyExtractor }
-          renderItem={ this.renderItem }
-        />
+      <View style={styles.infoCard}>
+        <View style={styles.titleBorder}>
+          <Text style={styles.notifTitle}>{ title }</Text>
+        </View>
+        <Text style={styles.time}>{ dateDisplayFormater(createdAt) }</Text>
+        <Text style={styles.descText}>{ description }</Text>
+        <View style={styles.footerBorder}>
+          <TouchableHighlight style={styles.box} >
+            <Text style={styles.footerText}> DISMISS </Text>
+          </TouchableHighlight>
+        </View>
       </View>
     )
-  }
-  componentDidMount() {
-    updateLastSeen(this.props.userData.deviceId)
   }
 }
 
 const styles = StyleSheet.create({
-  body: {
-    flex: 1,
-    backgroundColor: '#d3d3d3'
-  },
   infoCard: {
     borderWidth: 1,
     borderColor: '#00a819',
@@ -90,18 +79,3 @@ const styles = StyleSheet.create({
     borderBottomColor: '#a80000'
   }
 })
-
-function mapStateToProps (state) {
-  return {
-    userData: state.UserData,
-    logs: state.NotificationLogs.logs
-  }
-}
-
-// function mapDispatchToProps (dispatch) {
-//   return {
-//     getSensorStatus: () => dispatch(getSensorStatus())
-//   }
-// }
-
-export default connect(mapStateToProps, null)(Notify)

@@ -20,6 +20,7 @@ class Dashboard extends Component {
   })
 
   render() {
+    
     return (
       <ScrollView>
         <View style={styles.body}>
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
 
 function mapStateToProps (state) {
   return {
-    homeId: state.HomeData,
+    userLogin: state.data.userLogin,
     sensors: state.sensors
   }
 }
