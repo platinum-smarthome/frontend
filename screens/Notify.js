@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image, Button, TouchableHighlight } from 'react-native'
+import { connect } from 'react-redux'
+import { updateLastSeen } from '../store/userData/userData.actions'
 
-export default class Notify extends Component {
+class Notify extends Component {
   render() {
     return (
       <View style={styles.body}>
@@ -19,6 +21,9 @@ export default class Notify extends Component {
         </View>
       </View>
     )
+  }
+  componentDidMount() {
+    updateLastSeen(this.props.userData.deviceId)
   }
 }
 
@@ -81,3 +86,17 @@ const styles = StyleSheet.create({
     borderBottomColor: '#a80000'
   }
 })
+
+function mapStateToProps (state) {
+  return {
+    userData: state.UserData
+  }
+}
+
+// function mapDispatchToProps (dispatch) {
+//   return {
+//     getSensorStatus: () => dispatch(getSensorStatus())
+//   }
+// }
+
+export default connect(mapStateToProps, null)(Notify)

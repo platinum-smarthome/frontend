@@ -73,4 +73,5 @@ const timeDifferenceFlag = (date1, date2) => {
 }
 
 // console.log(timeDifferenceFlag(mockDate1, mockDate2))
-countNewNotification(lastSeen)
+// countNewNotification(lastSeen)
+generateNotification()

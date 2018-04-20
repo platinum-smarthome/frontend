@@ -18,12 +18,12 @@ class Bell extends Component {
   }
 
   render() {
-    // this.props.press()
+    let newNotif = this.newNotificationCounter()
     return (
       <View style={styles.pad}>
         <Image style={styles.img} source={require('../components/assets/alarma.png')}/>
         {
-          this.props.logs.length &&
+          newNotif > 0 &&
             <View style={styles.circle}>
               <Text style={styles.num}>{ this.newNotificationCounter() }</Text>
             </View>
