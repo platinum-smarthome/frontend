@@ -16,22 +16,9 @@ import { database } from '../../firebase/firebase'
 //   }
 // }
 
-// export const processNotificationsLogs = (data) => {
-//   let logs = Object.values(data.logs).reverse()
-//   let countNotif = 0
-//   for(let i = 0; i<logs.length; i++) {
-//     if(logs[i].createdAt > data.lastSeen) { countNotif += 1 }
-//     else { i = logs.length }
-//   }
-//   let payload = {
-//     logs: [ ...logs ],
-//     newNotifications: countNotif
-//   }
-//   return {
-//     type: FETCH_NOTIFICATION_LOGS,
-//     payload: payload
-//   }
-// }
+export const notificationsDelete = (payload) => {
+  database().ref(`/smarthome/logs/${payload}`).set(null)
+}
 
 export const fetchNotificationLogsSuccess = (payload) => {
   return {

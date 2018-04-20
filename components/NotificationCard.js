@@ -2,11 +2,13 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image, Button, TouchableHighlight } from 'react-native'
 import { connect } from 'react-redux'
 import { updateLastSeen } from '../store/userData/userData.actions'
+import { notificationsDelete } from '../store/notificationLogs/notificationLogs.actions'
 import { dateDisplayFormater } from '../helpers/date.helpers'
+import NotificationCardFooter from './NotificationCard.footer'
 
 export default class NotificationCard extends Component {
   render() {
-    const { title, description, createdAt } = this.props.data
+    const { title, description, createdAt, id } = this.props.data
     return (
       <View style={styles.infoCard}>
         <View style={styles.titleBorder}>
@@ -14,11 +16,9 @@ export default class NotificationCard extends Component {
         </View>
         <Text style={styles.time}>{ dateDisplayFormater(createdAt) }</Text>
         <Text style={styles.descText}>{ description }</Text>
-        <View style={styles.footerBorder}>
-          <TouchableHighlight style={styles.box} >
-            <Text style={styles.footerText}> DISMISS </Text>
-          </TouchableHighlight>
-        </View>
+        <NotificationCardFooter
+          onPress={ () => notificationsDelete(id) }
+        />
       </View>
     )
   }
@@ -27,7 +27,7 @@ export default class NotificationCard extends Component {
 const styles = StyleSheet.create({
   infoCard: {
     borderWidth: 1,
-    borderColor: '#00a819',
+    borderColor: '#34b8ed',
     marginTop: 1,
     marginHorizontal: 2,
     marginBottom: 2,
@@ -56,26 +56,5 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '200',
     color: '#333333'
-  },
-  footerBorder: {
-    marginTop: 8,
-    borderTopWidth: 1,
-    borderTopColor: '#d3d3d3',
-    paddingTop: 10,
-    paddingBottom: 4,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  footerText: {
-    color: '#fff',
-    padding: 8,
-  },
-  box: {
-    backgroundColor: 'red',
-    borderRadius: 3,
-    borderRightWidth: 3,
-    borderBottomWidth: 3,
-    borderRightColor: '#a80000',
-    borderBottomColor: '#a80000'
   }
 })
