@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0,
     borderBottomColor: 'transparent',
     elevation: 0,
-  }
+  },
 })
 
 // const PrimaryNav = StackNavigator({
@@ -42,7 +42,8 @@ const RootStack = StackNavigator({
     screen: CreateNewHome,
     navigationOptions: {
       headerStyle: styles.header,
-      headerTitle: <LogoHead/>
+      headerTitle: <LogoHead />,
+      headerTintColor: '#fff'
     }
   },
   Dashboard: {
