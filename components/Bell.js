@@ -8,7 +8,7 @@ export default class Bell extends Component {
         <Image style={styles.img} source={require('../components/assets/alarma.png')}/>
         {/* if has notification then display the below */}
         <View style={styles.circle}>
-          <Text style={styles.num}>1</Text>
+          <Text style={styles.num}>{ 1 }</Text>
         </View>
       </View>
     )
