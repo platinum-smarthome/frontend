@@ -30,6 +30,15 @@ export const searchUser = (payload) => {
   }
 }
 
+export const updateLastSeen = (payload) => {
+  database().ref(`/smarthome/users/${payload}/lastSeen`).set(database.ServerValue.TIMESTAMP)
+  //   .then(() => {
+  //     dispatch(createNewHomeSuccess());
+  //     dispatch(createNewUserSuccess())
+  //   })
+  //   .catch((err) => { dispatch(createNewHomeError()) });
+}
+
 const fetchUserDataSuccess = (payload) => {
   return {
     type: FETCH_USER_DATA,

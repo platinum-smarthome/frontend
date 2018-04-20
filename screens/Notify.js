@@ -1,24 +1,33 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, Image, Button, TouchableHighlight } from 'react-native'
+import { Text, View, StyleSheet, FlatList } from 'react-native'
+import { connect } from 'react-redux'
+import { updateLastSeen } from '../store/userData/userData.actions'
+import NotificationCard from '../components/NotificationCard'
 
-export default class Notify extends Component {
+
+class Notify extends Component {
+  
+  renderItem = ({ item }) => {
+    return <NotificationCard
+      data={ item }
+    />
+  }
+  
+  keyExtractor = (item, index) => `notif-${item.createdAt}`
+  
   render() {
     return (
       <View style={styles.body}>
-        <View style={styles.infoCard}>
-          <View style={styles.titleBorder}>
-            <Text style={styles.notifTitle}>What is Lorem Ipsum?</Text>
-          </View>
-          <Text style={styles.time}> 10:01 AM, 28 April 2017 </Text>
-          <Text style={styles.descText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </Text>
-          <View style={styles.footerBorder}>
-            <TouchableHighlight style={styles.box} >
-              <Text style={styles.footerText}> DISMISS </Text>
-            </TouchableHighlight>
-          </View>
-        </View>
+        <FlatList
+          data={ this.props.logs }
+          keyExtractor={ this.keyExtractor }
+          renderItem={ this.renderItem }
+        />
       </View>
     )
+  }
+  componentDidMount() {
+    updateLastSeen(this.props.userData.deviceId)
   }
 }
 
@@ -81,3 +90,18 @@ const styles = StyleSheet.create({
     borderBottomColor: '#a80000'
   }
 })
+
+function mapStateToProps (state) {
+  return {
+    userData: state.UserData,
+    logs: state.NotificationLogs.logs
+  }
+}
+
+// function mapDispatchToProps (dispatch) {
+//   return {
+//     getSensorStatus: () => dispatch(getSensorStatus())
+//   }
+// }
+
+export default connect(mapStateToProps, null)(Notify)

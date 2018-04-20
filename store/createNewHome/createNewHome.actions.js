@@ -10,7 +10,6 @@ import {
 import { createNewUserSuccess } from '../addNewUser/addNewUser.actions'
 
 export const createNewHomeHandleInputChange = (payload) => {
-  console.log('actions', payload)
   return {
     type: CREATE_NEW_HOME_HANDLE_INPUT_CHANGE,
     payload: payload

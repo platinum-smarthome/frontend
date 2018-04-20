@@ -10,6 +10,7 @@ import Drawer from './components/Drawer'
 import CreateNewHome from './screens/CreateNewHome'
 import AddNewUser from './screens/AddNewUser'
 import Notify from './screens/Notify'
+import Logout from './screens/Logout'
 import HousePin from './screens/HousePin'
 
 const styles = StyleSheet.create({
@@ -19,6 +20,12 @@ const styles = StyleSheet.create({
     borderBottomColor: 'transparent',
     elevation: 0,
   }
+})
+
+const DrawerNav = DrawerNavigator({
+  Dashboard: { screen: Dashboard },
+  ["Add New User"]: { screen: AddNewUser},
+  ["Logout"]: { screen: Logout }
 })
 
 // const PrimaryNav = StackNavigator({
@@ -46,7 +53,11 @@ const RootStack = StackNavigator({
     }
   },
   Dashboard: {
-    screen: Dashboard,
+    screen: DrawerNavigator({
+      Dashboard: { screen: Dashboard },
+      ["Add New User"]: { screen: AddNewUser},
+      ["Logout"]: { screen: Logout }
+    }),
     navigationOptions: {
       headerStyle: styles.header,
       headerLeft: <Drawer/>,
@@ -54,18 +65,15 @@ const RootStack = StackNavigator({
     }
   },
   Notify: {
-    screen: Notify,
+    screen: DrawerNavigator({
+      ["House Notifications"]: { screen: Notify },
+      ["Add New User"]: { screen: AddNewUser},
+      ["Logout"]: { screen: Logout }
+    }),
     navigationOptions: {
       headerStyle: styles.header,
       headerTitle: 'Notification',
       headerTintColor: '#fff'
-    }
-  },
-  AddNewUser: {
-    screen: AddNewUser,
-    navigationOptions: {
-      headerStyle: styles.header,
-      headerTitle: <LogoHead/>
     }
   },
   HousePin: {
@@ -78,6 +86,7 @@ const RootStack = StackNavigator({
 }, {
   initialRouteName: 'Home',
 })
+
 
 export default class App extends React.Component {
   render() {

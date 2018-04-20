@@ -5,6 +5,7 @@ import {
   DEVICE_PIN_INPUT_UPDATE,
   DEVICE_PIN_INPUT_REMOVE,
   USER_LOGIN_SUCCESS,
+  USER_LOGOUT
 } from './data.actionType'
 import firebase from 'firebase'
 import { database } from '../../firebase/firebase'
@@ -57,3 +58,8 @@ const devicePinRemove = (payload) => ({
 const userLoginSuccess = (payload) => ({
   type: USER_LOGIN_SUCCESS,
 })
+
+export const userLogout = () => {
+  console.log('LOGOUT')
+  return { type: USER_LOGOUT }
+}
