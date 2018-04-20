@@ -23,6 +23,7 @@ class AlarmType extends Component {
   }
 }
 
+
 const styles = StyleSheet.create({
   alarmTypes: {
     flexDirection: 'row',
