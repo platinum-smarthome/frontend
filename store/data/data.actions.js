@@ -12,7 +12,6 @@ import { database } from '../../firebase/firebase'
 
 export const getData = () => {
   return dispatch => {
-    console.log('masuk')
     dispatch(getDataLoading())
     database().ref(`/smarthome`).once('value', (snap) => {
       let data = snap.val()
@@ -29,6 +28,8 @@ export const devicePinUpdate = (payload) => {
     if (payload.input.join('') === payload.userPin ) {
       dispatch(devicePinRemove())
       dispatch(userLoginSuccess())
+    } else if ( payload.input[5]) {
+      dispatch(devicePinRemove())
     }
   }
 }

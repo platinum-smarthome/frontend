@@ -11,13 +11,14 @@ import CreateNewHome from './screens/CreateNewHome'
 import AddNewUser from './screens/AddNewUser'
 import Notify from './screens/Notify'
 import Logout from './screens/Logout'
-
+import HousePin from './screens/HousePin'
 
 const styles = StyleSheet.create({
   header: {
     backgroundColor: '#34b8ed',
     borderBottomWidth: 0,
-    borderBottomColor: 'transparent'
+    borderBottomColor: 'transparent',
+    elevation: 0,
   }
 })
 
@@ -27,13 +28,22 @@ const DrawerNav = DrawerNavigator({
   ["Logout"]: { screen: Logout }
 })
 
+// const PrimaryNav = StackNavigator({
+//   Home: { screen: Home },
+//   drawerStack: { screen: drawerNavigation }
+// }, {
+//   headerStyle: styles.header,
+//   headerTitle: <LogoHead />,
+//   initialRouteName: 'Home'
+// })
+
 const RootStack = StackNavigator({
   Home: {
     screen: Home,
     navigationOptions: {
       headerStyle: styles.header,
-      headerTitle: <LogoHead/>
-    }
+      headerTitle: <LogoHead/>,
+    },
   },
   CreateNewHome: {
     screen: CreateNewHome,
@@ -64,6 +74,13 @@ const RootStack = StackNavigator({
       headerStyle: styles.header,
       headerTitle: 'Notification',
       headerTintColor: '#fff'
+    }
+  },
+  HousePin: {
+    screen: HousePin,
+    navigationOptions: {
+      headerStyle: styles.header,
+      headerTitle: <LogoHead/>
     }
   }
 }, {

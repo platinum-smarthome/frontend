@@ -8,7 +8,7 @@ const initialState = {
   fectHomeDataLoading: false,
   homeId: '',
   homeName: '',
-  homePin: '',
+  homePin: ['','','','','',''],
   owner: '',
   users: [],
   sensors: [],

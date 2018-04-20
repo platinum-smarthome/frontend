@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 
 import { getData } from '../store/data/data.actions'
 import { fetchHomeData } from '../store/homeData/homeData.actions'
+import { devicePinUpdate } from '../store/data/data.actions'
+
 
 import PinText from '../components/PinText'
 import Keypad from '../components/Keypad'
@@ -11,21 +13,50 @@ import Bullet from '../components/Bullet'
 import ForgotText from '../components/ForgotText'
 import TouchAbleText from '../components/TouchAbleText'
 
+
 class Home extends Component {
+  pressButtonDevice (e) {
+    let newPin = [...this.props.devicePin]
+    let index = newPin.indexOf('')
+    newPin.splice(index, 1, e)
+    let payload = {
+      userPin: this.props.userPin,
+      input: newPin
+    }
+    this.props.devicePinUpdate(payload)
+  }
+  removePinDevice () {
+    let newPin = [...this.props.devicePin]
+    if (newPin.lastIndexOf('') != -1) {
+      let index = newPin.indexOf('') - 1
+      newPin.splice(index, 1, '')
+    } else {
+      newPin.splice(5, 1, '')
+    }
+    let payload = {
+      userPin: this.props.userPin,
+      input: newPin
+    }
+    this.props.devicePinUpdate(payload)
+  }
+
   render () {
     return (this.props.userLogin) ?
     this.props.navigation.navigate('Dashboard') :
     (
       <View style={styles.container}>
         <PinText text={'Enter Your PIN Device'} />
-        <Bullet/>
+        <Bullet pin={this.props.devicePin}/>
         <ForgotText text={'Forgot Password?'} />
         <TouchAbleText
           text={ 'Create New Home' }
           onPress={ () => this.props.navigation.navigate('CreateNewHome') }
-        />
+        /> 
         <View style={styles.end}>
-          <Keypad/>
+          <Keypad 
+            press={ (e) =>this.pressButtonDevice(e) } 
+            remove={ () => this.removePinDevice() }
+          />
         </View>
       </View>
     )
@@ -49,14 +80,16 @@ const styles = StyleSheet.create({
 
 function mapStateToProps (state) {
   return {
+    devicePin: state.data.devicePin,
     data: state.data,
-    userLogin: state.data.userLogin    
+    userLogin: state.data.userLogin,
+    userPin: state.UserData.pin
   }
 }
 
 function mapDispatchToProps (dispatch) {
   return {
-    // getData: () => dispatch(getData()),
+    devicePinUpdate: (payload) => dispatch(devicePinUpdate(payload)),
     fetchHomeData: () => dispatch(fetchHomeData())
   }
 }

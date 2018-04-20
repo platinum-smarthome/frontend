@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native'
-import { connect } from 'react-redux'
 
 class Bullet extends Component {
   render() {
     return (
       <View style={styles.aligner}>
         { 
-          this.props.devicePin.map(val => (val) ?
+          this.props.pin.map(val => (val) ?
              <Text style={styles.white}>&#8226;</Text> :
              <Text style={styles.grey}>&#8226;</Text>
           )
@@ -37,10 +36,4 @@ const styles = StyleSheet.create({
   }
 })
 
-function mapStateToProps (state) {
-  return {
-    devicePin: state.data.devicePin
-  }
-}
-
-export default connect(mapStateToProps, null)(Bullet)
+export default Bullet

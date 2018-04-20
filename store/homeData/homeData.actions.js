@@ -7,8 +7,9 @@ import firebase from 'firebase'
 import { database } from '../../firebase/firebase';
 import { searchUser } from '../userData/userData.actions'
 import { fetchNotificationLogsSuccess } from '../notificationLogs/notificationLogs.actions'
+import { getSensorStatusSuccess } from '../sensors/sensor.actions'
 
-export const fetchHomeData = (payload) => {
+export const fetchHomeData = () => {
   return dispatch => {
     dispatch(fetchHomeDataLoading())
     database().ref(`/smarthome`).on('value', (snap) => {
