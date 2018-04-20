@@ -5,6 +5,7 @@ import AddNewUser from './addNewUser/addNewUser.reducers'
 import Sensor from './sensors/sensor.reducers'
 import HomeData from './homeData/homeData.reducers'
 import UserData from './userData/userData.reducers'
+import NotificationLogs from './notificationLogs/notificationLogs.reducers'
 
 const reducers = combineReducers({
   addNewUserReducer: AddNewUser,
@@ -12,7 +13,8 @@ const reducers = combineReducers({
   CreateNewHomeReducer: CreateNewHome,
   sensors: Sensor,
   HomeData: HomeData,
-  UserData: UserData
+  UserData: UserData,
+  NotificationLogs: NotificationLogs
 })
 
 export default reducers

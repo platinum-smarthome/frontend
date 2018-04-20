@@ -32,9 +32,7 @@ class Home extends Component {
   }
 
   componentDidMount () {
-    let payload = ''
-    // this.props.getData()
-    this.props.fetchHomeData(payload)
+    this.props.fetchHomeData()
   }
 }
 
