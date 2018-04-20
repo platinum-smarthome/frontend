@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Image, StyleSheet, Text } from 'react-native'
+import { View, Image, StyleSheet, Text, TouchableOpacity, TouchableHighlight } from 'react-native'
 import { connect } from 'react-redux'
 
 class Bell extends Component {
@@ -18,6 +18,7 @@ class Bell extends Component {
   }
 
   render() {
+    // this.props.press()
     return (
       <View style={styles.pad}>
         <Image style={styles.img} source={require('../components/assets/alarma.png')}/>

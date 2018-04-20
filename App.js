@@ -9,12 +9,14 @@ import LogoHead from './components/LogoHead'
 import Drawer from './components/Drawer'
 import CreateNewHome from './screens/CreateNewHome'
 import AddNewUser from './screens/AddNewUser'
+import Notify from './screens/Notify'
 
 
 const styles = StyleSheet.create({
   header: {
     backgroundColor: '#34b8ed',
     borderBottomWidth: 0,
+    borderBottomColor: 'transparent'
   }
 })
 
@@ -23,12 +25,14 @@ const RootStack = StackNavigator({
     screen: Home,
     navigationOptions: {
       headerStyle: styles.header,
+      headerTitle: <LogoHead/>
     }
   },
   CreateNewHome: {
     screen: CreateNewHome,
     navigationOptions: {
       headerStyle: styles.header,
+      headerTitle: <LogoHead/>
     }
   },
   Dashboard: {
@@ -36,14 +40,22 @@ const RootStack = StackNavigator({
     navigationOptions: {
       headerStyle: styles.header,
       headerLeft: <Drawer/>,
-      headerRight: <Bell/>,
       headerTitle: <LogoHead/>
+    }
+  },
+  Notify: {
+    screen: Notify,
+    navigationOptions: {
+      headerStyle: styles.header,
+      headerTitle: 'Notification',
+      headerTintColor: '#fff'
     }
   },
   AddNewUser: {
     screen: AddNewUser,
     navigationOptions: {
       headerStyle: styles.header,
+      headerTitle: <LogoHead/>
     }
   }
 }, {
