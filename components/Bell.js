@@ -1,19 +1,52 @@
 import React, { Component } from 'react'
 import { View, Image, StyleSheet, Text } from 'react-native'
+import { connect } from 'react-redux'
 
-export default class Bell extends Component {
+class Bell extends Component {
+  newNotificationCounter = () => {
+    let logs = this.props.logs
+    let lastSeen = this.props.userlastSeen
+    let newNotifCount = 0
+    for(let i = 0; i<logs.length; i++) {
+      if(logs[i].createdAt > lastSeen) {
+        newNotifCount += 1
+      } else {
+        i = logs.length
+      }
+    }
+    return newNotifCount
+  }
+
   render() {
     return (
       <View style={styles.pad}>
         <Image style={styles.img} source={require('../components/assets/alarma.png')}/>
-        {/* if has notification then display the below */}
-        <View style={styles.circle}>
-          <Text style={styles.num}>{ 1 }</Text>
-        </View>
+        {
+          this.props.logs.length &&
+            <View style={styles.circle}>
+              <Text style={styles.num}>{ this.newNotificationCounter() }</Text>
+            </View>
+        }
       </View>
     )
   }
 }
+
+function mapStateToProps (state) {
+  return {
+    logs: state.NotificationLogs.logs,
+    userlastSeen: state.UserData.lastSeen
+  }
+}
+
+function mapDispatchToProps (dispatch) {
+  return {
+    // getData: () => dispatch(getData()),
+    // fetchHomeData: () => dispatch(fetchHomeData())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Bell)
 
 const styles = StyleSheet.create({
   img: {

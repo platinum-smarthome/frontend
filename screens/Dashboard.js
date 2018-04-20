@@ -41,7 +41,7 @@ class Dashboard extends Component {
 
 function mapStateToProps (state) {
   return {
-    homeId: state.HomeData
+    logs: state.NotificationLogs.logs
   }
 }
 
