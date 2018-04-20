@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native'
-import { connect } from 'react-redux'
 import { devicePinUpdate } from '../store/data/data.actions'
 
 class Keypad extends Component {

@@ -10,6 +10,7 @@ import TouchAbleText from '../components/TouchAbleText'
 import Bell from '../components/Bell'
 import { connect } from 'react-redux'
 import { getSensorStatus } from '../store/sensors/sensor.actions'
+import { loadHomePin, homeLock } from '../store/housePin/housePin.actions'
 
 class Dashboard extends Component {
   static navigationOptions = ({navigation}) => ({
@@ -33,7 +34,7 @@ class Dashboard extends Component {
           </View>
           <View style={styles.card}>
             <CardTitle imgLogo={require('../components/assets/megaphone.png')} text={'Alarms'} />
-            <AlarmType text={'Main Door'} status={true} press={ () => this.props.navigation.navigate('HousePin')} />
+            <AlarmType text={'Main Door'} status={this.props.housePin.houseLock} lock={ () => this.props.homeLock() } press={ () => this.props.navigation.navigate('HousePin')} />
           </View>
             { !this.props.sensors.length && 
               (<View style={styles.card}>
@@ -54,6 +55,8 @@ class Dashboard extends Component {
   }
   componentDidMount () {
     this.props.getSensorStatus()
+    this.props.loadHomePin()
+    // this.props
   }
 }
 
@@ -74,13 +77,16 @@ const styles = StyleSheet.create({
 function mapStateToProps (state) {
   return {
     homeId: state.HomeData,
-    sensors: state.sensors
+    sensors: state.sensors,
+    housePin: state.housePin
   }
 }
 
 function mapDispatchToProps (dispatch) {
   return {
-    getSensorStatus: () => dispatch(getSensorStatus())
+    getSensorStatus: () => dispatch(getSensorStatus()),
+    loadHomePin: () => dispatch(loadHomePin()),
+    homeLock: () => dispatch(homeLock())
   }
 }
 

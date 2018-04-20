@@ -6,15 +6,14 @@ import {
 import firebase from 'firebase'
 import { database } from '../../firebase/firebase';
 import { searchUser } from '../userData/userData.actions'
+import { getSensorStatusSuccess } from '../sensors/sensor.actions'
 
-export const fetchHomeData = (payload) => {
+export const fetchHomeData = () => {
   return dispatch => {
     dispatch(fetchHomeDataLoading())
     database().ref(`/smarthome`).on('value', (snap) => {
       let data = snap.val()
-      let newHomePin = data.homePin.split('')
-      let newData = {...data, homePin: newHomePin}
-      dispatch(fetchHomeDataSuccess(newData))
+      dispatch(fetchHomeDataSuccess(data))
       dispatch(searchUser(data.users))
     }, (err) => { dispatch(fetchHomeDataError()) })
   }

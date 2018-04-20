@@ -14,9 +14,18 @@ class AlarmType extends Component {
           }
         </View>
         <DoorStatus text={ this.props.text } status={ this.props.status }/>
-        <TouchableOpacity style={styles.arrowPos} onPress={ this.props.press }>
-          <Image style={{ height: 30, width: 30}} source={require('../components/assets/greyarrow.png')} />
-        </TouchableOpacity>
+          {
+            this.props.status ?
+            (
+            <TouchableOpacity style={styles.arrowPos} onPress={ this.props.press }>
+              <Image style={{ height: 30, width: 30}} source={require('../components/assets/greyarrow.png')} />
+            </TouchableOpacity>
+            ) : (
+            <TouchableOpacity style={styles.arrowPos} onPress={ this.props.lock }>
+              <Image style={{ height: 30, width: 30}} source={require('../components/assets/desbloqueado.png')} />
+            </TouchableOpacity>
+            )
+          }
       </View>
     )
   }
