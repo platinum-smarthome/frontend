@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { View, Image, Text, StyleSheet } from 'react-native'
-import CO2Status from './status/CO2Status'
-import GarageStatus from './status/GarageStatus'
+import { View, Image, Text, TouchableOpacity, StyleSheet } from 'react-native'
 import DoorStatus from './status/DoorStatus'
 
 class AlarmType extends Component {
@@ -9,15 +7,25 @@ class AlarmType extends Component {
     return (
       <View style={styles.alarmTypes}>
         <View>
-          <Image style={styles.alarmImg} source={ this.props.imgLogo }/>
+          {
+            this.props.status ?
+            <Image style={styles.alarmImg} source={ require('../components/assets/puerta.png') }/> :
+            <Image style={styles.alarmImg} source={ require('../components/assets/access.png') }/>
+          }
         </View>
-        {
-          (this.props.type === 'gas') ?
-          <CO2Status text={ this.props.text } status={ this.props.status }/> :
-          (this.props.type === 'garage') ?
-          <GarageStatus text={ this.props.text } status={ this.props.status }/> :
-          <DoorStatus text={ this.props.text } status={ this.props.status }/>
-        }
+        <DoorStatus text={ this.props.text } status={ this.props.status }/>
+          {
+            this.props.status ?
+            (
+            <TouchableOpacity style={styles.arrowPos} onPress={ this.props.press }>
+              <Image style={{ height: 30, width: 30}} source={require('../components/assets/greyarrow.png')} />
+            </TouchableOpacity>
+            ) : (
+            <TouchableOpacity style={styles.arrowPos} onPress={ this.props.lock }>
+              <Image style={{ height: 30, width: 30}} source={require('../components/assets/desbloqueado.png')} />
+            </TouchableOpacity>
+            )
+          }
       </View>
     )
   }
@@ -43,6 +51,12 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: '300',
     color: '#333333'
+  },
+  arrowPos: {
+    position: 'absolute',
+    right: 0,
+    paddingHorizontal: 25,
+    paddingVertical: 20
   },
   locked: {
     fontSize: 16,

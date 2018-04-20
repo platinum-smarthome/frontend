@@ -1,4 +1,11 @@
-import { GET_SENSOR_STATUS_SUCCESS, UPDATE_SENSOR_STATUS, GET_SENSOR_STATUS_LOADING } from './sensor.actionType'
+import { 
+  GET_SENSOR_STATUS_SUCCESS, 
+  GET_SENSOR_STATUS_LOADING, 
+  UPDATE_SENSOR_STATUS,
+  DISABLE_ALL_SENSORS,
+  ENABLE_ALL_SENSORS
+} from './sensor.actionType'
+import { enableSensors } from './sensor.actions';
 
 const initialState = {
   sensors: [],
@@ -19,6 +26,14 @@ const reducers = (state=initialState, action) => {
         loading: true
       }
     case UPDATE_SENSOR_STATUS:
+      return {
+        ...state
+      }
+    case DISABLE_ALL_SENSORS:
+      return {
+        ...state
+      }
+    case ENABLE_ALL_SENSORS:
       return {
         ...state
       }

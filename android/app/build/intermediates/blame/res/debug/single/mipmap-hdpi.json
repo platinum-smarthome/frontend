@@ -6,5 +6,9 @@
     {
         "merged": "/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
         "source": "/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }
 ]

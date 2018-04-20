@@ -1,6 +1,13 @@
-import { GET_SENSOR_STATUS_SUCCESS, GET_SENSOR_STATUS_LOADING, UPDATE_SENSOR_STATUS } from './sensor.actionType'
+import { 
+  GET_SENSOR_STATUS_SUCCESS, 
+  GET_SENSOR_STATUS_LOADING, 
+  UPDATE_SENSOR_STATUS,
+  DISABLE_ALL_SENSORS,
+  ENABLE_ALL_SENSORS
+} from './sensor.actionType'
 import firebase from 'firebase'
 import { database } from '../../firebase/firebase'
+import { homeUnlock, homePinAccessSuccess } from '../housePin/housePin.actions'
 
 export const getSensorStatus = () => {
   return dispatch => {
@@ -14,12 +21,51 @@ export const getSensorStatus = () => {
   }
 }
 
+export const checkSensorStatus = () => {
+  console.log('bambang------------------------------')
+  // return dispatch => {
+  database().ref('/smarthome/sensors').once('value', (snap) => {
+    let data = snap.val()
+    let val = 0
+    for (let i in data) { val += data[i] }
+    console.log(val)
+    if (!val) { 
+      console.log('semua off')
+       homePinAccessSuccess()
+      }
+    })
+  // }
+}
 export const updateSensorStatus = (payload) => {
   return dispatch => {
     let val = (payload.value) ? 1 : 0
     database().ref(`/smarthome/sensors/${payload.type}`).set(val)
-      .then(() => {
+    .then(() => {
+        checkSensorStatus()
         dispatch(updateSensorStatusSuccess())
+      })
+  }
+}
+
+
+export const disableSensors = () => {
+  return dispatch => {
+    database().ref('/smarthome/sensors/door').set(0)
+    database().ref('/smarthome/sensors/garage').set(0)
+    database().ref('/smarthome/sensors/gas').set(0)
+      .then(() => {
+        dispatch(disableAllSensors())
+      })
+  }
+} 
+
+export const enableSensors = () => {
+  return dispatch => {
+    database().ref('/smarthome/sensors/door').set(1)
+    database().ref('/smarthome/sensors/garage').set(1)
+    database().ref('/smarthome/sensors/gas').set(1)
+      .then(() => {
+        dispatch(enableAllSensors())
       })
   }
 }
@@ -35,4 +81,12 @@ const getSensorStatusLoading = () => ({
 
 const updateSensorStatusSuccess = () => ({
   type: UPDATE_SENSOR_STATUS
+})
+
+const disableAllSensors = () => ({
+  type: DISABLE_ALL_SENSORS
+})
+
+const enableAllSensors = () => ({
+  type: ENABLE_ALL_SENSORS
 })
