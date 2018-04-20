@@ -12,7 +12,9 @@ export const fetchHomeData = (payload) => {
     dispatch(fetchHomeDataLoading())
     database().ref(`/smarthome`).on('value', (snap) => {
       let data = snap.val()
-      dispatch(fetchHomeDataSuccess(data))
+      let newHomePin = data.homePin.split('')
+      let newData = {...data, homePin: newHomePin}
+      dispatch(fetchHomeDataSuccess(newData))
       dispatch(searchUser(data.users))
     }, (err) => { dispatch(fetchHomeDataError()) })
   }

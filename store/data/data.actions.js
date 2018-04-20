@@ -24,11 +24,15 @@ export const getData = () => {
 }
 
 export const devicePinUpdate = (payload) => {
+  console.log(payload)
   return dispatch => {
     dispatch(devicePinUpdateSuccess(payload.input))
+    console.log(payload.input.join(''), payload.userPin)
     if (payload.input.join('') === payload.userPin ) {
       dispatch(devicePinRemove())
       dispatch(userLoginSuccess())
+    } else if ( payload.input[5]) {
+      dispatch(devicePinRemove())
     }
   }
 }

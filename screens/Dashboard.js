@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { Text, View, Image, ScrollView, StyleSheet, Alert, TouchableOpacity } from 'react-native'
 import CardTitle from '../components/CardTitle'
 import AlarmType from '../components/AlarmType'
+import MonitorType from '../components/MonitorType'
 import SwitchType from '../components/SwitchType'
 import Cctv from '../components/Cctv'
 import TouchAbleText from '../components/TouchAbleText'
@@ -26,13 +27,13 @@ class Dashboard extends Component {
           <View style={styles.card}>
             <CardTitle imgLogo={require('../components/assets/cctv.png')} text={'Monitor'} />
             <Cctv imgLogo={require('../components/assets/watchhouse.png')} text={'Watch House'} />
-            <AlarmType imgLogo={require('../components/assets/co2icon.png')} type={'gas'} text={'Carbon Dioxide Sensor'} status={true} />
-            <AlarmType imgLogo={require('../components/assets/garage.png')} type={'garage'} text={'Garage'} status={false} />
-            <AlarmType imgLogo={require('../components/assets/motion.png')} type={'door'} text={'Motion'} status={true} />
+            <MonitorType imgLogo={require('../components/assets/co2icon.png')} type={'gas'} text={'Carbon Dioxide Sensor'} status={true} />
+            <MonitorType imgLogo={require('../components/assets/garage.png')} type={'garage'} text={'Garage'} status={false} />
+            <MonitorType imgLogo={require('../components/assets/motion.png')} type={'door'} text={'Motion'} status={true} />
           </View>
           <View style={styles.card}>
             <CardTitle imgLogo={require('../components/assets/megaphone.png')} text={'Alarms'} />
-            <AlarmType imgLogo={require('../components/assets/access.png')} type={'door'} text={'Main Door'} status={false} />
+            <AlarmType text={'Main Door'} status={true} press={ () => this.props.navigation.navigate('HousePin')} />
           </View>
             { !this.props.sensors.length && 
               (<View style={styles.card}>
