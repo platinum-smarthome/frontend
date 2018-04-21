@@ -66,14 +66,16 @@ const RootStack = StackNavigator({
     screen: AddNewUser,
     navigationOptions: {
       headerStyle: styles.header,
-      headerTitle: <LogoHead/>
+      headerTitle: <LogoHead/>,
+      headerTintColor: '#fff',
     }
   },
   HousePin: {
     screen: HousePin,
     navigationOptions: {
       headerStyle: styles.header,
-      headerTitle: <LogoHead/>
+      headerTitle: <LogoHead/>,
+      headerTintColor: '#fff'
     }
   }
 }, {
