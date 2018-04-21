@@ -66,7 +66,7 @@ class Home extends Component {
   }
 
   componentDidMount () {
-    this.props.fetchHomeData()
+    // this.props.fetchHomeData()
   }
 }
 

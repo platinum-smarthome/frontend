@@ -2,6 +2,7 @@ console.disableYellowBox = true
 import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { StackNavigator, DrawerNavigator } from 'react-navigation'
+
 import Home from './screens/Home'
 import Dashboard from './screens/Dashboard'
 import Bell from './components/Bell'
@@ -12,6 +13,7 @@ import AddNewUser from './screens/AddNewUser'
 import Notify from './screens/Notify'
 import Logout from './screens/Logout'
 import HousePin from './screens/HousePin'
+import Splash from './screens/Splash'
 
 const styles = StyleSheet.create({
   header: {
@@ -44,6 +46,12 @@ const RootStack = StackNavigator({
       headerStyle: styles.header,
       headerTitle: <LogoHead/>,
     },
+  },
+  Splash: {
+    screen: Splash,
+    navigationOptions: {
+      header: null
+    }
   },
   CreateNewHome: {
     screen: CreateNewHome,
@@ -94,7 +102,7 @@ const RootStack = StackNavigator({
     }
   }
 }, {
-  initialRouteName: 'Home',
+  initialRouteName: 'Splash',
 })
 
 

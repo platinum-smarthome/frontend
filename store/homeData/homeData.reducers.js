@@ -5,7 +5,7 @@ import {
 } from './homeData.actionType'
 
 const initialState = {
-  fectHomeDataLoading: false,
+  fectHomeDataLoading: true,
   homeId: '',
   homeName: '',
   homePin: ['','','','','',''],

@@ -27,7 +27,6 @@ export const watchNotification = (lastNotified) => {
         val = Object.values(snaphot.val()).reverse()
         if(val[0].createdAt > lastNotified) {
           lastNotified = val[0].createdAt
-          console.log(typeof(val[0].createdAt))
           PushNotification.localNotification({
             id: lastNotified,
             largeIcon: "ic_launcher",
