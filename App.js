@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0,
     borderBottomColor: 'transparent',
     elevation: 0,
-  }
+  },
 })
 
 const DrawerNav = DrawerNavigator({
@@ -49,7 +49,8 @@ const RootStack = StackNavigator({
     screen: CreateNewHome,
     navigationOptions: {
       headerStyle: styles.header,
-      headerTitle: <LogoHead/>
+      headerTitle: <LogoHead />,
+      headerTintColor: '#fff'
     }
   },
   Dashboard: {
@@ -76,11 +77,20 @@ const RootStack = StackNavigator({
       headerTintColor: '#fff'
     }
   },
+  AddNewUser: {
+    screen: AddNewUser,
+    navigationOptions: {
+      headerStyle: styles.header,
+      headerTitle: <LogoHead/>,
+      headerTintColor: '#fff',
+    }
+  },
   HousePin: {
     screen: HousePin,
     navigationOptions: {
       headerStyle: styles.header,
-      headerTitle: <LogoHead/>
+      headerTitle: <LogoHead/>,
+      headerTintColor: '#fff'
     }
   }
 }, {

@@ -45,13 +45,18 @@ class Home extends Component {
     this.props.navigation.navigate('Dashboard') :
     (
       <View style={styles.container}>
+        <View style={{marginVertical: 10}}/>
         <PinText text={'Enter Your PIN Device'} />
         <Bullet pin={this.props.devicePin}/>
-        <ForgotText text={'Forgot Password?'} />
-        <TouchAbleText
-          text={ 'Create New Home' }
-          onPress={ () => this.props.navigation.navigate('CreateNewHome') }
-        /> 
+        {/* <ForgotText text={'Forgot Password?'} /> */}
+        <View style={{marginVertical: 40}}/>
+        <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row'}}>
+          <Text style={{color: '#fff'}}> New to Fortress ?  </Text>
+          <TouchAbleText
+            text={ 'Register Here' }
+            onPress={ () => this.props.navigation.navigate('CreateNewHome') }
+          /> 
+        </View>
         <View style={styles.end}>
           <Keypad 
             press={ (e) =>this.pressButtonDevice(e) } 

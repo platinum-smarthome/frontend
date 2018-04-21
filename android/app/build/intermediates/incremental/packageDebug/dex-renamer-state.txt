@@ -1,4 +1,4 @@
-#Fri Apr 20 10:15:50 WIB 2018
+#Fri Apr 20 21:33:51 WIB 2018
 base.0=/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

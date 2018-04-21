@@ -17,6 +17,11 @@ class SwitchType extends Component {
           <Text style={styles.switchText}> { this.props.text } </Text>
           { this.props.sensors.loading ?
             <Text> </Text> :
+            this.props.houseLock ?
+            (<View>
+              <Text style={styles.locked}> On</Text> 
+              <Text style={styles.disabled}> Unlock Main Door to enable switch </Text>
+            </View>) :
             this.props.status ? 
             <Text style={styles.locked}> On</Text> :
             <Text style={styles.unlocked}> Off</Text>
@@ -25,8 +30,7 @@ class SwitchType extends Component {
         <View style={styles.switchPos}>
         { this.props.sensors.loading ?
           ( <Image style={{width: 60, height: 60, marginTop: -16}} source={require('../components/assets/spinner.gif')} /> ) :
-          // ( <Text> Loading </Text> ) : 
-          ( <Switch onValueChange={(e) => this.props.updateSensorStatus({type: this.props.type, value: e })} value={ (this.props.status) ? true : false }/> )
+          ( <Switch onValueChange={(e) => this.props.updateSensorStatus({type: this.props.type, value: e })} value={ (this.props.status) ? true : false } disabled={this.props.houseLock}/> )
         }
         </View>
       </View>
@@ -47,7 +51,7 @@ const styles = StyleSheet.create({
     marginVertical: 6
   },
   textContent: {
-    paddingVertical: 10,
+    paddingVertical: 4,
     flexDirection: 'column',
   },
   switchText: {
@@ -60,6 +64,11 @@ const styles = StyleSheet.create({
     right: 0,
     paddingHorizontal: 20,
     paddingVertical: 20
+  },
+  disabled: {
+    fontSize: 14,
+    fontWeight: '300',
+    color: '#d3d3d3'
   },
   locked: {
     fontSize: 16,
@@ -75,7 +84,8 @@ const styles = StyleSheet.create({
 
 function mapStateToProps (state) {
   return {
-    sensors: state.sensors
+    sensors: state.sensors,
+    houseLock: state.housePin.houseLock
   }
 }
 

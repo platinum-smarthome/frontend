@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button, StyleSheet } from 'react-native';
+import { View, Button, StyleSheet, Image } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import IMEI from 'react-native-imei';
@@ -7,6 +7,7 @@ import IMEI from 'react-native-imei';
 import { createNewHomeHandleInputChange, createNewHome } from '../store/createNewHome/createNewHome.actions'
 import InputTextForm from '../components/InputTextForm';
 import NewUserForm from '../components/NewUserForm'
+import PinText from '../components/PinText'
 
 class CreateNewHome extends Component {
   saveNewHome = () => {
@@ -26,23 +27,29 @@ class CreateNewHome extends Component {
   render () {
     return (
       <View style={styles.container}>
-        <InputTextForm
-          name={ 'homeName' }
-          placeholder={ 'Home Name' }
-          onChangeText={ this.props.createNewHomeHandleInputChange }
-          value={ this.props.homeName }
-        />
-        <InputTextForm
-          name={ 'homePin' }
-          placeholder={ 'Home Pin' }
-          secureTextEntry={ true }
-          onChangeText={ this.props.createNewHomeHandleInputChange }
-          keyboardType={ 'numeric' }
-          maxLength={ 6 }
-          value={this.props.homePin }
-        />
-        <NewUserForm />
-        <Button title={ 'create' } onPress={ this.saveNewHome }/>
+        <Image style={{ marginTop: 20, width: 120, height: 120}} source={require('../components/assets/casa.png')} />
+        <PinText text={'Secure Your Home With Us'}/>
+        <View style={{marginTop: 30}}>
+          <InputTextForm
+            name={ 'homeName' }
+            placeholder={ 'home name' }
+            onChangeText={ this.props.createNewHomeHandleInputChange }
+            value={ this.props.homeName }
+            />
+          <InputTextForm
+            name={ 'homePin' }
+            placeholder={ 'home pin' }
+            secureTextEntry={ true }
+            onChangeText={ this.props.createNewHomeHandleInputChange }
+            keyboardType={ 'numeric' }
+            maxLength={ 6 }
+            value={this.props.homePin }
+            />
+          <NewUserForm />
+          <View style={{ marginTop: 36 }} >
+            <Button style={styles.btn} title={ 'Register' } onPress={ this.saveNewHome }/>
+          </View>
+        </View>
       </View>
     )
   }
@@ -52,6 +59,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#34b8ed',
+    alignItems: 'center'
+  },
+  btn: {
+    padding: 12,
+    borderBottomWidth: 2,
+    borderBottomColor: '#003b93',
+    borderRightWidth: 2,
+    borderRightColor: '#003b93',
   },
   end: {
     marginTop: 40,
