@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
 function mapStateToProps (state) {
   return {
     userLogin: state.data.userLogin,
-    sensors: state.sensors
+    sensors: state.sensors,
     housePin: state.housePin
   }
 }
