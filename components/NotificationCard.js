@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Image, Button, TouchableHighlight } from 'react
 import { connect } from 'react-redux'
 import { updateLastSeen } from '../store/userData/userData.actions'
 import { notificationsDelete } from '../store/notificationLogs/notificationLogs.actions'
-import { dateDisplayFormater } from '../helpers/date.helpers'
+import { dateDisplayFormater } from '../helpers/date.helper'
 import NotificationCardFooter from './NotificationCard.footer'
 
 export default class NotificationCard extends Component {
