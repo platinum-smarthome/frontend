@@ -1,10 +1,12 @@
 import {
   FETCH_NOTIFICATION_LOGS_LOADING,
   FETCH_NOTIFICATION_LOGS,
-  FETCH_NOTIFICATION_LOGS_ERROR
+  FETCH_NOTIFICATION_LOGS_ERROR,
+  UPDATE_LAST_NOTIFIED
 } from './notificationLogs.actionType'
-import firebase from 'firebase'
+import { dateDisplayFormater } from '../../helpers/date.helper'
 import { database } from '../../firebase/firebase'
+import PushNotification from '../../helpers/notification.helper'
 
 // export const fetchNotificationLogs = (payload) => {
 //   return dispatch => {
@@ -15,6 +17,31 @@ import { database } from '../../firebase/firebase'
 //     }, (err) => { dispatch(fetchNotificationLogsError()) })
 //   }
 // }
+
+export const watchNotification = (lastNotified) => { 
+  return dispatch => {
+    dispatch(fetchNotificationLogsLoading())
+    database().ref(`/smarthome/logs`).on('value', (snaphot) => {
+      let val = Object.values(snaphot.val()).reverse()
+      if(val[0].createdAt > lastNotified) {
+        lastNotified = val[0].createdAt
+        console.log(typeof(val[0].createdAt))
+        PushNotification.localNotification({
+          id: lastNotified,
+          autoCancel: true,
+          bigText: `${ val[0].description }`,
+          subText: `${ dateDisplayFormater(val[0].createdAt) }`,
+          vibrate: true,
+          vibration: 300,
+          title: "Fortress - Smart Home Security",
+          message: `${ val[0].title }`,
+        });
+      }
+      dispatch(updateLastNotified(val[0].createdAt))
+      dispatch(fetchNotificationLogsSuccess(val))
+    }, (err) => { dispatch(fetchNotificationLogsError()) })
+  }
+}
 
 export const notificationsDelete = (payload) => {
   database().ref(`/smarthome/logs/${payload}`).set(null)
@@ -34,3 +61,10 @@ const fetchNotificationLogsLoading = () => ({
 const fetchNotificationLogsError = () => ({
   type: FETCH_NOTIFICATION_LOGS_ERROR
 })
+
+export const updateLastNotified = (payload) => {
+  return {
+    type: UPDATE_LAST_NOTIFIED,
+    payload: payload
+  }
+}
