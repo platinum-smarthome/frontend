@@ -1,12 +1,14 @@
 import {
   FETCH_NOTIFICATION_LOGS_LOADING,
   FETCH_NOTIFICATION_LOGS,
-  FETCH_NOTIFICATION_LOGS_ERROR
+  FETCH_NOTIFICATION_LOGS_ERROR,
+  UPDATE_LAST_NOTIFIED
 } from './notificationLogs.actionType'
 
 const initialState = {
   fectNotificationLogsLoading: false,
   logs: [],
+  lastNotified: 0,
   fectNotificationLogsError: false,
 }
 
@@ -29,6 +31,12 @@ const reducers = (state=initialState, action) => {
         fectNotificationLogsLoading: false,
         fectNotificationLogsError: true
       }
+    case UPDATE_LAST_NOTIFIED: {
+      return {
+        ...state,
+        lastNotified: action.payload
+      }
+    }
     default:
       return state
   }

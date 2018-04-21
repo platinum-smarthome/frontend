@@ -22,8 +22,6 @@ export const searchUser = (payload) => {
     dispatch(fetchUserDataLoading())
     payload = Object.values(payload);
     payload.forEach((user) => {
-      console.log(user)
-      console.log('===================>>>', user.deviceId, IMEI.getImei())
       if(user.deviceId === IMEI.getImei()) {
         return dispatch(fetchUserDataSuccess(user))
       }

@@ -16,7 +16,7 @@ export const fetchHomeData = () => {
       let data = snap.val()
       dispatch(fetchHomeDataSuccess(data))
       dispatch(searchUser(data.users))
-      dispatch(fetchNotificationLogsSuccess(Object.values(data.logs).reverse()))
+      // dispatch(fetchNotificationLogsSuccess(Object.values(data.logs).reverse()))
     }, (err) => { dispatch(fetchHomeDataError()) })
   }
 }

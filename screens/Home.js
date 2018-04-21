@@ -6,7 +6,6 @@ import { getData } from '../store/data/data.actions'
 import { fetchHomeData } from '../store/homeData/homeData.actions'
 import { devicePinUpdate } from '../store/data/data.actions'
 
-
 import PinText from '../components/PinText'
 import Keypad from '../components/Keypad'
 import Bullet from '../components/Bullet'
@@ -15,7 +14,6 @@ import TouchAbleText from '../components/TouchAbleText'
 import CreateNewHome from './CreateNewHome';
 
 import IMEI from 'react-native-imei';
-
 
 class Home extends Component {
   pressButtonDevice (e) {
@@ -94,14 +92,14 @@ function mapStateToProps (state) {
     devicePin: state.data.devicePin,
     data: state.data,
     userLogin: state.data.userLogin,
-    userPin: state.UserData.pin
+    userPin: state.UserData.pin,
   }
 }
 
 function mapDispatchToProps (dispatch) {
   return {
     devicePinUpdate: (payload) => dispatch(devicePinUpdate(payload)),
-    fetchHomeData: () => dispatch(fetchHomeData())
+    fetchHomeData: () => dispatch(fetchHomeData()),
   }
 }
 
