@@ -25,7 +25,6 @@ class AddNewUser extends Component {
 
   render () {
     return (
-      // <ScrollView>
       <View style={styles.container}>
         <Image style={{ marginVertical: 10, height: 40, width: 170}} source={require('../components/assets/fortress_logo.png')} />
         <Image style={{ marginTop: 20, width: 120, height: 120}} source={require('../components/assets/usuario.png')} />
@@ -43,7 +42,6 @@ class AddNewUser extends Component {
           </View>
         </View>
       </View>
-      // </ScrollView>
     )
   }
 }
