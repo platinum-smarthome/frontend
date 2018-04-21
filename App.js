@@ -51,12 +51,6 @@ const Main = StackNavigator({
       headerTitle: <LogoHead/>,
     },
   },
-  Splash: {
-    screen: Splash,
-    navigationOptions: {
-      header: null
-    }
-  },
   CreateNewHome: {
     screen: CreateNewHome,
     navigationOptions: {
@@ -166,22 +160,32 @@ const Dash = DrawerNavigator({
   drawerToggleRoute: 'DrawerToggle'
 })
 
-const RootStack = StackNavigator({
-  Login: {
-    screen: Main,
-    navigationOptions: {
-      header: null
-    }
+const RootStack = SwitchNavigator(
+  {
+    Splash: {
+      screen: Splash
+    },
+    Login: {
+      screen: Main,
+      navigationOptions: {
+        header: null
+      }
+    },
+    App: {
+      screen: Dash,
+      navigationOptions: {
+        header: null
+      }
+    },
   },
-  Page: {
-    screen: Dash,
-    navigationOptions: {
-      header: null
-    }
-  },
-}, {
-  initialRouteName: 'Login'
-})
+  {
+    initialRouteName: 'Splash',
+    // headerMode: 'screen',
+    // navigationOptions: ({ navigation }) => ({
+    //   header: null
+    // })
+  }
+)
 
 class App extends React.Component {
   render() {

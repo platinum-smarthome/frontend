@@ -34,9 +34,9 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontWeight: '200',
     fontSize: 30,
-    paddingVertical: 16,
+    paddingVertical: 10,
     paddingHorizontal: 36,
-    marginHorizontal: 24
+    marginHorizontal: 16
   }
 });
 
