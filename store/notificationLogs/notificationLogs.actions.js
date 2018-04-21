@@ -22,22 +22,27 @@ export const watchNotification = (lastNotified) => {
   return dispatch => {
     dispatch(fetchNotificationLogsLoading())
     database().ref(`/smarthome/logs`).on('value', (snaphot) => {
-      let val = Object.values(snaphot.val()).reverse()
-      if(val[0].createdAt > lastNotified) {
-        lastNotified = val[0].createdAt
-        console.log(typeof(val[0].createdAt))
-        PushNotification.localNotification({
-          id: lastNotified,
-          autoCancel: true,
-          bigText: `${ val[0].description }`,
-          subText: `${ dateDisplayFormater(val[0].createdAt) }`,
-          vibrate: true,
-          vibration: 300,
-          title: "Fortress - Smart Home Security",
-          message: `${ val[0].title }`,
-        });
+      let val = []
+      if(snaphot.val()) {
+        val = Object.values(snaphot.val()).reverse()
+        if(val[0].createdAt > lastNotified) {
+          lastNotified = val[0].createdAt
+          console.log(typeof(val[0].createdAt))
+          PushNotification.localNotification({
+            id: lastNotified,
+            largeIcon: "ic_launcher",
+            smallIcon: "ic_launcher",
+            autoCancel: true,
+            bigText: `${ val[0].description }`,
+            subText: `${ dateDisplayFormater(val[0].createdAt) }`,
+            vibrate: true,
+            vibration: 300,
+            title: "Fortress - Smart Home Security",
+            message: `${ val[0].title }`,
+          });
+        }
+        dispatch(updateLastNotified(val[0].createdAt))
       }
-      dispatch(updateLastNotified(val[0].createdAt))
       dispatch(fetchNotificationLogsSuccess(val))
     }, (err) => { dispatch(fetchNotificationLogsError()) })
   }
