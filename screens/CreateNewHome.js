@@ -19,7 +19,13 @@ class CreateNewHome extends Component {
         username: this.props.username,
         pin: this.props.pin,
         deviceId: IMEI.getImei()
-      }
+      },
+      sensors: {
+        gas: 1,
+        garage: 1,
+        door: 1
+      },
+      logs: {}
     }
     this.props.createNewHome(payload)
   }

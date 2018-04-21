@@ -5,7 +5,7 @@ import {
 } from './userData.actionType'
 
 const initialState = {
-  fectUserDataLoading: false,
+  fectUserDataLoading: true,
   username: '',
   deviceId: '',
   pin: '',

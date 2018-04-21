@@ -19,7 +19,11 @@ class SwitchType extends Component {
             <Text> </Text> :
             this.props.houseLock ?
             (<View>
-              <Text style={styles.locked}> On</Text> 
+              {
+                this.props.status ?
+                <Text style={styles.locked}> On</Text> :
+                <Text style={styles.unlocked}> Off</Text>
+              }
               <Text style={styles.disabled}> Unlock Main Door to enable switch </Text>
             </View>) :
             this.props.status ? 

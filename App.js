@@ -12,7 +12,7 @@ import AddNewUser from './screens/AddNewUser'
 import Notify from './screens/Notify'
 import Logout from './screens/Logout'
 import HousePin from './screens/HousePin'
-import { connect } from 'react-redux'
+import Splash from './screens/Splash'
 import store from './store/store'
 
 const styles = StyleSheet.create({
@@ -50,6 +50,12 @@ const Main = StackNavigator({
       headerStyle: styles.header,
       headerTitle: <LogoHead/>,
     },
+  },
+  Splash: {
+    screen: Splash,
+    navigationOptions: {
+      header: null
+    }
   },
   CreateNewHome: {
     screen: CreateNewHome,
@@ -185,10 +191,4 @@ class App extends React.Component {
   }
 }
 
-function mapStateToProps (state) {
-  return {
-    userData: state.userData
-  }
-}
-
-export default connect(mapStateToProps, null)(App)
+export default App

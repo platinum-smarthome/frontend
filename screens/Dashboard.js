@@ -44,8 +44,7 @@ class Dashboard extends Component {
   componentDidMount () {
     this.props.getSensorStatus()
     this.props.loadHomePin()
-    this.props.watchNotification(this.props.lastNotified)    
-    // this.props
+    this.props.watchNotification(this.props.lastNotified)
   }
 }
 
