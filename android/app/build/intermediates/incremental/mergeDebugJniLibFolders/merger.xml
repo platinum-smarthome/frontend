@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/src/debug/jniLibs"/></dataSet></merger>

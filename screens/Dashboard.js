@@ -11,6 +11,7 @@ import Bell from '../components/Bell'
 import { connect } from 'react-redux'
 import { getSensorStatus } from '../store/sensors/sensor.actions'
 import { loadHomePin, homeLock } from '../store/housePin/housePin.actions'
+import { watchNotification } from '../store/notificationLogs/notificationLogs.actions'
 
 class Dashboard extends Component {
   static navigationOptions = ({navigation}) => ({
@@ -57,6 +58,7 @@ class Dashboard extends Component {
   componentDidMount () {
     this.props.getSensorStatus()
     this.props.loadHomePin()
+    this.props.watchNotification(this.props.lastNotified)    
     // this.props
   }
 }
@@ -78,8 +80,9 @@ const styles = StyleSheet.create({
 function mapStateToProps (state) {
   return {
     userLogin: state.data.userLogin,
-    sensors: state.sensors
-    housePin: state.housePin
+    sensors: state.sensors,
+    housePin: state.housePin,
+    lastNotified: state.NotificationLogs.lastNotified    
   }
 }
 
@@ -87,7 +90,8 @@ function mapDispatchToProps (dispatch) {
   return {
     getSensorStatus: () => dispatch(getSensorStatus()),
     loadHomePin: () => dispatch(loadHomePin()),
-    homeLock: () => dispatch(homeLock())
+    homeLock: () => dispatch(homeLock()),
+    watchNotification: (payload) => dispatch(watchNotification(payload))    
   }
 }
 

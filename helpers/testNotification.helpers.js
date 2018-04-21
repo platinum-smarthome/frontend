@@ -41,4 +41,18 @@ const countNewNotification = (lastSeen) => {
 
 // console.log(timeDifferenceFlag(mockDate1, mockDate2))
 // countNewNotification(lastSeen)
-generateNotification()
+
+// firebase.database().ref('/smarthome/logs/').orderByChild("createdAt").on('child_added', (snapshot) => {
+//   let val = snapshot.val()
+//   console.log(val)
+//   // generateNotification()
+// })
+let count = 0
+firebase.database().ref('/smarthome/logs/').orderByChild("createdAt").on('child_added', (snapshot) => {
+  let val = snapshot.val()
+  if(count) {
+    console.log('=======>',val)
+  }
+  count += 1
+  // generateNotification()
+})
