@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button, StyleSheet, Image } from 'react-native';
+import { View, Button, StyleSheet, Image, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -18,12 +18,16 @@ class AddNewUser extends Component {
         deviceId: this.props.deviceId
       }
     }
-    this.props.createNewUser(payload)
+    if (this.props.deviceId){
+      this.props.createNewUser(payload)
+    }
   }
 
   render () {
     return (
+      // <ScrollView>
       <View style={styles.container}>
+        <Image style={{ marginVertical: 10, height: 40, width: 170}} source={require('../components/assets/fortress_logo.png')} />
         <Image style={{ marginTop: 20, width: 120, height: 120}} source={require('../components/assets/usuario.png')} />
         <PinText text={'Add a New House Member'}/>
         <View style={{marginTop: 80}}>
@@ -39,6 +43,7 @@ class AddNewUser extends Component {
           </View>
         </View>
       </View>
+      // </ScrollView>
     )
   }
 }

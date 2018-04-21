@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button, StyleSheet, Image } from 'react-native';
+import { View, Button, StyleSheet, Image, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import IMEI from 'react-native-imei';
@@ -32,31 +32,33 @@ class CreateNewHome extends Component {
 
   render () {
     return (
-      <View style={styles.container}>
-        <Image style={{ marginTop: 20, width: 120, height: 120}} source={require('../components/assets/casa.png')} />
-        <PinText text={'Secure Your Home With Us'}/>
-        <View style={{marginTop: 30}}>
-          <InputTextForm
-            name={ 'homeName' }
-            placeholder={ 'home name' }
-            onChangeText={ this.props.createNewHomeHandleInputChange }
-            value={ this.props.homeName }
-            />
-          <InputTextForm
-            name={ 'homePin' }
-            placeholder={ 'home pin' }
-            secureTextEntry={ true }
-            onChangeText={ this.props.createNewHomeHandleInputChange }
-            keyboardType={ 'numeric' }
-            maxLength={ 6 }
-            value={this.props.homePin }
-            />
-          <NewUserForm />
-          <View style={{ marginTop: 36 }} >
-            <Button style={styles.btn} title={ 'Register' } onPress={ this.saveNewHome }/>
+      // <ScrollView>
+        <View style={styles.container}>
+          <Image style={{ marginTop: 20, width: 120, height: 120}} source={require('../components/assets/casa.png')} />
+          <PinText text={'Secure Your Home With Us'}/>
+          <View style={{marginTop: 30}}>
+            <InputTextForm
+              name={ 'homeName' }
+              placeholder={ 'home name' }
+              onChangeText={ this.props.createNewHomeHandleInputChange }
+              value={ this.props.homeName }
+              />
+            <InputTextForm
+              name={ 'homePin' }
+              placeholder={ 'home pin' }
+              secureTextEntry={ true }
+              onChangeText={ this.props.createNewHomeHandleInputChange }
+              keyboardType={ 'numeric' }
+              maxLength={ 6 }
+              value={this.props.homePin }
+              />
+            <NewUserForm />
+            <View style={{ marginTop: 36 }} >
+              <Button style={styles.btn} title={ 'Register' } onPress={ this.saveNewHome }/>
+            </View>
           </View>
         </View>
-      </View>
+      // </ScrollView>
     )
   }
 }

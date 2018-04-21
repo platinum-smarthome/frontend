@@ -1,8 +1,7 @@
 console.disableYellowBox = true
 import React, { Component } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { StackNavigator, DrawerNavigator } from 'react-navigation'
-
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import { StackNavigator, DrawerNavigator, SwitchNavigator, DrawerItems } from 'react-navigation'
 import Home from './screens/Home'
 import Dashboard from './screens/Dashboard'
 import Bell from './components/Bell'
@@ -14,6 +13,7 @@ import Notify from './screens/Notify'
 import Logout from './screens/Logout'
 import HousePin from './screens/HousePin'
 import Splash from './screens/Splash'
+import store from './store/store'
 
 const styles = StyleSheet.create({
   header: {
@@ -24,22 +24,26 @@ const styles = StyleSheet.create({
   },
 })
 
-const DrawerNav = DrawerNavigator({
-  Dashboard: { screen: Dashboard },
-  ["Add New User"]: { screen: AddNewUser},
-  ["Logout"]: { screen: Logout }
-})
+const CustomDrawerContentComponent = (prop) => {
+  return (
+    <View style={{flex: 1}}>
+      <View style={{paddingVertical: 25, borderBottomColor: 'rgba(255, 255, 255, 0.4)', borderBottomWidth: 1, alignItems: 'center'}}>
+        <Image style={{height: 150, width: 150}} source={require('./components/assets/hombre.png')} />
+        <Text style={{fontSize: 24, fontFamily: '100', marginTop: 12, color: '#fff'}}> { store.getState().UserData.username } </Text>
+      </View>
+      <DrawerItems {...prop} 
+        activeTintColor='#2196f3' 
+        activeBackgroundColor='rgba(0, 0, 0, .04)' 
+        inactiveTintColor='rgba(0, 0, 0, .87)' 
+        inactiveBackgroundColor='transparent' 
+        style={{backgroundColor: '#000000'}} 
+        labelStyle={{color: '#ffffff',  fontSize: 16, fontWeight: '200'}}
+      />
+    </View>
+  )
+}
 
-// const PrimaryNav = StackNavigator({
-//   Home: { screen: Home },
-//   drawerStack: { screen: drawerNavigation }
-// }, {
-//   headerStyle: styles.header,
-//   headerTitle: <LogoHead />,
-//   initialRouteName: 'Home'
-// })
-
-const RootStack = StackNavigator({
+const Main = StackNavigator({
   Home: {
     screen: Home,
     navigationOptions: {
@@ -58,31 +62,38 @@ const RootStack = StackNavigator({
     navigationOptions: {
       headerStyle: styles.header,
       headerTitle: <LogoHead />,
-      headerTintColor: '#fff'
+      headerTintColor: '#fff',
+      headerRight: <Text />
     }
   },
+}, {
+  initialRouteName: 'Home'
+})
+
+const EntryPoint = StackNavigator({
   Dashboard: {
-    screen: DrawerNavigator({
-      Dashboard: { screen: Dashboard },
-      ["Add New User"]: { screen: AddNewUser},
-      ["Logout"]: { screen: Logout }
-    }),
-    navigationOptions: {
+    screen: Dashboard,
+    navigationOptions: ({navigation}) => ({
       headerStyle: styles.header,
-      headerLeft: <Drawer/>,
-      headerTitle: <LogoHead/>
-    }
+      headerLeft: (
+      <TouchableOpacity onPress={ () => navigation.navigate('DrawerOpen')}>
+        <Drawer/>
+      </TouchableOpacity>
+      ),
+      headerTitle: <LogoHead/>,
+      headerRight: (
+      <TouchableOpacity onPress={ () => navigation.navigate('Notify') }>
+        <Bell/>
+      </TouchableOpacity>)
+    })
   },
   Notify: {
-    screen: DrawerNavigator({
-      ["House Notifications"]: { screen: Notify },
-      ["Add New User"]: { screen: AddNewUser},
-      ["Logout"]: { screen: Logout }
-    }),
+    screen: Notify,
     navigationOptions: {
       headerStyle: styles.header,
-      headerTitle: 'Notification',
-      headerTintColor: '#fff'
+      headerTitle: <LogoHead />,
+      headerTintColor: '#fff',
+      headerRight: <Text />
     }
   },
   AddNewUser: {
@@ -91,6 +102,7 @@ const RootStack = StackNavigator({
       headerStyle: styles.header,
       headerTitle: <LogoHead/>,
       headerTintColor: '#fff',
+      headerRight: <Text />
     }
   },
   HousePin: {
@@ -98,18 +110,85 @@ const RootStack = StackNavigator({
     navigationOptions: {
       headerStyle: styles.header,
       headerTitle: <LogoHead/>,
-      headerTintColor: '#fff'
+      headerTintColor: '#fff',
+      headerRight: <Text />
     }
   }
 }, {
-  initialRouteName: 'Splash',
+  initialRouteName: 'Dashboard'
 })
 
+const Dash = DrawerNavigator({
+  Dashboard: {
+    screen: EntryPoint,
+    navigationOptions: {
+      drawerIcon: (
+        <Image source={require('./components/assets/controlar.png')} style={{width:24, height:24}} />
+      )
+    }
+  },
+  ['Add New Member']: {
+    screen: AddNewUser,
+    navigationOptions: {
+      drawerIcon: (
+        <Image source={require('./components/assets/singleusuario.png')} style={{width:24, height:24}} />
+      )
+    }
+  },
+  ['Member List']: {
+    screen: AddNewUser,
+    navigationOptions: {
+      drawerIcon: (
+        <Image source={require('./components/assets/usuarios.png')} style={{width:24, height:24}} />
+      ),
+    }
+  },
+  Logout: {
+    screen: Logout,
+    navigationOptions: {
+      drawerIcon: (
+        <Image source={require('./components/assets/salida.png')} style={{width:24, height:24}} />
+      ),
+      headerStyle: {
+        borderTopWidth: 1,
+        borderTopColor: 'rgba(255, 255, 255, 0.4)',
+      }
+    },
+  }
+}, {
+  initialRouteName: 'Dashboard',
+  drawerPosition: 'left',
+  drawerBackgroundColor: '#34b8ed',
+  headerMode: 'float',
+  contentComponent: CustomDrawerContentComponent,
+  drawerOpenRoute: 'DrawerOpen',
+  drawerCloseRoute: 'DrawerClose',
+  drawerToggleRoute: 'DrawerToggle'
+})
 
-export default class App extends React.Component {
+const RootStack = StackNavigator({
+  Login: {
+    screen: Main,
+    navigationOptions: {
+      header: null
+    }
+  },
+  Page: {
+    screen: Dash,
+    navigationOptions: {
+      header: null
+    }
+  },
+}, {
+  initialRouteName: 'Login'
+})
+
+class App extends React.Component {
   render() {
     return (
         <RootStack/>
     )
   }
 }
+
+export default App
