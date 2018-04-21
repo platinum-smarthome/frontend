@@ -4,16 +4,16 @@ import {
   DEVICE_PIN_INPUT_UPDATE,
   DEVICE_PIN_INPUT_REMOVE,
   USER_LOGIN_SUCCESS,
+  USER_LOGOUT
 } from './data.actionType'
 import { devicePinUpdate } from './data.actions';
 
 const initialState = {
-  loading: false,
-  error: false,
-  data: [],
+  // loading: false,
+  // error: false,
+  // data: [],
   userLogin: false,
-  devicePin: ['','', '', '', '', ''],
-
+  devicePin: ['','', '', '', '', '']
 }
 
 const reducers = (state=initialState, action) => {
@@ -44,7 +44,7 @@ const reducers = (state=initialState, action) => {
         ...state,
         userLogin: true
       }
-  
+    case USER_LOGOUT: return initialState
     default:
       return state
   }
