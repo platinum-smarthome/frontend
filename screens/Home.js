@@ -12,6 +12,9 @@ import Keypad from '../components/Keypad'
 import Bullet from '../components/Bullet'
 import ForgotText from '../components/ForgotText'
 import TouchAbleText from '../components/TouchAbleText'
+import CreateNewHome from './CreateNewHome';
+
+import IMEI from 'react-native-imei';
 
 
 class Home extends Component {
@@ -42,9 +45,12 @@ class Home extends Component {
 
   render () {
     return (this.props.userLogin) ?
-    this.props.navigation.navigate('Dashboard') :
+    this.props.navigation.navigate('Page') :
     (
       <View style={styles.container}>
+        <Text> { IMEI.getImei() } </Text>
+        <Text> { this.props.devicePin } </Text>
+        <Text> { this.props.userPin } </Text>
         <View style={{marginVertical: 10}}/>
         <PinText text={'Enter Your PIN Device'} />
         <Bullet pin={this.props.devicePin}/>
@@ -54,7 +60,7 @@ class Home extends Component {
           <Text style={{color: '#fff'}}> New to Fortress ?  </Text>
           <TouchAbleText
             text={ 'Register Here' }
-            onPress={ () => this.props.navigation.navigate('CreateNewHome') }
+            onPress={ () => {console.log('kena');this.props.navigation.navigate('CreateNewHome')} }
           /> 
         </View>
         <View style={styles.end}>

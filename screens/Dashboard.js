@@ -13,16 +13,7 @@ import { getSensorStatus } from '../store/sensors/sensor.actions'
 import { loadHomePin, homeLock } from '../store/housePin/housePin.actions'
 
 class Dashboard extends Component {
-  static navigationOptions = ({navigation}) => ({
-    headerRight: (
-      <TouchableOpacity onPress={ () => navigation.navigate('Notify') }>
-        <Bell/>
-      </TouchableOpacity>
-    )
-  })
-
   render() {
-    
     return (
       <ScrollView>
         <View style={styles.body}>
@@ -45,11 +36,6 @@ class Dashboard extends Component {
                   <SwitchType imgLogo={require('../components/assets/presion.png')} type={'gas'} text={'Gas'} status={this.props.sensors.sensors.gas} />
               </View>) 
             }
-          <Text> Dashboard </Text>
-          <TouchAbleText
-            text={ 'Add New User' }
-            onPress={ () => this.props.navigation.navigate('AddNewUser') }
-          />       
         </View> 
       </ScrollView>
     )
