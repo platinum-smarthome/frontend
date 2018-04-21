@@ -19,6 +19,7 @@ export const createNewUser = (payload) => {
   return dispatch => {
     dispatch(createNewUserLoading())
     payload.user.lastSeen = database.ServerValue.TIMESTAMP;
+    payload.user.deviceId = payload.user.deviceId || 'BAMBANG'
     database().ref(`/smarthome/users/${payload.user.deviceId}`).set(payload.user)
     .then(() => { dispatch(createNewUserSuccess()); })
     .catch((err) => { dispatch(createNewUserError()) });

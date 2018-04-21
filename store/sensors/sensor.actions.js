@@ -21,21 +21,6 @@ export const getSensorStatus = () => {
   }
 }
 
-export const checkSensorStatus = () => {
-  console.log('bambang------------------------------')
-  // return dispatch => {
-  database().ref('/smarthome/sensors').once('value', (snap) => {
-    let data = snap.val()
-    let val = 0
-    for (let i in data) { val += data[i] }
-    console.log(val)
-    if (!val) { 
-      console.log('semua off')
-       homePinAccessSuccess()
-      }
-    })
-  // }
-}
 export const updateSensorStatus = (payload) => {
   return dispatch => {
     let val = (payload.value) ? 1 : 0
