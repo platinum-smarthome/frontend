@@ -43,14 +43,14 @@ class Home extends Component {
 
   render () {
     return (this.props.userLogin) ?
-    this.props.navigation.navigate('Page') :
+    this.props.navigation.navigate('App') :
     (
       <View style={styles.container}>
         <View style={{marginVertical: 10}}/>
         <PinText text={'Enter Your PIN Device'} />
         <Bullet pin={this.props.devicePin}/>
         {/* <ForgotText text={'Forgot Password?'} /> */}
-        <View style={{marginVertical: 40}}/>
+        <View style={{marginVertical: 5}}/>
         <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row'}}>
           <Text style={{color: '#fff'}}> New to Fortress ?  </Text>
           <TouchAbleText
@@ -69,7 +69,7 @@ class Home extends Component {
   }
 
   componentDidMount () {
-    this.props.fetchHomeData()
+    // this.props.fetchHomeData()
   }
 }
 
