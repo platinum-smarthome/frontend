@@ -6,6 +6,7 @@ export default class TouchAble extends Component {
     console.log(`./assets/${this.props.image}.png`)
     return (
       <TouchableHighlight
+        style={{marginHorizontal: 12}}
         onPress={ this.props.onPress }
       >
         <Image style={ styles.logo } source={require('./assets/info-2-16.png')}/>
