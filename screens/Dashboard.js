@@ -4,6 +4,8 @@ import { Text, View, Image, ScrollView, StyleSheet, Alert, TouchableOpacity, App
 import CardTitle from '../components/CardTitle'
 import AlarmType from '../components/AlarmType'
 import MonitorType from '../components/MonitorType'
+import NewMonitor from '../components/NewMonitor'
+import TopCardTitle from '../components/TopCardTitle'
 import SwitchType from '../components/SwitchType'
 import Cctv from '../components/Cctv'
 import TouchAbleText from '../components/TouchAbleText'
@@ -18,12 +20,14 @@ class Dashboard extends Component {
     return (
       <ScrollView>
         <View style={styles.body}>
+          <View style={{marginTop: 1}}/>
           <View style={styles.card}>
-            <CardTitle imgLogo={require('../components/assets/cctv.png')} text={'Monitor'} />
-            <Cctv imgLogo={require('../components/assets/watchhouse.png')} text={'Watch House'} />
-            <MonitorType imgLogo={require('../components/assets/co2icon.png')} type={'gas'} text={'Carbon Dioxide Sensor'} status={true} />
-            <MonitorType imgLogo={require('../components/assets/garage.png')} type={'garage'} text={'Garage'} status={false} />
-            <MonitorType imgLogo={require('../components/assets/motion.png')} type={'door'} text={'Motion'} status={true} />
+          <TopCardTitle img={require('../components/assets/cctv.png')} />
+          <View style={{justifyContent: 'space-around', flexDirection: 'row', backgroundColor: '#81d4fa', paddingVertical: 20}}>
+            <NewMonitor text={'Door'} imgGood={ require('../components/assets/porto.png') } imgBad={require('../components/assets/dooropen.png')} status={ this.props.alarms.door } type='door'/>
+            <NewMonitor text={'Carbon Dioxide'} imgGood={ require('../components/assets/co2.png') } imgBad={ require('../components/assets/co2.png') } status={ this.props.alarms.gas } type='gas'/>
+            <NewMonitor text={'Garage'} imgGood={ require('../components/assets/garajeclose.png') } imgBad={ require('../components/assets/garages.png') } status={ this.props.alarms.garage } type='door'/>
+          </View>
           </View>
           <View style={styles.card}>
             <CardTitle imgLogo={require('../components/assets/megaphone.png')} text={'Alarms'} />
@@ -59,6 +63,7 @@ class Dashboard extends Component {
 const styles = StyleSheet.create({
   body: {
     flex: 1,
+    height: '100%',
     backgroundColor: '#d3d3d3'
   },
   card: {
@@ -75,7 +80,8 @@ function mapStateToProps (state) {
     userLogin: state.data.userLogin,
     sensors: state.sensors,
     housePin: state.housePin,
-    lastNotified: state.NotificationLogs.lastNotified
+    lastNotified: state.NotificationLogs.lastNotified,
+    alarms: state.HomeData.alarms
   }
 }
 

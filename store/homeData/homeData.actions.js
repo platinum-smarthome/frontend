@@ -12,7 +12,7 @@ import { getSensorStatusSuccess } from '../sensors/sensor.actions'
 export const fetchHomeData = () => {
   return dispatch => {
     dispatch(fetchHomeDataLoading())
-    database().ref(`/smarthome`).once('value', (snap) => {
+    database().ref(`/smarthome`).on('value', (snap) => {
       let data = snap.val()
       dispatch(fetchHomeDataSuccess(data))
       dispatch(searchUser(data.users))
