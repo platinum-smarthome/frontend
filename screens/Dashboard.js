@@ -75,7 +75,7 @@ function mapStateToProps (state) {
     userLogin: state.data.userLogin,
     sensors: state.sensors,
     housePin: state.housePin,
-    lastNotified: state.NotificationLogs.lastNotified    
+    lastNotified: state.NotificationLogs.lastNotified
   }
 }
 
