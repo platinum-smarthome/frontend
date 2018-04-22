@@ -10,7 +10,7 @@ export default class NewMonitor extends Component {
           <Text style={ styles.monitorTitle }> { this.props.text } </Text>
         </View>
         <View style={ this.props.status ? styles.good : styles.bad }>
-          <Image style={styles.img} source={ this.props.img }/>
+          <Image style={styles.img} source={ this.props.status? this.props.imgGood : this.props.imgBad }/>
         </View>
         <View style={{ alignItems: 'center', paddingVertical: 6 }}>
           { 

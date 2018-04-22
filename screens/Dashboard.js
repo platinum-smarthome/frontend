@@ -24,9 +24,9 @@ class Dashboard extends Component {
           <View style={styles.card}>
           <TopCardTitle img={require('../components/assets/cctv.png')} />
           <View style={{justifyContent: 'space-around', flexDirection: 'row', backgroundColor: '#81d4fa', paddingVertical: 20}}>
-            <NewMonitor text={'Door'} img={ require('../components/assets/porto.png') } status={ this.props.alarms.door } type='door'/>
-            <NewMonitor text={'Carbon Dioxide'} img={ require('../components/assets/co2.png') } status={ this.props.alarms.gas } type='gas'/>
-            <NewMonitor text={'Garage'} img={ require('../components/assets/garages.png') } status={ this.props.alarms.garage } type='door'/>
+            <NewMonitor text={'Door'} imgGood={ require('../components/assets/porto.png') } imgBad={require('../components/assets/dooropen.png')} status={ this.props.alarms.door } type='door'/>
+            <NewMonitor text={'Carbon Dioxide'} imgGood={ require('../components/assets/co2.png') } imgBad={ require('../components/assets/co2.png') } status={ this.props.alarms.gas } type='gas'/>
+            <NewMonitor text={'Garage'} imgGood={ require('../components/assets/garajeclose.png') } imgBad={ require('../components/assets/garages.png') } status={ this.props.alarms.garage } type='door'/>
           </View>
           </View>
           <View style={styles.card}>
