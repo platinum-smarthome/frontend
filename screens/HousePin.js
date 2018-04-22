@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Image, StyleSheet } from 'react-native'
+import { Text, View, Image, StyleSheet, AppState } from 'react-native'
 import PinText from '../components/PinText'
 import Bullet from '../components/Bullet'
 import Keypad from '../components/Keypad'
@@ -36,6 +36,12 @@ class HousePin extends Component {
     this.props.homePinUpdate(payload)
   }
 
+  handleAppStateChange = (appState) => {
+    if (appState.match(/inactive|background/)) {
+      this.props.navigation.navigate('Logout')
+    }
+  }
+  
   handleViewRef = ref => this.view = ref;
   
   shake = () => this.view.shake(600).then(endState => console.log(endState.finished ? 'bounce finished' : 'bounce cancelled'));
@@ -62,6 +68,11 @@ class HousePin extends Component {
     </View>
     )
   }
+
+  componentDidMount () {
+    AppState.addEventListener('change', this.handleAppStateChange)
+  }
+
 }
 
  const styles = StyleSheet.create({
