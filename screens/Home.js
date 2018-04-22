@@ -64,10 +64,12 @@ class Home extends Component {
         {/* <Text> { this.props.devicePin } </Text> */}
         {/* <Text> { this.props.userPin } </Text> */}
         <View style={{marginVertical: 10}}/>
-        <PinText text={'Enter Your PIN Device'} />
-        <Animatable.View animation="zoomInUp" easing="ease-in-out" ref={this.handleViewRef}>
-          <Bullet pin={this.props.devicePin}/>
-        </Animatable.View>
+        <View>
+          <PinText text={'Enter Your PIN Device'} />
+          <Animatable.View animation="zoomInUp" easing="ease-in-out" ref={this.handleViewRef}>
+            <Bullet pin={this.props.devicePin}/>
+          </Animatable.View>
+        </View>
         <View style={{marginVertical: 5}}/>
         <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row'}}>
           <Text style={{color: '#fff'}}> New to Fortress ?  </Text>
@@ -95,6 +97,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#34b8ed',
+    justifyContent: 'space-around'
   },
   end: {
     marginTop: 40,

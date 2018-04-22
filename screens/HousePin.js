@@ -47,10 +47,12 @@ class HousePin extends Component {
       <Animatable.View animation="bounceInDown" easing="ease-in-out" >
         <Image style={styles.img} source={require('../components/assets/clave.png')} />
       </Animatable.View>
-      <PinText text={'Enter Your House Pin'}/>
-      <Animatable.View animation="zoomInUp" easing="ease-in-out" ref={this.handleViewRef}>
-        <Bullet pin={this.props.userHomePin.housePin}/>
-      </Animatable.View>
+      <View>
+        <PinText text={'Enter Your House Pin'}/>
+        <Animatable.View animation="zoomInUp" easing="ease-in-out" ref={this.handleViewRef}>
+          <Bullet pin={this.props.userHomePin.housePin}/>
+        </Animatable.View>
+      </View>
       <View style={styles.end}>
         <Keypad 
           press={ (e) => this.pressButtonHouse(e) } 
@@ -66,6 +68,7 @@ class HousePin extends Component {
    body: {
     flex: 1,
     backgroundColor: '#34b8ed',
+    justifyContent: 'space-around'
    },
    img: {
     marginTop: 30,
