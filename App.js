@@ -14,6 +14,7 @@ import Logout from './screens/Logout'
 import HousePin from './screens/HousePin'
 import Splash from './screens/Splash'
 import Members from './screens/Members'
+import FullView from './screens/FullView'
 import store from './store/store'
 
 const styles = StyleSheet.create({
@@ -102,6 +103,15 @@ const EntryPoint = StackNavigator({
   },
   HousePin: {
     screen: HousePin,
+    navigationOptions: {
+      headerStyle: styles.header,
+      headerTitle: <LogoHead/>,
+      headerTintColor: '#fff',
+      headerRight: <Text />
+    }
+  },
+  FullView: {
+    screen: FullView,
     navigationOptions: {
       headerStyle: styles.header,
       headerTitle: <LogoHead/>,

@@ -10,6 +10,7 @@ class Notify extends Component {
   renderItem = ({ item }) => {
     return <NotificationCard
       data={ item }
+      press={ () => this.props.navigation.navigate('FullView', { description: item }) }
     />
   }
   
