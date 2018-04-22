@@ -15,6 +15,11 @@ export default class NotificationCard extends Component {
           <Text style={styles.notifTitle}>{ title }</Text>
         </View>
         <Text style={styles.time}>{ dateDisplayFormater(createdAt) }</Text>
+        { this.props.data.imageUrl &&
+          <View style={{alignItems: 'center'}}>
+            <Image style={{width: 120, height: 120}} source={{ uri: this.props.data.imageUrl }} />
+          </View>
+        }
         <Text style={styles.descText}>{ description }</Text>
         <NotificationCardFooter
           onPress={ () => notificationsDelete(id) }
