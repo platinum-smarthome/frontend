@@ -1,4 +1,3 @@
-console.disableYellowBox = true
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import { StackNavigator, DrawerNavigator, SwitchNavigator, DrawerItems } from 'react-navigation'
@@ -160,7 +159,7 @@ const Dash = DrawerNavigator({
       }
     },
   }
-}, {
+},{
   initialRouteName: 'Dashboard',
   drawerPosition: 'left',
   drawerBackgroundColor: '#34b8ed',
@@ -190,18 +189,14 @@ const RootStack = SwitchNavigator(
     },
   },
   {
-    initialRouteName: 'Splash',
-    // headerMode: 'screen',
-    // navigationOptions: ({ navigation }) => ({
-    //   header: null
-    // })
+    initialRouteName: 'Splash'
   }
 )
 
 class App extends React.Component {
   render() {
     return (
-        <RootStack/>
+      <RootStack/>
     )
   }
 }

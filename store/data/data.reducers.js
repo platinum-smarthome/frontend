@@ -44,7 +44,11 @@ const reducers = (state=initialState, action) => {
         ...state,
         userLogin: true
       }
-    case USER_LOGOUT: return initialState
+    case USER_LOGOUT:
+      return {
+        ...state,
+        userLogin: false
+      }
     default:
       return state
   }

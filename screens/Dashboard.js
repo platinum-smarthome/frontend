@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import { Text, View, Image, ScrollView, StyleSheet, Alert, TouchableOpacity } from 'react-native'
+import { Text, View, Image, ScrollView, StyleSheet, Alert, TouchableOpacity, AppState } from 'react-native'
 import CardTitle from '../components/CardTitle'
 import AlarmType from '../components/AlarmType'
 import MonitorType from '../components/MonitorType'
@@ -45,10 +45,18 @@ class Dashboard extends Component {
       </ScrollView>
     )
   }
+
+  handleAppStateChange = (appState) => {
+    if (appState.match(/inactive|background/)) {
+      this.props.navigation.navigate('Logout')
+    }
+  }
+
   componentDidMount () {
     this.props.getSensorStatus()
     this.props.loadHomePin()
     this.props.watchNotification(this.props.lastNotified)
+    AppState.addEventListener('change', this.handleAppStateChange)
   }
 }
 

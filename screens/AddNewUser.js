@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { View, Button, StyleSheet, Image, KeyboardAvoidingView } from 'react-native';
+<<<<<<< HEAD
+import { View, Button, StyleSheet, Image, ScrollView, AppState } from 'react-native';
+=======
+import { View, Button, StyleSheet, Image, AppState, KeyboardAvoidingView } from 'react-native';
+>>>>>>> a4714295087876b9bb2c65d12fc5d69054e8d947
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -20,6 +24,12 @@ class AddNewUser extends Component {
     }
     if (this.props.deviceId){
       this.props.createNewUser(payload)
+    }
+  }
+
+  handleAppStateChange = (appState) => {
+    if (appState.match(/inactive|background/)) {
+      this.props.navigation.navigate('Logout')
     }
   }
 
@@ -46,7 +56,13 @@ class AddNewUser extends Component {
       </View>
     )
   }
+
+  componentDidMount () {
+    AppState.addEventListener('change', this.handleAppStateChange)
+  }
+
 }
+
 
 const styles = StyleSheet.create({
   container: {
