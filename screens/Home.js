@@ -15,7 +15,6 @@ import TouchAbleText from '../components/TouchAbleText'
 import TouchAbleImage from '../components/TouchAbleImage'
 import CreateNewHome from './CreateNewHome';
 
-import IMEI from 'react-native-imei';
 import * as Animatable from 'react-native-animatable';
 
 class Home extends Component {
@@ -75,9 +74,6 @@ class Home extends Component {
     this.props.navigation.navigate('App') :
     (
       <View style={styles.container}>
-        {/* <Text> { IMEI.getImei() } </Text> */}
-        {/* <Text> { this.props.devicePin } </Text> */}
-        {/* <Text> { this.props.userPin } </Text> */}
         <View style={{marginVertical: 10}}/>
         <View>
           <PinText text={'Enter Your PIN Device'} />
