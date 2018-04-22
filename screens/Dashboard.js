@@ -76,7 +76,7 @@ function mapDispatchToProps (dispatch) {
     getSensorStatus: () => dispatch(getSensorStatus()),
     loadHomePin: () => dispatch(loadHomePin()),
     homeLock: () => dispatch(homeLock()),
-    watchNotification: (payload) => dispatch(watchNotification(payload))    
+    watchNotification: (payload) => dispatch(watchNotification(payload))  
   }
 }
 

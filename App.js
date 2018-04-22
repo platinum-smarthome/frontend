@@ -13,6 +13,7 @@ import Notify from './screens/Notify'
 import Logout from './screens/Logout'
 import HousePin from './screens/HousePin'
 import Splash from './screens/Splash'
+import Members from './screens/Members'
 import store from './store/store'
 
 const styles = StyleSheet.create({
@@ -130,7 +131,7 @@ const Dash = DrawerNavigator({
     }
   },
   ['Member List']: {
-    screen: AddNewUser,
+    screen: Members,
     navigationOptions: {
       drawerIcon: (
         <Image source={require('./components/assets/usuarios.png')} style={{width:24, height:24}} />
