@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 import { getData } from '../store/data/data.actions'
 import { fetchHomeData } from '../store/homeData/homeData.actions'
-import { devicePinUpdate } from '../store/data/data.actions'
+import { devicePinUpdate, userLogout } from '../store/data/data.actions'
 
 import PinText from '../components/PinText'
 import Keypad from '../components/Keypad'
@@ -12,8 +12,6 @@ import Bullet from '../components/Bullet'
 import ForgotText from '../components/ForgotText'
 import TouchAbleText from '../components/TouchAbleText'
 import CreateNewHome from './CreateNewHome';
-
-import IMEI from 'react-native-imei';
 
 class Home extends Component {
   pressButtonDevice (e) {
@@ -69,6 +67,8 @@ class Home extends Component {
   }
 
   componentDidMount () {
+    // this.props.userLogout()
+    // console.log('=++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
     // this.props.fetchHomeData()
   }
 }
@@ -97,6 +97,7 @@ function mapDispatchToProps (dispatch) {
   return {
     devicePinUpdate: (payload) => dispatch(devicePinUpdate(payload)),
     fetchHomeData: () => dispatch(fetchHomeData()),
+    userLogout: () => dispatch(userLogout())
   }
 }
 

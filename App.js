@@ -149,7 +149,7 @@ const Dash = DrawerNavigator({
       }
     },
   }
-}, {
+},{
   initialRouteName: 'Dashboard',
   drawerPosition: 'left',
   drawerBackgroundColor: '#34b8ed',
@@ -190,7 +190,7 @@ const RootStack = SwitchNavigator(
 class App extends React.Component {
   render() {
     return (
-        <RootStack/>
+      <RootStack/>
     )
   }
 }

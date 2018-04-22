@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, StyleSheet, Image, Text } from 'react-native';
 import { connect } from 'react-redux'
 
 import { userLogout } from '../store/data/data.actions'
@@ -10,16 +10,14 @@ class Home extends Component {
   render () {
     return (
       <View style={styles.container}>
-        <TouchAbleText
-          text={ 'Logout . . .' }
-        />
-        {/* { this.props.userLogout() } */}
+        <Image style={ styles.logo } source={require('../components/assets/fortaleza.png')}/>
       </View>
     )
   }
 
   componentDidMount () {
     this.props.userLogout()
+    this.props.navigation.navigate('Login')    
   }
 }
 
@@ -27,10 +25,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#34b8ed',
+    alignItems: 'center'
   },
-  end: {
-    marginTop: 40,
-    justifyContent: 'flex-end'
+  logo: {
+    flex: 1,
+    height: null,
+    width: 82,
+    alignSelf: 'center',
+    resizeMode: 'contain',
   }
 })
 
