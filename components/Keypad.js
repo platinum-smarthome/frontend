@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     flexDirection: 'row',
     flexWrap: 'wrap',
+    marginBottom: 16
   },
   keypress: {
     flex: 1,
@@ -36,7 +37,8 @@ const styles = StyleSheet.create({
     fontSize: 30,
     paddingVertical: 10,
     paddingHorizontal: 36,
-    marginHorizontal: 16
+    // marginHorizontal: 16
+    marginHorizontal: 24,
   }
 });
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, Image, Button, TouchableHighlight } from 'react-native'
+import { Text, View, StyleSheet, Image, Button, TouchableHighlight, TouchableOpacity } from 'react-native'
 import { connect } from 'react-redux'
 import { updateLastSeen } from '../store/userData/userData.actions'
 import { notificationsDelete } from '../store/notificationLogs/notificationLogs.actions'
@@ -15,6 +15,11 @@ export default class NotificationCard extends Component {
           <Text style={styles.notifTitle}>{ title }</Text>
         </View>
         <Text style={styles.time}>{ dateDisplayFormater(createdAt) }</Text>
+        { this.props.data.imageUrl &&
+          <TouchableOpacity style={{alignItems: 'center'}} onPress={ this.props.press }>
+            <Image style={{width: 120, height: 120}} source={{ uri: this.props.data.imageUrl }} />
+          </TouchableOpacity>
+        }
         <Text style={styles.descText}>{ description }</Text>
         <NotificationCardFooter
           onPress={ () => notificationsDelete(id) }

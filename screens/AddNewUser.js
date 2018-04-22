@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import { View, Button, StyleSheet, Image, ScrollView, AppState } from 'react-native';
+=======
+import { View, Button, StyleSheet, Image, AppState, KeyboardAvoidingView } from 'react-native';
+>>>>>>> a4714295087876b9bb2c65d12fc5d69054e8d947
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -31,32 +35,32 @@ class AddNewUser extends Component {
 
   render () {
     return (
-      // <ScrollView>
       <View style={styles.container}>
-        <Image style={{ marginVertical: 10, height: 40, width: 170}} source={require('../components/assets/fortress_logo.png')} />
-        <Image style={{ marginTop: 20, width: 120, height: 120}} source={require('../components/assets/usuario.png')} />
-        <PinText text={'Add a New House Member'}/>
-        <View style={{marginTop: 80}}>
-          <NewUserForm />
-          <InputTextForm
-            name={ 'deviceId' }
-            placeholder={ 'user device id' }
-            onChangeText={ this.props.createNewUserHandleInputChange }
-            value={ this.props.deviceId }
-          />
-          <View style={{ marginTop: 36 }} >
-            <Button style={styles.btn} title={ 'Add New User' } onPress={ this.saveNewUser }/>
+        <KeyboardAvoidingView behavior="padding" style={{flex: 2, justifyContent: 'center', marginTop: -5, marginBottom: 10}}>
+          <Image style={{ marginVertical: 10, height: 40, width: 170, alignSelf: 'center'}} source={require('../components/assets/fortress_logo.png')} />
+          <Image style={{ marginTop: 20, width: 120, height: 120, alignSelf: 'center'}} source={require('../components/assets/usuario.png')} />
+          <PinText text={'Add a New House Member'}/>
+          <View style={{marginTop: 80}}>
+            <NewUserForm />
+            <InputTextForm
+              name={ 'deviceId' }
+              placeholder={ 'user device id' }
+              onChangeText={ this.props.createNewUserHandleInputChange }
+              value={ this.props.deviceId }
+            />
+            <View style={{ marginTop: 36 }} >
+              <Button style={styles.btn} title={ 'Add New User' } onPress={ this.saveNewUser }/>
+            </View>
           </View>
-        </View>
+        </KeyboardAvoidingView>
       </View>
-      // </ScrollView>
     )
   }
 
   componentDidMount () {
     AppState.addEventListener('change', this.handleAppStateChange)
   }
-  
+
 }
 
 

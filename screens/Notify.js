@@ -10,12 +10,14 @@ class Notify extends Component {
   renderItem = ({ item }) => {
     return <NotificationCard
       data={ item }
+      press={ () => this.props.navigation.navigate('FullView', { description: item }) }
     />
   }
   
   keyExtractor = (item, index) => `notif-${item.createdAt}`
   
   render() {
+    console.log(this.props.logs)
     return (
       <View style={styles.body}>
         <FlatList

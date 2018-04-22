@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button, StyleSheet, Image, ScrollView, AppState } from 'react-native';
+import { View, Button, StyleSheet, Image, ScrollView, AppState, KeyboardAvoidingView } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import IMEI from 'react-native-imei';
@@ -38,9 +38,9 @@ class CreateNewHome extends Component {
 
   render () {
     return (
-      // <ScrollView>
-        <View style={styles.container}>
-          <Image style={{ marginTop: 20, width: 120, height: 120}} source={require('../components/assets/casa.png')} />
+      <View style={styles.container}>
+        <KeyboardAvoidingView behavior="padding" style={{flex: 2, justifyContent: 'center', marginTop: -5, marginBottom: 10}}>
+          <Image style={{ marginTop: 2, width: 120, height: 120, alignSelf: 'center'}} source={require('../components/assets/casa.png')} />
           <PinText text={'Secure Your Home With Us'}/>
           <View style={{marginTop: 30}}>
             <InputTextForm
@@ -63,15 +63,15 @@ class CreateNewHome extends Component {
               <Button style={styles.btn} title={ 'Register' } onPress={ this.saveNewHome }/>
             </View>
           </View>
-        </View>
-      // </ScrollView>
+        </KeyboardAvoidingView>
+      </View>
     )
   }
 
   componentDidMount () {
     AppState.addEventListener('change', this.handleAppStateChange)
   }
-  
+
 }
 
 const styles = StyleSheet.create({
