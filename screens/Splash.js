@@ -16,7 +16,7 @@ class Splash extends Component {
         <Image style={ styles.logo } source={require('../components/assets/fortaleza.png')}/>
         {
           !this.props.userDataLoading &&
-          this.props.navigation.navigate('Home')
+          this.props.navigation.navigate('Login')
         }
       </View>
     )
