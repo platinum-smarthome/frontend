@@ -17,7 +17,7 @@ class Home extends Component {
 
   componentDidMount () {
     this.props.userLogout()
-    this.props.navigation.navigate('Login')    
+    this.props.navigation.navigate('Login')
   }
 }
 

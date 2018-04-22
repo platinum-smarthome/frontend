@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button, StyleSheet, Image, ScrollView } from 'react-native';
+import { View, Button, StyleSheet, Image, ScrollView, AppState } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import IMEI from 'react-native-imei';
@@ -28,6 +28,12 @@ class CreateNewHome extends Component {
       logs: {}
     }
     this.props.createNewHome(payload)
+  }
+
+  handleAppStateChange = (appState) => {
+    if (appState.match(/inactive|background/)) {
+      this.props.navigation.navigate('Logout')
+    }
   }
 
   render () {
@@ -61,6 +67,11 @@ class CreateNewHome extends Component {
       // </ScrollView>
     )
   }
+
+  componentDidMount () {
+    AppState.addEventListener('change', this.handleAppStateChange)
+  }
+  
 }
 
 const styles = StyleSheet.create({
