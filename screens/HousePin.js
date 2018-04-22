@@ -5,6 +5,7 @@ import Bullet from '../components/Bullet'
 import Keypad from '../components/Keypad'
 import { connect } from 'react-redux'
 import { homePinUpdate } from '../store/housePin/housePin.actions'
+import * as Animatable from 'react-native-animatable';
 
 class HousePin extends Component {
   pressButtonHouse (e) {
@@ -14,6 +15,9 @@ class HousePin extends Component {
     let payload = {
       homePin: this.props.homePin,
       input: newPin
+    }
+    if ((payload.input.join('').length === 6) && payload.userPin != payload.input.join('')) {
+      this.shake()
     }
     this.props.homePinUpdate(payload)
   }
@@ -32,13 +36,21 @@ class HousePin extends Component {
     this.props.homePinUpdate(payload)
   }
 
+  handleViewRef = ref => this.view = ref;
+  
+  shake = () => this.view.shake(600).then(endState => console.log(endState.finished ? 'bounce finished' : 'bounce cancelled'));
+
   render() {
     return (!this.props.userHomePin.houseLock) ?
     this.props.navigation.goBack() :
     (<View style={styles.body}>
-      <Image style={styles.img} source={require('../components/assets/clave.png')} />
+      <Animatable.View animation="bounceInDown" easing="ease-in-out" >
+        <Image style={styles.img} source={require('../components/assets/clave.png')} />
+      </Animatable.View>
       <PinText text={'Enter Your House Pin'}/>
-      <Bullet pin={this.props.userHomePin.housePin}/>
+      <Animatable.View animation="zoomInUp" easing="ease-in-out" ref={this.handleViewRef}>
+        <Bullet pin={this.props.userHomePin.housePin}/>
+      </Animatable.View>
       <View style={styles.end}>
         <Keypad 
           press={ (e) => this.pressButtonHouse(e) } 
