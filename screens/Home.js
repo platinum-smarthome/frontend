@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Alert } from 'react-native'
 import { connect } from 'react-redux'
+import IMEI from 'react-native-imei'
 
 import { getData } from '../store/data/data.actions'
 import { fetchHomeData } from '../store/homeData/homeData.actions'
@@ -11,6 +12,7 @@ import Keypad from '../components/Keypad'
 import Bullet from '../components/Bullet'
 import ForgotText from '../components/ForgotText'
 import TouchAbleText from '../components/TouchAbleText'
+import TouchAbleImage from '../components/TouchAbleImage'
 import CreateNewHome from './CreateNewHome';
 
 class Home extends Component {
@@ -39,6 +41,19 @@ class Home extends Component {
     this.props.devicePinUpdate(payload)
   }
 
+  imeiInformation = () => {
+    Alert.alert(
+      'Your IMEI Id',
+      IMEI.getImei(),
+      [
+        // {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
+        // {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+        // {text: 'OK', onPress: () => console.log('OK Pressed')},
+      ],
+      // { cancelable: false }
+    )
+  }
+
   render () {
     return (this.props.userLogin) ?
     this.props.navigation.navigate('App') :
@@ -55,6 +70,9 @@ class Home extends Component {
             text={ 'Register Here' }
             onPress={ () => {console.log('kena');this.props.navigation.navigate('CreateNewHome')} }
           /> 
+          <TouchAbleImage
+            onPress={ this.imeiInformation }
+          />
         </View>
         <View style={styles.end}>
           <Keypad 
@@ -64,12 +82,6 @@ class Home extends Component {
         </View>
       </View>
     )
-  }
-
-  componentDidMount () {
-    // this.props.userLogout()
-    // console.log('=++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
-    // this.props.fetchHomeData()
   }
 }
 
