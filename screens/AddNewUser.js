@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-import { View, Button, StyleSheet, Image, ScrollView, AppState } from 'react-native';
-=======
 import { View, Button, StyleSheet, Image, AppState, KeyboardAvoidingView } from 'react-native';
->>>>>>> a4714295087876b9bb2c65d12fc5d69054e8d947
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 

@@ -15,7 +15,6 @@ import TouchAbleText from '../components/TouchAbleText'
 import TouchAbleImage from '../components/TouchAbleImage'
 import CreateNewHome from './CreateNewHome';
 
-import IMEI from 'react-native-imei';
 import * as Animatable from 'react-native-animatable';
 
 class Home extends Component {
