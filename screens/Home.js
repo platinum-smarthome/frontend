@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 import { connect } from 'react-redux'
 
 import { getData } from '../store/data/data.actions'
@@ -14,8 +14,15 @@ import TouchAbleText from '../components/TouchAbleText'
 import CreateNewHome from './CreateNewHome';
 
 import IMEI from 'react-native-imei';
+import * as Animatable from 'react-native-animatable';
 
 class Home extends Component {
+  constructor () {
+    super()
+    this.state ={
+      shake: false
+    }
+  }
   pressButtonDevice (e) {
     let newPin = [...this.props.devicePin]
     let index = newPin.indexOf('')
@@ -23,6 +30,9 @@ class Home extends Component {
     let payload = {
       userPin: this.props.userPin,
       input: newPin
+    }
+    if ((payload.input.join('').length === 6) && payload.userPin != payload.input.join('')) {
+      this.shake()
     }
     this.props.devicePinUpdate(payload)
   }
@@ -41,6 +51,10 @@ class Home extends Component {
     this.props.devicePinUpdate(payload)
   }
 
+  handleViewRef = ref => this.view = ref;
+  
+  shake = () => this.view.shake(600).then(endState => console.log(endState.finished ? 'bounce finished' : 'bounce cancelled'));
+
   render () {
     return (this.props.userLogin) ?
     this.props.navigation.navigate('App') :
@@ -51,15 +65,16 @@ class Home extends Component {
         {/* <Text> { this.props.userPin } </Text> */}
         <View style={{marginVertical: 10}}/>
         <PinText text={'Enter Your PIN Device'} />
-        <Bullet pin={this.props.devicePin}/>
-        {/* <ForgotText text={'Forgot Password?'} /> */}
+        <Animatable.View animation="zoomInUp" easing="ease-in-out" ref={this.handleViewRef}>
+          <Bullet pin={this.props.devicePin}/>
+        </Animatable.View>
         <View style={{marginVertical: 5}}/>
         <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row'}}>
           <Text style={{color: '#fff'}}> New to Fortress ?  </Text>
           <TouchAbleText
             text={ 'Register Here' }
             onPress={ () => {console.log('kena');this.props.navigation.navigate('CreateNewHome')} }
-          /> 
+          />
         </View>
         <View style={styles.end}>
           <Keypad 
