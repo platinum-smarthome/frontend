@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { View, Button, StyleSheet, Image, AppState, KeyboardAvoidingView } from 'react-native';
+import { View, Button, Text, StyleSheet, Image, AppState, KeyboardAvoidingView } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { createNewUser, createNewUserHandleInputChange } from '../store/addNewUser/addNewUser.actions'
+import { createNewUser, createNewUserHandleInputChange, sendMessage } from '../store/addNewUser/addNewUser.actions'
 import InputTextForm from '../components/InputTextForm';
 import NewUserForm from '../components/NewUserForm';
 import PinText from '../components/PinText'
+import InputErrorText from '../components/InputErrorText'
+import { validateInput } from '../helpers/formInput.helper'
 
 class AddNewUser extends Component {
   saveNewUser = () => {
@@ -18,8 +20,12 @@ class AddNewUser extends Component {
         deviceId: this.props.deviceId
       }
     }
-    if (this.props.deviceId){
+    let validate = validateInput(payload.user)
+    if(validate === true) {
       this.props.createNewUser(payload)
+      this.props.navigation.goBack()    
+    } else {
+      this.props.sendMessage(validate)
     }
   }
 
@@ -36,7 +42,8 @@ class AddNewUser extends Component {
           <Image style={{ marginVertical: 10, height: 40, width: 170, alignSelf: 'center'}} source={require('../components/assets/fortress_logo.png')} />
           <Image style={{ marginTop: 20, width: 120, height: 120, alignSelf: 'center'}} source={require('../components/assets/usuario.png')} />
           <PinText text={'Add a New House Member'}/>
-          <View style={{marginTop: 80}}>
+          <InputErrorText text={ this.props.message }/>
+          <View style={{marginTop: '5%'}}>
             <NewUserForm />
             <InputTextForm
               name={ 'deviceId' }
@@ -65,6 +72,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#34b8ed',
     alignItems: 'center',
+    justifyContent: 'space-around'
   },
   btn: {
     padding: 12,
@@ -85,12 +93,14 @@ function mapStateToProps (state) {
     username: state.addNewUserReducer.username,
     pin: state.addNewUserReducer.pin,
     deviceId: state.addNewUserReducer.deviceId,
+    message: state.addNewUserReducer.message,    
   }
 }
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   createNewUser,
-  createNewUserHandleInputChange
+  createNewUserHandleInputChange,
+  sendMessage
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddNewUser)

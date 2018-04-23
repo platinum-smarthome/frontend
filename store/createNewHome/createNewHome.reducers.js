@@ -2,7 +2,8 @@ import {
   CREATE_NEW_HOME_HANDLE_INPUT_CHANGE,
   CREATE_NEW_HOME_LOADING,
   CREATE_NEW_HOME_SUCCESS,
-  CREATE_NEW_HOME_ERROR
+  CREATE_NEW_HOME_ERROR,
+  SET_CREATE_NEW_HOME_MESSAGE
 } from './createNewHome.actionType';
 
 const initialState = {
@@ -10,6 +11,7 @@ const initialState = {
   homePin:'',
   createNewHomeLoading: false,
   createNewHomeError: false,
+  message: '',
 }
 
 const reducers = (state={ ...initialState }, action) => {
@@ -31,6 +33,11 @@ const reducers = (state={ ...initialState }, action) => {
         ...state,
         createNewHomeLoading: false,
         createNewHomeError: true
+      }
+    case SET_CREATE_NEW_HOME_MESSAGE:
+      return {
+        ...state,
+        message: action.payload
       }
     default:
       return state

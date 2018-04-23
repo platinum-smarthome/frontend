@@ -4,10 +4,12 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import IMEI from 'react-native-imei';
 
-import { createNewHomeHandleInputChange, createNewHome } from '../store/createNewHome/createNewHome.actions'
+import { createNewHomeHandleInputChange, createNewHome, setCreateNewHomeMessage } from '../store/createNewHome/createNewHome.actions'
 import InputTextForm from '../components/InputTextForm';
 import NewUserForm from '../components/NewUserForm'
 import PinText from '../components/PinText'
+import InputErrorText from '../components/InputErrorText'
+import { validateCreatenewHomeInput } from '../helpers/formInput.helper'
 
 class CreateNewHome extends Component {
   saveNewHome = () => {
@@ -27,7 +29,13 @@ class CreateNewHome extends Component {
       },
       logs: {}
     }
-    this.props.createNewHome(payload)
+    let validate = validateCreatenewHomeInput(payload)
+    if(validate === true) {
+      this.props.createNewHome(payload)
+      this.props.navigation.navigate('Login')
+    } else {
+      this.props.setCreateNewHomeMessage(validate)
+    }
   }
 
   handleAppStateChange = (appState) => {
@@ -42,7 +50,8 @@ class CreateNewHome extends Component {
         <KeyboardAvoidingView behavior="padding" style={{flex: 2, justifyContent: 'center', marginTop: -5, marginBottom: 10}}>
           <Image style={{ marginTop: 2, width: 120, height: 120, alignSelf: 'center'}} source={require('../components/assets/casa.png')} />
           <PinText text={'Secure Your Home With Us'}/>
-          <View style={{marginTop: 30}}>
+          <InputErrorText text={ this.props.message }/>
+          <View style={{marginTop: '2%'}}>
             <InputTextForm
               name={ 'homeName' }
               placeholder={ 'home name' }
@@ -59,7 +68,7 @@ class CreateNewHome extends Component {
               value={this.props.homePin }
               />
             <NewUserForm />
-            <View style={{ marginTop: 36 }} >
+            <View style={{ marginTop: 12 }} >
               <Button style={styles.btn} title={ 'Register' } onPress={ this.saveNewHome }/>
             </View>
           </View>
@@ -78,7 +87,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#34b8ed',
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'space-around'
   },
   btn: {
     padding: 12,
@@ -99,13 +109,15 @@ function mapStateToProps (state) {
     username: state.addNewUserReducer.username,
     pin: state.addNewUserReducer.pin,
     homeName: state.CreateNewHomeReducer.homeName,
-    homePin: state.CreateNewHomeReducer.homePin
+    homePin: state.CreateNewHomeReducer.homePin,
+    message: state.CreateNewHomeReducer.message    
   }
 }
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   createNewHomeHandleInputChange,
-  createNewHome
+  createNewHome,
+  setCreateNewHomeMessage
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreateNewHome)

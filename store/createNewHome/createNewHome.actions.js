@@ -5,7 +5,8 @@ import {
   CREATE_NEW_HOME_HANDLE_INPUT_CHANGE,
   CREATE_NEW_HOME_LOADING,
   CREATE_NEW_HOME_SUCCESS,
-  CREATE_NEW_HOME_ERROR
+  CREATE_NEW_HOME_ERROR,
+  SET_CREATE_NEW_HOME_MESSAGE
 } from './createNewHome.actionType';
 import { createNewUserSuccess } from '../addNewUser/addNewUser.actions'
 
@@ -40,6 +41,13 @@ export const createNewHome = (payload) => {
     .catch((err) => { dispatch(createNewHomeError()) });
   }
 };
+
+export const setCreateNewHomeMessage = (payload) => {
+  return {
+    type: SET_CREATE_NEW_HOME_MESSAGE,
+    payload: payload
+  }
+}
 
 const createNewHomeLoading = () => ({
   type: CREATE_NEW_HOME_LOADING,
