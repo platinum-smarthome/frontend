@@ -1,5 +1,5 @@
 import firebase from 'firebase';
-
+import Base64 from '../../helpers/hash.helper';
 import { database } from '../../firebase/firebase';
 import {
   CREATE_NEW_HOME_HANDLE_INPUT_CHANGE,
@@ -24,7 +24,7 @@ export const createNewHome = (payload) => {
     payload.user.LastSeen = database.ServerValue.TIMESTAMP
     let newHome = {
       homeId: key,
-      homeName: payload.homeName,
+      homeName: Base64.encode(payload.homeName),
       homePin: payload.homePin,
       owner: payload.user.deviceId,
       sensors: [],
