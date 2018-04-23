@@ -37,8 +37,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     paddingVertical: 10,
     paddingHorizontal: '13%',
-    // marginHorizontal: 16
-    marginHorizontal: 6,
+    marginHorizontal: 6
   }
 });
 
