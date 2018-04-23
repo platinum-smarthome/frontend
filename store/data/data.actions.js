@@ -8,6 +8,7 @@ import {
   USER_LOGOUT
 } from './data.actionType'
 import firebase from 'firebase'
+import Base64 from '../../helpers/hash.helper'
 import { database } from '../../firebase/firebase'
 
 export const getData = () => {
@@ -25,7 +26,7 @@ export const getData = () => {
 export const devicePinUpdate = (payload) => {
   return dispatch => {
     dispatch(devicePinUpdateSuccess(payload.input))
-    if (payload.input.join('') === payload.userPin ) {
+    if (payload.input.join('') === Base64.decode(payload.userPin) ) {
       dispatch(devicePinRemove())
       dispatch(userLoginSuccess())
     } else if ( payload.input[5]) {
