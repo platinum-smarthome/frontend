@@ -11,9 +11,9 @@ class AlarmType extends Component {
             <Image style={styles.alarmImg} source={ this.props.status ? require('../components/assets/puerta.png') : require('../components/assets/access.png') }/>
           </View>
           <DoorStatus text={ this.props.text } status={ this.props.status }/>
-          <TouchableOpacity style={styles.arrowPos}>
+          <View style={styles.arrowPos}>
             <Image style={{ height: 30, width: 30}} source={ this.props.status ? require('../components/assets/greyarrow.png') : require('../components/assets/desbloqueado.png')} />
-          </TouchableOpacity>
+          </View>
         </View>
       </TouchableOpacity>
     )
