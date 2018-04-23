@@ -8,6 +8,9 @@ export default class About extends Component {
         <View style={{alignItems: 'center', marginTop: 16}}>
           <Text style={styles.shadow}> Team Fortress </Text>
         </View>
+        <View>
+          {/* marquee */}
+        </View>
       </View>
     )
   }
@@ -22,8 +25,8 @@ const styles = StyleSheet.create({
     fontSize: 26, 
     color: '#fff', 
     fontWeight: '400', 
-    textShadowColor: '#ff7043',
-    textShadowOffset: {width: 3, height: 1},
-    textShadowRadius: 10
+    // textShadowColor: '#ff7043',
+    // textShadowOffset: {width: 3, height: 1},
+    // textShadowRadius: 10
   }
 })
