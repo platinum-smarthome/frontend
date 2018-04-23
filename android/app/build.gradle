@@ -140,7 +140,8 @@ dependencies {
     compile project(':react-native-push-notification')
     compile project(':react-native-imei')
     compile fileTree(dir: "libs", include: ["*.jar"])
-    compile "com.android.support:appcompat-v7:23.0.1"
+    compile 'com.facebook.fresco:animated-gif:1.3.0' // For animated GIF support
+    compile "com.android.support:appcompat-v7:23.0.1" 
     compile "com.facebook.react:react-native:+"  // From node_modules
 }
 
