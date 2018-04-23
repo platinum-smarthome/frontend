@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, Image, FlatList } from 'react-native';
+import { View, Text, StyleSheet, Image, FlatList, ScrollView } from 'react-native';
 import { connect } from 'react-redux'
 import Member from '../components/Member'
 import PinText from '../components/PinText'
@@ -20,6 +20,7 @@ class Members extends Component {
       arr.push(userlist[user])
     }
     return (
+    <ScrollView>
     <View style={styles.container}>
       <View style={{alignItems: 'center'}}>
         <Image style={{ marginVertical: 10, height: 40, width: 170}} source={require('../components/assets/fortress_logo.png')} />
@@ -34,6 +35,7 @@ class Members extends Component {
       />
       </Animatable.View>
     </View>
+    </ScrollView>
     )
   }
 }

@@ -78,7 +78,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#34b8ed',
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'space-around'
   },
   btn: {
     padding: 12,
