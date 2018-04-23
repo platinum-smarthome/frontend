@@ -1,27 +1,26 @@
 import React, { Component } from 'react'
-import { View, Text, Image, StyleSheet, ScrollView } from 'react-native'
+import { View, Text, Image, StyleSheet } from 'react-native'
 import { dateDisplayFormater } from '../helpers/date.helper'
 
 export default class FullView extends Component {
   render() {
     let data = this.props.navigation.state.params.description
     return (
-      <ScrollView>
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'space-around', backgroundColor: 'rgba(52, 184, 237, 0.4)'}}>
+      <View style={{flex: 1, height: '100%', alignItems: 'center', justifyContent: 'space-around', backgroundColor: 'rgba(52, 184, 237, 0.4)'}}>
         <View style={{flexDirection: 'row'}}>
           <Text style={{ fontSize: 26, fontWeight: '100', color: '#fff', paddingHorizontal: 18 }}> Is this you? </Text>
           <Image style={{marginTop: 4, width: 30, height: 30}} source={require('../components/assets/ladron.png')} />
         </View>
         <View style={styles.shadow}>
         <Image 
-          style={{width: 350, height: 500,}} 
+          style={{ width: 300, height: 250 }} 
           source={{uri: data.imageUrl }}
+          resizeMode="contain"
         />
         </View>
         <Text style={{ marginTop: 4, fontSize: 22, fontWeight: '200', color: 'rgba(255,255,255,0.9)' }}> Image captured at </Text>
         <Text style={{ fontSize: 16, fontWeight: '100', color: '#fff' }}> { dateDisplayFormater(data.createdAt) } </Text>
       </View>
-      </ScrollView>
     )
   }
 }
