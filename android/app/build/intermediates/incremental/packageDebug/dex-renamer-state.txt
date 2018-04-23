@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#Mon Apr 23 15:11:18 WIB 2018
-=======
-#Mon Apr 23 15:42:32 WIB 2018
->>>>>>> d1180b4a8e9eb5c1769a5eec11734d027964ae1d
+#Mon Apr 23 16:46:18 WIB 2018
 base.0=/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

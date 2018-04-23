@@ -85,11 +85,8 @@ MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/herby/Doc
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/AndroidManifest.xml:17:5-43
 MERGED from [me.leolin:ShortcutBadger:1.1.8] /Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.8/AndroidManifest.xml:7:5-9:41
 MERGED from [frontend:react-native-imei:unspecified] /Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-imei/unspecified/AndroidManifest.xml:7:5-9:41
-<<<<<<< HEAD
-=======
 MERGED from [com.facebook.fresco:animated-gif:1.3.0] /Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/animated-gif/1.3.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:animated-base:1.3.0] /Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/animated-base/1.3.0/AndroidManifest.xml:5:5-7:41
->>>>>>> d1180b4a8e9eb5c1769a5eec11734d027964ae1d
 MERGED from [com.facebook.react:react-native:0.54.0] /Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:25.2.0] /Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/AndroidManifest.xml:21:5-23:54
