@@ -3,11 +3,12 @@ import { View, Button, Text, StyleSheet, Image, AppState, KeyboardAvoidingView }
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { createNewUser, createNewUserHandleInputChange } from '../store/addNewUser/addNewUser.actions'
+import { createNewUser, createNewUserHandleInputChange, sendMessage } from '../store/addNewUser/addNewUser.actions'
 import InputTextForm from '../components/InputTextForm';
 import NewUserForm from '../components/NewUserForm';
 import PinText from '../components/PinText'
 import InputErrorText from '../components/InputErrorText'
+import { validateInput } from '../helpers/formInput.helper'
 
 class AddNewUser extends Component {
   saveNewUser = () => {
@@ -19,7 +20,13 @@ class AddNewUser extends Component {
         deviceId: this.props.deviceId
       }
     }
-    this.props.createNewUser(payload)
+    let validate = validateInput(payload.user)
+    if(validate === true) {
+      this.props.createNewUser(payload)
+      this.props.navigation.goBack()    
+    } else {
+      this.props.sendMessage(validate)
+    }
   }
 
   handleAppStateChange = (appState) => {
@@ -92,7 +99,8 @@ function mapStateToProps (state) {
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   createNewUser,
-  createNewUserHandleInputChange
+  createNewUserHandleInputChange,
+  sendMessage
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddNewUser)

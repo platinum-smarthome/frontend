@@ -8,7 +8,6 @@ import {
   CHECK_INPUT
 } from './addNewUser.actionType';
 import { database } from '../../firebase/firebase';
-import { validateInput } from '../../helpers/formInput.helper'
 
 export const createNewUserHandleInputChange = (payload) => {
   return {
@@ -20,22 +19,16 @@ export const createNewUserHandleInputChange = (payload) => {
 export const createNewUser = (payload) => {
   return dispatch => {
     payload.user.lastSeen = database.ServerValue.TIMESTAMP;
-    let validate = validateInput(payload.user)
-    if(validate === true) {
-      dispatch(createNewUserLoading())
-      database().ref(`/smarthome/users/${payload.user.deviceId}`).set(payload.user)
-      .then(() => {
-        dispatch(createNewUserSuccess());
-      })
-      .catch((err) => { dispatch(createNewUserError()) });
-    } else {
-      dispatch(checkInput(validate))
-    }
-    
+    dispatch(createNewUserLoading())
+    database().ref(`/smarthome/users/${payload.user.deviceId}`).set(payload.user)
+    .then(() => {
+      dispatch(createNewUserSuccess());
+    })
+    .catch((err) => { dispatch(createNewUserError()) });
   }
 };
 
-const checkInput = (payload) => {
+export const sendMessage = (payload) => {
   return {
     type: CHECK_INPUT,
     payload: payload

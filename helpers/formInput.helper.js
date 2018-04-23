@@ -10,13 +10,25 @@ export const validateInput = (user) => {
           return `Device Id must be at least 4 characters long, Please Try Again`;
         }
       } else {
-        return `Pin must be 4 digits long, Please Try Again`;
+        return `Pin must be 6 digits long, Please Try Again`;
       }
     } else {
       return `E-mail address format is incorrect, Please Try Again`;
     }
   } else {
     return `Username must be at least 4 characters long, Please Try Again`;
+  }
+}
+
+export const validateCreatenewHomeInput = (payload) => {
+  if(payload.homeName.length > 3) {
+    if(payload.homePin.length === 6) {
+      return validateInput(payload.user)
+    } else {
+      return `Home Pin must be 6 digits long, Please Try Again`;
+    }
+  } else {
+    return `Home Name must be at least 4 characters long, Please Try Again`;
   }
 }
 
