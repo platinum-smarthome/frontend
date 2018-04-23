@@ -1,4 +1,4 @@
-
+console.disableYellowBox = true
 import React, { Component } from 'react'
 import { Text, View, Image, ScrollView, StyleSheet, Alert, TouchableOpacity, AppState } from 'react-native'
 import CardTitle from '../components/CardTitle'

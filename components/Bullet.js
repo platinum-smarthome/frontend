@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native'
+import * as Animatable from 'react-native-animatable'
 
 class Bullet extends Component {
   render() {
@@ -7,7 +8,7 @@ class Bullet extends Component {
       <View style={styles.aligner}>
         { 
           this.props.pin.map(val => (val) ?
-             <Text style={styles.white}>&#8226;</Text> :
+             <Animatable.Text animation="bounce" iterationCount={1} style={styles.white}>&#8226;</Animatable.Text> :
              <Text style={styles.grey}>&#8226;</Text>
           )
         }
