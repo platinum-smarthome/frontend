@@ -4,7 +4,8 @@ import {
   CREATE_NEW_USER_HANDLE_INPUT_CHANGE,
   CREATE_NEW_USER_LOADING,
   CREATE_NEW_USER_SUCCESS,
-  CREATE_NEW_USER_ERROR
+  CREATE_NEW_USER_ERROR,
+  CHECK_INPUT
 } from './addNewUser.actionType';
 import { database } from '../../firebase/firebase';
 
@@ -17,14 +18,22 @@ export const createNewUserHandleInputChange = (payload) => {
 
 export const createNewUser = (payload) => {
   return dispatch => {
-    dispatch(createNewUserLoading())
     payload.user.lastSeen = database.ServerValue.TIMESTAMP;
-    payload.user.deviceId = payload.user.deviceId || 'BAMBANG'
+    dispatch(createNewUserLoading())
     database().ref(`/smarthome/users/${payload.user.deviceId}`).set(payload.user)
-    .then(() => { dispatch(createNewUserSuccess()); })
+    .then(() => {
+      dispatch(createNewUserSuccess());
+    })
     .catch((err) => { dispatch(createNewUserError()) });
   }
 };
+
+export const sendMessage = (payload) => {
+  return {
+    type: CHECK_INPUT,
+    payload: payload
+  }
+}
 
 const createNewUserLoading = () => ({
   type: CREATE_NEW_USER_LOADING,

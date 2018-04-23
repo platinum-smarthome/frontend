@@ -3,6 +3,24 @@
 
     <item
         is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/animated-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ff997c37654bead6c259c0b124d52bdc944f5bff">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-animated-base-1.3.0_114f111834a418db17ea7acd436f2f21ad3cc047.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_2b9e1107d3a90f08c35c0b6c0955ed8bea32249e.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/libs/infer-annotations-4.0.jar"
         jumboMode="false"
         optimize="true"
@@ -30,6 +48,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9bc5c658348a96fc5110ac2a8785920bb9417c07">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.54.0_f47882fa342034299e3e9e9d8bed8eadd70dde28.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -48,12 +75,66 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_ff2f9e1b86ef12f83399556eaa9e40cef8800349.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_72124d0984232ddd925e3c8bd2145d0e46912ced.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-11.0.4_cdd853e142a6a29661220bdf0e2941bc06611f95.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
         <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_7bcb24832de4f3562c8072d716424c606aa0d344.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d8942ee348aaa9341f08f7e2437063893fe27542">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-11.0.4_a684086db91e053d6990e3f755d69350a3081cb5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_9c0952dfe108c36def161d57675d325dcc1639d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-imei/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e26c5a747be65a14d8760235e02f00f098dcd432">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/frontend-react-native-imei-unspecified_79ca7b107e7e962979d0d29f9ca8cd42532ddf7e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -93,12 +174,39 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-push-notification/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2cde319087db2efb5405930849f9c861fca0197b">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/frontend-react-native-push-notification-unspecified_4cf70725147d101632a03d8b5b9fb0fb9bc19d51.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
         <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_157e9d731c2a22b1b07012dab9a23f50c76b45d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_5862759cd0f60309ac24c15fb61e8c82c96bf5ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_eb0ebc8e3cacd5dc37a1fe11b8fdf902d50dd98c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -138,12 +246,39 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/animated-gif/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5f79b1232c817718a764464331f75b7c6b0b4da2">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-animated-gif-1.3.0_9e91f8e3a78ac3dc69e4d636b1beab725a5b9d53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.0.4_c1a24a12383d707bbf1bade2589140dbe85ddea3.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
         <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-11.0.4_431d9afeafa7298240de19cba834dfbcc866dcd1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6505cae0601b3bf666df5fd7de81069e98a71040.jar" />
     </item>
     <item
         is-multidex="false"
@@ -165,138 +300,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_1d38ab170d67c00891cba8e26b48ac33f58fbc70.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_2b9e1107d3a90f08c35c0b6c0955ed8bea32249e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9bc5c658348a96fc5110ac2a8785920bb9417c07">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.54.0_f47882fa342034299e3e9e9d8bed8eadd70dde28.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_ff2f9e1b86ef12f83399556eaa9e40cef8800349.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_72124d0984232ddd925e3c8bd2145d0e46912ced.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-11.0.4_cdd853e142a6a29661220bdf0e2941bc06611f95.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d8942ee348aaa9341f08f7e2437063893fe27542">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-11.0.4_a684086db91e053d6990e3f755d69350a3081cb5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_9c0952dfe108c36def161d57675d325dcc1639d4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-imei/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e26c5a747be65a14d8760235e02f00f098dcd432">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/frontend-react-native-imei-unspecified_79ca7b107e7e962979d0d29f9ca8cd42532ddf7e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/frontend/react-native-push-notification/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2cde319087db2efb5405930849f9c861fca0197b">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/frontend-react-native-push-notification-unspecified_4cf70725147d101632a03d8b5b9fb0fb9bc19d51.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_5862759cd0f60309ac24c15fb61e8c82c96bf5ad.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_eb0ebc8e3cacd5dc37a1fe11b8fdf902d50dd98c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.0.4_c1a24a12383d707bbf1bade2589140dbe85ddea3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6505cae0601b3bf666df5fd7de81069e98a71040.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="8f615bca00639150c9eb6175d4b5471193f70794">
         <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_d5580681ac2cd97b4b9ccdbeffae9d0f3278d8de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herby/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_1d38ab170d67c00891cba8e26b48ac33f58fbc70.jar" />
     </item>
 
 </items>
