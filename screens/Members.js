@@ -20,9 +20,8 @@ class Members extends Component {
       arr.push(userlist[user])
     }
     return (
-    <ScrollView>
-    <View style={styles.container}>
-      <View style={{alignItems: 'center'}}>
+    <ScrollView contentContainerStyle={{ flexGrow: 1, width: '100%', backgroundColor: '#34b8ed',}}>
+      <View style={{alignItems: 'center', flex: 1}}>
         <Image style={{ marginVertical: 10, height: 40, width: 170}} source={require('../components/assets/fortress_logo.png')} />
         <Image style={{ marginTop: 20, width: 120, height: 120}} source={require('../components/assets/familia.png')} />
         <PinText text={'Members List'}/>
@@ -34,19 +33,16 @@ class Members extends Component {
         renderItem={ this.renderItem }
       />
       </Animatable.View>
-    </View>
     </ScrollView>
     )
   }
 }
 
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#34b8ed',
-  }
-})
+// const styles = StyleSheet.create({
+//   container: {
+//   }
+// })
 
 function mapStateToProps (state) {
   return {
