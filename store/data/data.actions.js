@@ -26,7 +26,7 @@ export const getData = () => {
 export const devicePinUpdate = (payload) => {
   return dispatch => {
     dispatch(devicePinUpdateSuccess(payload.input))
-    if (payload.input.join('') === Base64.decode(payload.userPin) ) {
+    if (payload.input.join('') === Base64.decode(payload.userPin) && payload.input.join('').length === 6) {
       dispatch(devicePinRemove())
       dispatch(userLoginSuccess())
     } else if ( payload.input[5]) {
