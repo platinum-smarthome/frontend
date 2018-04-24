@@ -26,13 +26,11 @@ class Members extends Component {
         <Image style={ styles.img } source={require('../components/assets/familia.png')} />
         <PinText text={'Members List'}/>
       </View>
-      <Animatable.View animation="zoomInUp" easing="ease-in-out" >
       <FlatList 
         data={ arr }
         keyExtractor= { this.keyExtractor }
         renderItem={ this.renderItem }
       />
-      </Animatable.View>
     </ScrollView>
     )
   }
@@ -40,9 +38,9 @@ class Members extends Component {
 
 const styles = StyleSheet.create({
   scroll: {
-    flexGrow: 1, 
+    flex: 1, 
     width: '100%', 
-    backgroundColor: '#34b8ed'
+    backgroundColor: '#34b8ed',
   },
   logo: {
     marginVertical: 10, 

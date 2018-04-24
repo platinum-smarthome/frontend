@@ -119,15 +119,6 @@ const EntryPoint = StackNavigator({
       headerRight: <Text />
     }
   },
-  About: {
-    screen: About,
-    navigationOptions: {
-      headerStyle: styles.header,
-      headerTitle: <LogoHead/>,
-      headerTintColor: '#fff',
-      headerRight: <Text />
-    }
-  }
 }, {
   initialRouteName: 'Dashboard'
 })
