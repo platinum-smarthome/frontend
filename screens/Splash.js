@@ -3,10 +3,12 @@ import { View, StyleSheet, Image, Text } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { fetchHomeData } from '../store/homeData/homeData.actions'
 import InputTextForm from '../components/InputTextForm';
 import NewUserForm from '../components/NewUserForm'
 import PinText from '../components/PinText'
+
+import { fetchHomeData } from '../store/homeData/homeData.actions'
+import { watchNotification } from '../store/notificationLogs/notificationLogs.actions'
 
 class Splash extends Component {
 
@@ -23,6 +25,7 @@ class Splash extends Component {
   }
   componentDidMount () {
     this.props.fetchHomeData()
+    this.props.watchNotification(this.props.lastNotified)
   }
 }
 
@@ -43,12 +46,14 @@ const styles = StyleSheet.create({
 
 function mapStateToProps (state) {
   return {
+    lastNotified: state.NotificationLogs.lastNotified,    
     userDataLoading: state.UserData.fectUserDataLoading
   }
 }
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  fetchHomeData
+  fetchHomeData,
+  watchNotification
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Splash)

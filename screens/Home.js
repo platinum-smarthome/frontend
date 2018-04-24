@@ -13,7 +13,6 @@ import Bullet from '../components/Bullet'
 import ForgotText from '../components/ForgotText'
 import TouchAbleText from '../components/TouchAbleText'
 import TouchAbleImage from '../components/TouchAbleImage'
-import CreateNewHome from './CreateNewHome';
 
 import * as Animatable from 'react-native-animatable';
 
