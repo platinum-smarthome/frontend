@@ -32,7 +32,7 @@ class CreateNewHome extends Component {
     let validate = validateCreatenewHomeInput(payload)
     if(validate === true) {
       this.props.createNewHome(payload)
-      this.props.navigation.navigate('Login')
+      this.props.navigation.goBack()
     } else {
       this.props.setCreateNewHomeMessage(validate)
     }
