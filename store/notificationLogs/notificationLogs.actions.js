@@ -40,8 +40,10 @@ export const watchNotification = (lastNotified) => {
             message: `${ val[0].title }`,
           }
           PushNotification.localNotification(notificationMessage);
+          dispatch(updateLastNotified(val[0].createdAt))
         }
-        dispatch(updateLastNotified(val[0].createdAt))
+      } else {
+        val = []
       }
       dispatch(fetchNotificationLogsSuccess(val))
     }, (err) => { dispatch(fetchNotificationLogsError()) })

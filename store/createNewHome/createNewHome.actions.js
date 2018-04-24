@@ -24,10 +24,19 @@ export const createNewHome = (payload) => {
     payload.user.LastSeen = database.ServerValue.TIMESTAMP
     let newHome = {
       homeId: key,
-      homeName: Base64.encode(payload.homeName),
-      homePin: payload.homePin,
+      homeName: payload.homeName,
+      homePin: Base64.encode(payload.homePin),
       owner: payload.user.deviceId,
-      sensors: [],
+      sensors: {
+        door: 1,
+        garage: 1,
+        gas:1
+      },
+      alarms: {
+        door: 1,
+        garage: 1,
+        gas:1
+      },
       users: {
         [payload.user.deviceId]: payload.user
       },
