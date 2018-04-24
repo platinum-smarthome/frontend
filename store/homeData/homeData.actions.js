@@ -4,7 +4,7 @@ import {
   FETCH_HOME_DATA_ERROR
 } from './homeData.actionType'
 import firebase from 'firebase'
-import { database } from '../../firebase/firebase';
+import { database } from '../../firebase/firebase'
 import { searchUser } from '../userData/userData.actions'
 import { fetchNotificationLogsSuccess } from '../notificationLogs/notificationLogs.actions'
 import { getSensorStatusSuccess } from '../sensors/sensor.actions'
@@ -15,7 +15,7 @@ export const fetchHomeData = () => {
     database().ref(`/smarthome`).on('value', (snap) => {
       let data = snap.val()
       dispatch(fetchHomeDataSuccess(data))
-      dispatch(searchUser(data.users))
+      // dispatch(searchUser(data.users))
       // dispatch(fetchNotificationLogsSuccess(Object.values(data.logs).reverse()))
     }, (err) => { dispatch(fetchHomeDataError()) })
   }

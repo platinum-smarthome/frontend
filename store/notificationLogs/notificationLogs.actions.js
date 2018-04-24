@@ -22,12 +22,12 @@ export const watchNotification = (lastNotified) => {
   return dispatch => {
     dispatch(fetchNotificationLogsLoading())
     database().ref(`/smarthome/logs`).on('value', (snaphot) => {
-      let val = []
-      if(snaphot.val()) {
+      let val = snaphot.val()
+      if(val) {
         val = Object.values(snaphot.val()).reverse()
         if(val[0].createdAt > lastNotified) {
           lastNotified = val[0].createdAt
-          PushNotification.localNotification({
+          let notificationMessage = {
             id: lastNotified,
             largeIcon: "ic_launcher",
             smallIcon: "ic_launcher",
@@ -38,7 +38,8 @@ export const watchNotification = (lastNotified) => {
             vibration: 300,
             title: "Fortress - Smart Home Security",
             message: `${ val[0].title }`,
-          });
+          }
+          PushNotification.localNotification(notificationMessage);
         }
         dispatch(updateLastNotified(val[0].createdAt))
       }

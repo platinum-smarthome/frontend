@@ -10,6 +10,7 @@ import PinText from '../components/PinText'
 import { fetchHomeData } from '../store/homeData/homeData.actions'
 import { getSensorStatus } from '../store/sensors/sensor.actions'
 import { watchNotification } from '../store/notificationLogs/notificationLogs.actions'
+import { fetchMemberList } from '../store/memberList/memberList.actions'
 
 
 class Splash extends Component {
@@ -29,6 +30,7 @@ class Splash extends Component {
     this.props.fetchHomeData()
     this.props.getSensorStatus()
     this.props.watchNotification(this.props.lastNotified)
+    this.props.fetchMemberList()
   }
 }
 
@@ -50,14 +52,15 @@ const styles = StyleSheet.create({
 function mapStateToProps (state) {
   return {
     lastNotified: state.NotificationLogs.lastNotified,    
-    userDataLoading: state.UserData.fectUserDataLoading
+    userDataLoading: state.UserData.fectUserDataLoading,
   }
 }
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   fetchHomeData,
   watchNotification,
-  getSensorStatus
+  getSensorStatus,
+  fetchMemberList
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Splash)
