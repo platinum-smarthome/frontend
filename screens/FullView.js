@@ -9,7 +9,7 @@ export default class FullView extends Component {
       <View style={{flex: 1, height: '100%', alignItems: 'center', justifyContent: 'space-around', backgroundColor: 'rgba(52, 184, 237, 0.4)'}}>
         <View style={{flexDirection: 'row'}}>
           <Text style={{ fontSize: 26, fontWeight: '100', color: '#fff', paddingHorizontal: 18 }}> Is this you? </Text>
-          <Image style={{marginTop: 4, width: 30, height: 30}} source={require('../components/assets/ladron.png')} />
+          <Image style={{marginTop: 4, width: 30, height: 30}} source={require('../components/assets/policia.png')} />
         </View>
         <View style={styles.shadow}>
         <Image 

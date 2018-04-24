@@ -5,28 +5,17 @@ import DoorStatus from './status/DoorStatus'
 class AlarmType extends Component {
   render() {
     return (
-      <View style={styles.alarmTypes}>
-        <View>
-          {
-            this.props.status ?
-            <Image style={styles.alarmImg} source={ require('../components/assets/puerta.png') }/> :
-            <Image style={styles.alarmImg} source={ require('../components/assets/access.png') }/>
-          }
+      <TouchableOpacity onPress={this.props.status ? this.props.press : this.props.lock}>
+        <View style={styles.alarmTypes}>
+          <View>
+            <Image style={styles.alarmImg} source={ this.props.status ? require('../components/assets/puerta.png') : require('../components/assets/access.png') }/>
+          </View>
+          <DoorStatus text={ this.props.text } status={ this.props.status }/>
+          <View style={styles.arrowPos}>
+            <Image style={{ height: 30, width: 30}} source={ this.props.status ? require('../components/assets/greyarrow.png') : require('../components/assets/desbloqueado.png')} />
+          </View>
         </View>
-        <DoorStatus text={ this.props.text } status={ this.props.status }/>
-          {
-            this.props.status ?
-            (
-            <TouchableOpacity style={styles.arrowPos} onPress={ this.props.press }>
-              <Image style={{ height: 30, width: 30}} source={require('../components/assets/greyarrow.png')} />
-            </TouchableOpacity>
-            ) : (
-            <TouchableOpacity style={styles.arrowPos} onPress={ this.props.lock }>
-              <Image style={{ height: 30, width: 30}} source={require('../components/assets/desbloqueado.png')} />
-            </TouchableOpacity>
-            )
-          }
-      </View>
+      </TouchableOpacity>
     )
   }
 }

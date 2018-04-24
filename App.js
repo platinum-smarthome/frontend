@@ -9,6 +9,7 @@ import Drawer from './components/Drawer'
 import CreateNewHome from './screens/CreateNewHome'
 import AddNewUser from './screens/AddNewUser'
 import Notify from './screens/Notify'
+import About from './screens/About'
 import Logout from './screens/Logout'
 import HousePin from './screens/HousePin'
 import Splash from './screens/Splash'
@@ -117,7 +118,7 @@ const EntryPoint = StackNavigator({
       headerTintColor: '#fff',
       headerRight: <Text />
     }
-  }
+  },
 }, {
   initialRouteName: 'Dashboard'
 })
@@ -144,6 +145,14 @@ const Dash = DrawerNavigator({
     navigationOptions: {
       drawerIcon: (
         <Image source={require('./components/assets/usuarios.png')} style={{width:24, height:24}} />
+      ),
+    }
+  },
+  About: {
+    screen: About,
+    navigationOptions: {
+      drawerIcon: (
+        <Image source={require('./components/assets/libros.png')} style={{width:24, height:24}} />
       ),
     }
   },
