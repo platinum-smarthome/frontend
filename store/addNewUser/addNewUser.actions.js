@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+import Base64 from '../../helpers/hash.helper';
 
 import {
   CREATE_NEW_USER_HANDLE_INPUT_CHANGE,
@@ -19,6 +20,7 @@ export const createNewUserHandleInputChange = (payload) => {
 export const createNewUser = (payload) => {
   return dispatch => {
     payload.user.lastSeen = database.ServerValue.TIMESTAMP;
+    payload.user.pin = Base64.encode(payload.user.pin);
     dispatch(createNewUserLoading())
     database().ref(`/smarthome/users/${payload.user.deviceId}`).set(payload.user)
     .then(() => {

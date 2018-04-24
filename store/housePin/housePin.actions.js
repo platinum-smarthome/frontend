@@ -6,6 +6,7 @@ import {
   GET_HOMEPIN
 } from './housePin.actionType'
 import { disableSensors, enableSensors } from '../sensors/sensor.actions'
+import Base64 from '../../helpers/hash.helper';
 
 export const loadHomePin = () => {
   return dispatch => {
@@ -16,7 +17,7 @@ export const loadHomePin = () => {
 export const homePinUpdate = (payload) => {
   return dispatch => {
     dispatch(homePinUpdateSuccess(payload.input))
-    if(payload.input.join('') === payload.homePin) {
+    if(payload.input.join('') === Base64.decode(payload.homePin)) {
       dispatch(homePinRemove())
       dispatch(homePinAccessSuccess())
       dispatch(disableSensors())
