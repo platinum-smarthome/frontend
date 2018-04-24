@@ -1,6 +1,9 @@
 import {
   FETCH_HOME_DATA_LOADING,
   FETCH_HOME_DATA,
+  FETCH_HOME_DATA_ID,
+  FETCH_HOME_DATA_NAME,
+  FETCH_HOME_DATA_PIN,  
   FETCH_HOME_DATA_ERROR
 } from './homeData.actionType'
 import firebase from 'firebase'
@@ -11,19 +14,46 @@ import { getSensorStatusSuccess } from '../sensors/sensor.actions'
 
 export const fetchHomeData = () => {
   return dispatch => {
-    dispatch(fetchHomeDataLoading())
-    database().ref(`/smarthome`).on('value', (snap) => {
-      let data = snap.val()
-      dispatch(fetchHomeDataSuccess(data))
-      // dispatch(searchUser(data.users))
-      // dispatch(fetchNotificationLogsSuccess(Object.values(data.logs).reverse()))
+    dispatch(fetchHomeDataLoading())  
+    database().ref(`/smarthome/homePin`).on('value', (snapshot) => {
+      let val = snapshot.val()
+      dispatch(fetchHomeDataPin(val))
+      database().ref(`/smarthome/homeId`).on('value', (snapshot) => {
+        let val = snapshot.val()
+        dispatch(fetchHomeDataId(val))
+        database().ref(`/smarthome/homeName`).on('value', (snapshot) => {
+          let val = snapshot.val()
+          dispatch(fetchHomeDataName(val))
+          dispatch(fetchHomeDataSuccess())
+        }, (err) => { dispatch(fetchHomeDataError()) })
+      }, (err) => { dispatch(fetchHomeDataError()) })
     }, (err) => { dispatch(fetchHomeDataError()) })
   }
 }
 
-const fetchHomeDataSuccess = (payload) => {
+const fetchHomeDataSuccess = () => {
   return {
-    type: FETCH_HOME_DATA,
+    type: FETCH_HOME_DATA
+  }
+}
+
+const fetchHomeDataPin = (payload) => {
+  return {
+    type: FETCH_HOME_DATA_PIN,
+    payload: payload
+  }
+}
+
+const fetchHomeDataName = (payload) => {
+  return {
+    type: FETCH_HOME_DATA_NAME,
+    payload: payload
+  }
+}
+
+const fetchHomeDataId = (payload) => {
+  return {
+    type: FETCH_HOME_DATA_ID,
     payload: payload
   }
 }

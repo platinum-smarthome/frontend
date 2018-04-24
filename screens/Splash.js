@@ -11,6 +11,7 @@ import { fetchHomeData } from '../store/homeData/homeData.actions'
 import { getSensorStatus } from '../store/sensors/sensor.actions'
 import { watchNotification } from '../store/notificationLogs/notificationLogs.actions'
 import { fetchMemberList } from '../store/memberList/memberList.actions'
+import { getAlarmsStatus } from '../store/alarms/alarms.actions'
 
 
 class Splash extends Component {
@@ -20,7 +21,7 @@ class Splash extends Component {
       <View style={styles.container}>
         <Image style={ styles.logo } source={require('../components/assets/fortaleza.png')}/>
         {
-          !this.props.userDataLoading &&
+          !this.props.fetchMemberListLoading &&
           this.props.navigation.navigate('Login')
         }
       </View>
@@ -28,9 +29,10 @@ class Splash extends Component {
   }
   componentDidMount () {
     this.props.fetchHomeData()
+    this.props.fetchMemberList()
     this.props.getSensorStatus()
     this.props.watchNotification(this.props.lastNotified)
-    this.props.fetchMemberList()
+    this.props.getAlarmsStatus()
   }
 }
 
@@ -52,7 +54,7 @@ const styles = StyleSheet.create({
 function mapStateToProps (state) {
   return {
     lastNotified: state.NotificationLogs.lastNotified,    
-    userDataLoading: state.UserData.fectUserDataLoading,
+    fetchMemberListLoading: state.MemberList.fetchMemberListLoading,
   }
 }
 
@@ -60,7 +62,8 @@ const mapDispatchToProps = (dispatch) => bindActionCreators({
   fetchHomeData,
   watchNotification,
   getSensorStatus,
-  fetchMemberList
+  fetchMemberList,
+  getAlarmsStatus
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Splash)

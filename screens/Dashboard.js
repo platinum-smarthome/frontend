@@ -19,7 +19,7 @@ import { loadHomePin, homeLock } from '../store/housePin/housePin.actions'
 class Dashboard extends Component {
   render() {
     return (
-      <ScrollView>
+      <ScrollView>  
         <View style={styles.body}>
           <View style={{marginTop: 1}}/>
           <View style={styles.card}>
@@ -80,13 +80,12 @@ function mapStateToProps (state) {
     sensors: state.sensors,
     housePin: state.housePin,
     lastNotified: state.NotificationLogs.lastNotified,
-    alarms: state.HomeData.alarms
+    alarms: state.AlarmsData.alarms
   }
 }
 
 function mapDispatchToProps (dispatch) {
   return {
-    getSensorStatus: () => dispatch(getSensorStatus()),
     loadHomePin: () => dispatch(loadHomePin()),
     homeLock: () => dispatch(homeLock())
   }

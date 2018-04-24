@@ -27,10 +27,14 @@ export const fetchMemberListSuccess = (payload) => {
   }
 }
 
-const fetchMemberListLoading = () => ({
-  type: FETCH_MEMBER_LIST_LOADING,
-})
+const fetchMemberListLoading = () => {
+  return {
+    type: FETCH_MEMBER_LIST_LOADING,
+  }
+}
 
-const fetchMemberListError = () => ({
-  type: FETCH_MEMBER_LIST_ERROR
-})
+const fetchMemberListError = () => {
+  return {
+    type: FETCH_MEMBER_LIST_ERROR
+  }
+}

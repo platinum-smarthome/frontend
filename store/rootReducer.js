@@ -9,6 +9,7 @@ import UserData from './userData/userData.reducers'
 import NotificationLogs from './notificationLogs/notificationLogs.reducers'
 import HousePin from './housePin/housePin.reducers'
 import MemberList from './memberList/memberList.reducers'
+import Alarms from './alarms/alarms.reducers'
 
 const reducers = combineReducers({
   addNewUserReducer: AddNewUser,
@@ -19,7 +20,8 @@ const reducers = combineReducers({
   UserData: UserData,
   NotificationLogs: NotificationLogs,
   housePin: HousePin,
-  MemberList: MemberList
+  MemberList: MemberList,
+  AlarmsData : Alarms
 })
 
 export default reducers
