@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, FlatList, AppState } from 'react-native'
+import { Text, View, StyleSheet, FlatList, AppState, StatusBar } from 'react-native'
 import { connect } from 'react-redux'
 import { updateLastSeen } from '../store/userData/userData.actions'
 import NotificationCard from '../components/NotificationCard'
@@ -19,6 +19,9 @@ class Notify extends Component {
   render() {
     return (
       <View style={styles.body}>
+        <StatusBar
+          hidden={true}
+        />
         <FlatList
           data={ this.props.logs }
           keyExtractor={ this.keyExtractor }

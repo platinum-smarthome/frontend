@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button, StyleSheet, Image, ScrollView, AppState, KeyboardAvoidingView } from 'react-native';
+import { View, Button, StyleSheet, Image, ScrollView, AppState, KeyboardAvoidingView, StatusBar } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import IMEI from 'react-native-imei';
@@ -32,7 +32,7 @@ class CreateNewHome extends Component {
     let validate = validateCreatenewHomeInput(payload)
     if(validate === true) {
       this.props.createNewHome(payload)
-      this.props.navigation.navigate('Login')
+      this.props.navigation.goBack()
     } else {
       this.props.setCreateNewHomeMessage(validate)
     }
@@ -47,6 +47,9 @@ class CreateNewHome extends Component {
   render () {
     return (
       <View style={styles.container}>
+        <StatusBar
+          hidden={true}
+        />
         <KeyboardAvoidingView behavior="padding" style={{flex: 2, justifyContent: 'center', marginTop: -5, marginBottom: 10}}>
           <Image style={{ marginTop: 2, width: 120, height: 120, alignSelf: 'center'}} source={require('../components/assets/casa.png')} />
           <PinText text={'Secure Your Home With Us'}/>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, Image, ScrollView, Animated, Easing } from 'react-native'
+import { View, Text, StyleSheet, Image, ScrollView, Animated, Easing, StatusBar } from 'react-native'
 import MarqueeLabelVertical from 'react-native-lahk-marquee-label-vertical'
 
 export default class About extends Component {
@@ -31,6 +31,9 @@ export default class About extends Component {
     })
     return (
     <ScrollView>
+      <StatusBar
+        hidden={true}
+      />
       <View style={styles.body}>
         <View style={{alignItems: 'center', marginTop: 16}}>
           <Text style={styles.shadow}> The Team </Text>

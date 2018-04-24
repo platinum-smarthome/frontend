@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, Image, FlatList, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, Image, FlatList, ScrollView, StatusBar } from 'react-native';
 import { connect } from 'react-redux'
 import Member from '../components/Member'
 import PinText from '../components/PinText'
@@ -21,6 +21,9 @@ class Members extends Component {
     }
     return (
     <ScrollView contentContainerStyle={styles.scroll}>
+      <StatusBar
+        hidden={true}
+      />
       <View style={{alignItems: 'center', flex: 1}}>
         <Image style={ styles.logo } source={require('../components/assets/fortress_logo.png')} />
         <Image style={ styles.img } source={require('../components/assets/familia.png')} />

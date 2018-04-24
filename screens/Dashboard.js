@@ -1,6 +1,6 @@
 console.disableYellowBox = true
 import React, { Component } from 'react'
-import { Text, View, Image, ScrollView, StyleSheet, Alert, TouchableOpacity, AppState } from 'react-native'
+import { Text, View, Image, ScrollView, StyleSheet, Alert, TouchableOpacity, AppState, StatusBar } from 'react-native'
 import { connect } from 'react-redux'
 
 import CardTitle from '../components/CardTitle'
@@ -19,7 +19,10 @@ import { loadHomePin, homeLock } from '../store/housePin/housePin.actions'
 class Dashboard extends Component {
   render() {
     return (
-      <ScrollView>  
+      <ScrollView>
+        <StatusBar
+          hidden={true}
+        />
         <View style={styles.body}>
           <View style={{marginTop: 1}}/>
           <View style={styles.card}>

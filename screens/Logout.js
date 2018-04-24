@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, Image, Text } from 'react-native';
+import { View, StyleSheet, Image, Text, StatusBar } from 'react-native';
 import { connect } from 'react-redux'
 
 import { userLogout } from '../store/data/data.actions'
@@ -10,6 +10,9 @@ class Home extends Component {
   render () {
     return (
       <View style={styles.container}>
+        <StatusBar
+          hidden={true}
+        />
         <Image style={ styles.logo } source={require('../components/assets/fortaleza.png')}/>
       </View>
     )

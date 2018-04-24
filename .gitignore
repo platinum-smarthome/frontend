@@ -17,3 +17,6 @@ yarn-debug.log*
 yarn-error.log*
 
 local.properties
+my-release-key.keystore
+gradle.properties
+firebase.js

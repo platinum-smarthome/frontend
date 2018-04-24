@@ -17,7 +17,7 @@ export const loadHomePin = () => {
 export const homePinUpdate = (payload) => {
   return dispatch => {
     dispatch(homePinUpdateSuccess(payload.input))
-    if(payload.input.join('') === Base64.decode(payload.homePin)) {
+    if(payload.input.join('') === Base64.decode(payload.homePin) && payload.input.join('').length === 6) {
       dispatch(homePinRemove())
       dispatch(homePinAccessSuccess())
       dispatch(disableSensors())
