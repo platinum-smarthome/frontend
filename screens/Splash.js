@@ -8,7 +8,9 @@ import NewUserForm from '../components/NewUserForm'
 import PinText from '../components/PinText'
 
 import { fetchHomeData } from '../store/homeData/homeData.actions'
+import { getSensorStatus } from '../store/sensors/sensor.actions'
 import { watchNotification } from '../store/notificationLogs/notificationLogs.actions'
+
 
 class Splash extends Component {
 
@@ -25,6 +27,7 @@ class Splash extends Component {
   }
   componentDidMount () {
     this.props.fetchHomeData()
+    this.props.getSensorStatus()
     this.props.watchNotification(this.props.lastNotified)
   }
 }
@@ -53,7 +56,8 @@ function mapStateToProps (state) {
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   fetchHomeData,
-  watchNotification
+  watchNotification,
+  getSensorStatus
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Splash)

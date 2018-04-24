@@ -54,7 +54,6 @@ class Dashboard extends Component {
   }
 
   componentDidMount () {
-    this.props.getSensorStatus()
     this.props.loadHomePin()
     AppState.addEventListener('change', this.handleAppStateChange)
   }
