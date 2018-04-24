@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button, Text, StyleSheet, Image, AppState, KeyboardAvoidingView } from 'react-native';
+import { View, Button, Text, StyleSheet, Image, AppState, KeyboardAvoidingView, StatusBar } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -38,6 +38,9 @@ class AddNewUser extends Component {
   render () {
     return (
       <View style={styles.container}>
+        <StatusBar
+          hidden={true}
+        />
         <KeyboardAvoidingView behavior="padding" style={{flex: 2, justifyContent: 'center', marginTop: -5, marginBottom: 10}}>
           <Image style={{ marginVertical: 10, height: 40, width: 170, alignSelf: 'center'}} source={require('../components/assets/fortress_logo.png')} />
           <Image style={{ marginTop: 20, width: 120, height: 120, alignSelf: 'center'}} source={require('../components/assets/usuario.png')} />

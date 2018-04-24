@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Image, StyleSheet, AppState } from 'react-native'
+import { Text, View, Image, StyleSheet, AppState, StatusBar } from 'react-native'
 import PinText from '../components/PinText'
 import Bullet from '../components/Bullet'
 import Keypad from '../components/Keypad'
@@ -50,6 +50,9 @@ class HousePin extends Component {
     return (!this.props.userHomePin.houseLock) ?
     this.props.navigation.goBack() :
     (<View style={styles.body}>
+      <StatusBar
+        hidden={true}
+      />
       <Animatable.View animation="bounceInDown" easing="ease-in-out" >
         <Image style={styles.img} source={require('../components/assets/clave.png')} />
       </Animatable.View>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, Alert, TouchableWithoutFeedback } from 'react-native'
+import { View, Text, StyleSheet, Alert, TouchableWithoutFeedback, StatusBar } from 'react-native'
 import { connect } from 'react-redux'
 import IMEI from 'react-native-imei'
 
@@ -73,6 +73,9 @@ class Home extends Component {
     this.props.navigation.navigate('App') :
     (
       <View style={styles.container}>
+        <StatusBar
+          hidden={true}
+        />
         <View style={{marginVertical: 10}}/>
         <View>
           <PinText text={'Enter Your PIN Device'} />
