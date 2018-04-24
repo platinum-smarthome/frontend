@@ -8,6 +8,7 @@ import NotificationCardFooter from './NotificationCard.footer'
 
 export default class NotificationCard extends Component {
   render() {
+    let jpgRegex = /(\.jpg)$/
     const { title, description, createdAt, id } = this.props.data
     return (
       <View style={styles.infoCard}>
@@ -15,7 +16,7 @@ export default class NotificationCard extends Component {
           <Text style={styles.notifTitle}>{ title }</Text>
         </View>
         <Text style={styles.time}>{ dateDisplayFormater(createdAt) }</Text>
-        { this.props.data.imageUrl &&
+        { jpgRegex.test(this.props.data.imageUrl) &&
           <TouchableOpacity style={{alignItems: 'center'}} onPress={ this.props.press }>
             <Image style={{width: 120, height: 120}} source={{ uri: this.props.data.imageUrl }} />
           </TouchableOpacity>

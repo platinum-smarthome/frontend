@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
 
 function mapStateToProps (state) {
   return {
-    users: state.HomeData.users
+    users: state.MemberList.users
   }
 }
 

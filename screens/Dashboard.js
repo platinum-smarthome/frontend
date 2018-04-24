@@ -1,6 +1,8 @@
 console.disableYellowBox = true
 import React, { Component } from 'react'
 import { Text, View, Image, ScrollView, StyleSheet, Alert, TouchableOpacity, AppState } from 'react-native'
+import { connect } from 'react-redux'
+
 import CardTitle from '../components/CardTitle'
 import AlarmType from '../components/AlarmType'
 import MonitorType from '../components/MonitorType'
@@ -10,15 +12,14 @@ import SwitchType from '../components/SwitchType'
 import Cctv from '../components/Cctv'
 import TouchAbleText from '../components/TouchAbleText'
 import Bell from '../components/Bell'
-import { connect } from 'react-redux'
+
 import { getSensorStatus } from '../store/sensors/sensor.actions'
 import { loadHomePin, homeLock } from '../store/housePin/housePin.actions'
-import { watchNotification } from '../store/notificationLogs/notificationLogs.actions'
 
 class Dashboard extends Component {
   render() {
     return (
-      <ScrollView>
+      <ScrollView>  
         <View style={styles.body}>
           <View style={{marginTop: 1}}/>
           <View style={styles.card}>
@@ -53,9 +54,7 @@ class Dashboard extends Component {
   }
 
   componentDidMount () {
-    this.props.getSensorStatus()
     this.props.loadHomePin()
-    this.props.watchNotification(this.props.lastNotified)
     AppState.addEventListener('change', this.handleAppStateChange)
   }
 }
@@ -81,16 +80,14 @@ function mapStateToProps (state) {
     sensors: state.sensors,
     housePin: state.housePin,
     lastNotified: state.NotificationLogs.lastNotified,
-    alarms: state.HomeData.alarms
+    alarms: state.AlarmsData.alarms
   }
 }
 
 function mapDispatchToProps (dispatch) {
   return {
-    getSensorStatus: () => dispatch(getSensorStatus()),
     loadHomePin: () => dispatch(loadHomePin()),
-    homeLock: () => dispatch(homeLock()),
-    watchNotification: (payload) => dispatch(watchNotification(payload))  
+    homeLock: () => dispatch(homeLock())
   }
 }
 

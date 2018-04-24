@@ -17,7 +17,6 @@ class Notify extends Component {
   keyExtractor = (item, index) => `notif-${item.createdAt}`
   
   render() {
-    console.log(this.props.logs)
     return (
       <View style={styles.body}>
         <FlatList
