@@ -17,7 +17,10 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|react-navigation|react-native-push-notification|react-native-animatable|react-native-safe-area-view)/)"
+    ]
   },
   "dependencies": {
     "axios": "^0.18.0",
