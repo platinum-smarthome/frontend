@@ -27,7 +27,7 @@ const reducers = (state=initialState, action) => {
         ...state,
         fectUserDataLoading: true
       }
-    case FETCH_USER_DATA_LOADING:
+    case FETCH_USER_DATA_ERROR:
       return {
         ...state,
         fectUserDataLoading: false,

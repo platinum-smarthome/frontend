@@ -18,7 +18,12 @@ describe('Action getAlarmsStatus Test', () => {
   it('getAlarmsStatus Success Test', () => {
     let expectedActions = [
       {type: "GET_ALARMS_STATUS_LOADING"},
-      {type: "GET_ALARMS_STATUS_SUCCESS"},
+      {payload: {
+        door: 1,
+        garage: 1,
+        gas: 1
+      },
+      type: "GET_ALARMS_STATUS_SUCCESS"},
     ];
     result = getAlarmsStatus();
     let index = 0

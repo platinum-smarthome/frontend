@@ -31,7 +31,7 @@ describe('Action homePinUpdate Test', () => {
     const expectedActions = [
       {
         type: 'HOMEPIN_UPDATE',
-        housePin: ['8','8','8','8','8','8']
+        payload: ['8','8','8','8','8','8']
       },
       {type: "HOMEPIN_REMOVE"},
       {type: "HOMEPIN_ACCESS_UNLOCK"},
@@ -54,7 +54,7 @@ describe('Action homePinUpdate Test', () => {
     const expectedActions = [
       {
         type: 'HOMEPIN_UPDATE',
-        housePin: ['8','8','8','8','2','2']
+        payload: ['8','8','8','8','2','2']
       },
       {type: "HOMEPIN_REMOVE"}
     ];

@@ -49,7 +49,7 @@ const getHomePinSuccess = () => {
 const homePinUpdateSuccess = (payload) => {
   return {
     type: HOMEPIN_UPDATE,
-    housePin: payload
+    payload: payload
   }
 }
 

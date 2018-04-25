@@ -12,10 +12,10 @@ const initialState = {
   homeId: '',
   homeName: '',
   homePin: ['','','','','',''],
-  owner: '',
-  users: [],
-  sensors: [],
-  logs: [],
+  // owner: '',
+  // users: [],
+  // sensors: [],
+  // logs: [],
   fectHomeDataError: false,
 }
 
@@ -46,7 +46,7 @@ const reducers = (state=initialState, action) => {
         ...state,
         fectHomeDataLoading: true
       }
-    case FETCH_HOME_DATA_LOADING:
+    case FETCH_HOME_DATA_ERROR:
       return {
         ...state,
         fectHomeDataLoading: false,

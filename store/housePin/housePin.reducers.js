@@ -19,11 +19,11 @@ const reducers = (state=initialState, action) => {
         ...state,
         loading: false
       }
-    case HOMEPIN_UPDATE:{
+    case HOMEPIN_UPDATE:
       return {
         ...state,
-        housePin: [ ...action.housePin ]
-      }}
+        housePin: [ ...action.payload ]
+      }
     case HOMEPIN_REMOVE: 
       return {
         ...state,
