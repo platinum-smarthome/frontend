@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flexGrow": 1,
+      "paddingTop": 6,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../components/assets/fortress_logo.png",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "flex": 1,
+        "height": null,
+        "resizeMode": "contain",
+        "width": 150,
+      }
+    }
+  />
+</View>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "marginBottom": 10,
+      "marginTop": 30,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 22,
+        "fontWeight": "300",
+      }
+    }
+  />
+</View>
+`;

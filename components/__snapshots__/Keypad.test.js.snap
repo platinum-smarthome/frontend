@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "center",
+      "marginBottom": 16,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    1
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    2
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    3
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    4
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    5
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    6
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    7
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    8
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    9
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+     
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    0
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#fff",
+        "flex": 1,
+        "fontSize": 30,
+        "fontWeight": "200",
+        "marginHorizontal": 6,
+        "paddingHorizontal": "13%",
+        "paddingVertical": 10,
+      }
+    }
+  >
+    ←
+  </Text>
+</View>
+`;

@@ -3,7 +3,6 @@ import { Text, View, StyleSheet, TouchableHighlight, Image } from 'react-native'
 
 export default class TouchAble extends Component {
   render() {
-    console.log(`./assets/${this.props.image}.png`)
     return (
       <TouchableHighlight
         style={{marginHorizontal: 16, borderRadius: 50}}
