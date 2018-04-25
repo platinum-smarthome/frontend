@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet, Image, ScrollView, Animated, Easing, StatusBar } from 'react-native'
-import MarqueeLabelVertical from 'react-native-lahk-marquee-label-vertical'
 
 export default class About extends Component {
   constructor () {
