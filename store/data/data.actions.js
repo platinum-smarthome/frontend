@@ -1,7 +1,4 @@
-import { 
-  GET_DATA_SUCCESS,
-  GET_DATA_LOADING,
-  GET_DATA_ERROR,
+import {
   DEVICE_PIN_INPUT_UPDATE,
   DEVICE_PIN_INPUT_REMOVE,
   USER_LOGIN_SUCCESS,
@@ -15,7 +12,7 @@ export const devicePinUpdate = (payload) => {
     if (payload.input.join('') === Base64.decode(payload.userPin) && payload.input.join('').length === 6) {
       dispatch(devicePinRemove())
       dispatch(userLoginSuccess())
-    } else if ( payload.input[5]) {
+    } else if ( payload.input[5] ) {
       dispatch(devicePinRemove())
     }
   }
@@ -23,7 +20,7 @@ export const devicePinUpdate = (payload) => {
 
 const devicePinUpdateSuccess = (payload) => ({
   type: DEVICE_PIN_INPUT_UPDATE,
-  key: payload
+  payload: payload
 })
 const devicePinRemove = (payload) => ({
   type: DEVICE_PIN_INPUT_REMOVE,

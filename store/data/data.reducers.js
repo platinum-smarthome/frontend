@@ -1,6 +1,4 @@
-import { 
-  GET_DATA_SUCCESS,
-  GET_DATA_LOADING,
+import {
   DEVICE_PIN_INPUT_UPDATE,
   DEVICE_PIN_INPUT_REMOVE,
   USER_LOGIN_SUCCESS,
@@ -18,13 +16,10 @@ const reducers = (state=initialState, action) => {
     case DEVICE_PIN_INPUT_UPDATE:
       return {
         ...state,
-        devicePin: action.key
+        devicePin: action.payload
       }
     case DEVICE_PIN_INPUT_REMOVE:
-      return {
-        ...state,
-        devicePin: ['','', '', '', '', '']
-      }
+      return initialState
     case USER_LOGIN_SUCCESS:
       return {
         ...state,
