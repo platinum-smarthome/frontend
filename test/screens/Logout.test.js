@@ -6,9 +6,9 @@ import Enzyme, { configure, shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from "react-redux";
 
-import store from '../store/store';
+import store from '../../store/store';
 
-import Logout from '../screens/Logout';
+import Logout from '../../screens/Logout';
 
 
 Enzyme.configure({ adapter: new Adapter() });

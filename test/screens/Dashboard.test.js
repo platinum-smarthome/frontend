@@ -5,9 +5,9 @@ import Enzyme, { shallow } from 'enzyme';
 import { Provider } from "react-redux";
 import Adapter from 'enzyme-adapter-react-16';
 
-import store from '../store/store';
-import Dashboard from '../screens/Dashboard';
-import NewMonitor from '../components/NewMonitor';
+import store from '../../store/store';
+import Dashboard from '../../screens/Dashboard';
+import NewMonitor from '../../components/NewMonitor';
 
 Enzyme.configure({ adapter: new Adapter() });
 
