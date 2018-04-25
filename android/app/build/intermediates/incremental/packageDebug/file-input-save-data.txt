@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Apr 24 15:48:28 WIB 2018
+#Wed Apr 25 17:42:43 WIB 2018
 20.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 143.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 340.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout-v17/notification_template_part_chronometer.xml
@@ -42,7 +42,7 @@
 123.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 149.set=NATIVE_RESOURCE
 156.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-50.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/common_google_signin_btn_icon_dark_normal.xml
+50.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png
 327.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 66.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 189.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
@@ -81,8 +81,8 @@
 37.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 157.set=ANDROID_RESOURCE
 63.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png
-186.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/select_dialog_multichoice_material.xml
-96.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_activity_chooser_view.xml
+186.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+96.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
 82.set=ANDROID_RESOURCE
 221.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 333.set=ANDROID_RESOURCE
@@ -132,7 +132,7 @@
 241.set=JAVA_RESOURCE
 257.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 104.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
-137.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+137.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_media_cancel_action.xml
 308.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_ic_search_api_mtrl_alpha.png
 47.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/select_dialog_singlechoice_material.xml
 372.set=ANDROID_RESOURCE
@@ -152,7 +152,7 @@
 4.set=ANDROID_RESOURCE
 71.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 195.set=ANDROID_RESOURCE
-391.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/xml/preferences.xml
+391.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
 254.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
 47.set=ANDROID_RESOURCE
 287.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
@@ -198,7 +198,7 @@
 145.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 22.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 171.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png
-342.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+342.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/support_simple_spinner_dropdown_item.xml
 55.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 86.set=ANDROID_RESOURCE
 337.set=ANDROID_RESOURCE
@@ -214,7 +214,7 @@
 314.set=ANDROID_RESOURCE
 135.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 306.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-332.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/common_google_signin_btn_text_dark_normal.xml
+332.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png
 45.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 168.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 237.set=ANDROID_RESOURCE
@@ -223,7 +223,7 @@
 115.set=ANDROID_RESOURCE
 78.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 398.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png
-228.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout-v17/notification_template_big_media_narrow.xml
+228.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
 400.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 368.set=ANDROID_RESOURCE
 40.set=ANDROID_RESOURCE
@@ -252,7 +252,7 @@
 16.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 165.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
 148.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-42.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png
+42.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png
 399.set=ANDROID_RESOURCE
 319.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 71.set=ANDROID_RESOURCE
@@ -273,7 +273,7 @@
 188.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/abc_btn_colored_material.xml
 65.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png
 100.set=ANDROID_RESOURCE
-98.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png
+98.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
 223.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 353.set=ANDROID_RESOURCE
 282.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_search_api_mtrl_alpha.png
@@ -282,7 +282,7 @@
 119.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 13.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
 8.set=ANDROID_RESOURCE
-316.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_activity_chooser_view_list_item.xml
+316.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
 199.set=NATIVE_RESOURCE
 29.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 178.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png
@@ -296,7 +296,7 @@
 176.set=NATIVE_RESOURCE
 109.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 384.set=NATIVE_RESOURCE
-36.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+36.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_launcher.png
 19.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 28.set=ANDROID_RESOURCE
 339.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/mipmap-mdpi-v4/ic_launcher.png
@@ -333,12 +333,12 @@
 36.set=ANDROID_RESOURCE
 50.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 370.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/color/abc_search_url_text.xml
-200.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/googleg_standard_color_18.png
+200.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/color/abc_primary_text_material_light.xml
 83.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 386.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 5.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-233.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/dev_loading_view.xml
-404.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_radio.xml
+233.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/googleg_disabled_color_18.png
+404.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/redbox_item_frame.xml
 266.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png
 299.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ratingbar_full_material.xml
 129.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_menu_layout.xml
@@ -351,7 +351,7 @@
 360.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
 73.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 393.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libfolly_json.so
-256.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
+256.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_layout.xml
 67.set=ANDROID_RESOURCE
 318.set=ANDROID_RESOURCE
 289.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_popup_menu_item_layout.xml
@@ -367,7 +367,7 @@
 80.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_grow_fade_in_from_bottom.xml
 383.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png
 44.set=ANDROID_RESOURCE
-2.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/googleg_disabled_color_18.png
+2.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png
 96.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 218.set=ANDROID_RESOURCE
 279.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_ic_clear_mtrl_alpha.png
@@ -381,7 +381,7 @@
 176.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 70.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/common_full_open_on_phone.png
 347.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-227.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+227.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_spinner_textfield_background_material.xml
 75.set=ANDROID_RESOURCE
 326.set=ANDROID_RESOURCE
 150.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_dialog_material_background_dark.xml
@@ -433,7 +433,7 @@
 297.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 234.set=ANDROID_RESOURCE
 127.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-21.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
+21.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
 144.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png
 112.set=ANDROID_RESOURCE
 54.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/x86_64/libimagepipeline.so
@@ -469,7 +469,7 @@
 157.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png
 328.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
 242.set=ANDROID_RESOURCE
-67.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+67.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png
 120.set=ANDROID_RESOURCE
 191.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 225.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
@@ -504,7 +504,7 @@
 238.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 381.set=ANDROID_RESOURCE
 25.set=ANDROID_RESOURCE
-118.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
+118.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
 28.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_template_big_media_narrow.xml
 332.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 194.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
@@ -515,7 +515,7 @@
 228.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 245.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png
 281.set=ANDROID_RESOURCE
-108.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-hdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
+108.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_template_part_chronometer.xml
 18.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_015.png
 142.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 52.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
@@ -582,7 +582,7 @@
 62.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout-v17/select_dialog_singlechoice_material.xml
 185.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
 339.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-95.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+95.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_activity_chooser_view.xml
 219.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png
 72.set=NATIVE_RESOURCE
 220.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
@@ -638,14 +638,14 @@
 385.set=ANDROID_RESOURCE
 29.set=NATIVE_RESOURCE
 393.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
-240.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+240.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_btn_default_mtrl_shape.xml
 231.set=ANDROID_RESOURCE
 256.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 103.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_cab_background_internal_bg.xml
 289.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-136.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_media_cancel_action.xml
-307.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/color/common_google_signin_btn_tint.xml
-46.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png
+136.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+307.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_text_cursor_material.xml
+46.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/anim/catalyst_push_up_in.xml
 169.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
 362.set=ANDROID_RESOURCE
 79.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/color/abc_secondary_text_material_light.xml
@@ -709,12 +709,12 @@
 214.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libgnustl_shared.so
 99.set=ANDROID_RESOURCE
 22.set=ANDROID_RESOURCE
-247.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+247.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
 111.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 144.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 21.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 170.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_btn_borderless_material.xml
-341.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/support_simple_spinner_dropdown_item.xml
+341.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png
 54.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 76.set=ANDROID_RESOURCE
 327.set=ANDROID_RESOURCE
@@ -732,7 +732,7 @@
 304.set=ANDROID_RESOURCE
 134.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 305.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-331.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+331.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/common_google_signin_btn_text_dark_normal.xml
 44.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 167.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 61.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_item_background_holo_light.xml
@@ -752,7 +752,7 @@
 124.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 159.set=NATIVE_RESOURCE
 157.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-51.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png
+51.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/common_google_signin_btn_icon_dark_normal.xml
 328.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 354.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png
 67.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
@@ -770,7 +770,7 @@
 15.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 164.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_btn_radio_material.xml
 147.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-41.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png
+41.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png
 389.set=ANDROID_RESOURCE
 318.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 61.set=ANDROID_RESOURCE
@@ -789,8 +789,8 @@
 38.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 167.set=ANDROID_RESOURCE
 64.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
-187.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
-97.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+187.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/select_dialog_multichoice_material.xml
+97.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png
 92.set=ANDROID_RESOURCE
 222.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 343.set=NATIVE_RESOURCE
@@ -846,8 +846,8 @@
 82.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 385.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 4.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-232.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/googleg_disabled_color_18.png
-403.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/redbox_item_frame.xml
+232.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/dev_loading_view.xml
+403.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_radio.xml
 265.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
 298.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_bar_title_item.xml
 128.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png
@@ -856,8 +856,8 @@
 162.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 160.set=ANDROID_RESOURCE
 72.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
-392.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
-255.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_layout.xml
+392.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/xml/preferences.xml
+255.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
 57.set=ANDROID_RESOURCE
 308.set=ANDROID_RESOURCE
 288.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
@@ -871,7 +871,7 @@
 390.set=ANDROID_RESOURCE
 382.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
 34.set=ANDROID_RESOURCE
-1.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png
+1.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/googleg_disabled_color_18.png
 95.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 219.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 208.set=ANDROID_RESOURCE
@@ -885,7 +885,7 @@
 346.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 290.set=ANDROID_RESOURCE
 379.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-226.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_spinner_textfield_background_material.xml
+226.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
 209.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 65.set=ANDROID_RESOURCE
 316.set=ANDROID_RESOURCE
@@ -917,7 +917,7 @@
 376.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png
 206.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/x86_64/libgifimage.so
 89.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-239.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_btn_default_mtrl_shape.xml
+239.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
 148.set=ANDROID_RESOURCE
 240.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 103.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
@@ -935,7 +935,7 @@
 125.set=ANDROID_RESOURCE
 79.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 399.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/common_google_signin_btn_text_dark_focused.xml
-229.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+229.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout-v17/notification_template_big_media_narrow.xml
 230.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 401.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 378.set=ANDROID_RESOURCE
@@ -987,10 +987,10 @@
 327.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_go_search_api_mtrl_alpha.png
 232.set=ANDROID_RESOURCE
 189.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
-66.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png
+66.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
 110.set=ANDROID_RESOURCE
 190.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-99.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png
+99.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png
 224.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 363.set=ANDROID_RESOURCE
 250.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
@@ -998,7 +998,7 @@
 286.set=ANDROID_RESOURCE
 164.set=ANDROID_RESOURCE
 14.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/x86/libimagepipeline.so
-317.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+317.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_activity_chooser_view_list_item.xml
 179.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout-v17/abc_dialog_title_material.xml
 180.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 351.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
@@ -1011,7 +1011,7 @@
 273.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png
 186.set=ANDROID_RESOURCE
 394.set=ANDROID_RESOURCE
-37.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/mipmap-hdpi-v4/ic_launcher.png
+37.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
 38.set=ANDROID_RESOURCE
 170.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 341.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
@@ -1035,7 +1035,7 @@
 397.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 244.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_alert_dialog_material.xml
 271.set=ANDROID_RESOURCE
-107.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_template_part_chronometer.xml
+107.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-hdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
 3.set=ANDROID_RESOURCE
 194.set=ANDROID_RESOURCE
 17.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png
@@ -1044,7 +1044,7 @@
 51.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 371.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/x86/libglog.so
 354.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-201.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/color/abc_primary_text_material_light.xml
+201.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/googleg_standard_color_18.png
 84.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 387.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 234.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png
@@ -1138,7 +1138,7 @@ count=409
 298.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 244.set=ANDROID_RESOURCE
 128.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-22.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+22.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
 145.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png
 122.set=ANDROID_RESOURCE
 55.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png
@@ -1154,8 +1154,8 @@ count=409
 102.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_slide_in_top.xml
 288.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 135.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png
-306.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_text_cursor_material.xml
-45.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/anim/catalyst_push_up_in.xml
+306.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/color/common_google_signin_btn_tint.xml
+45.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png
 168.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
 352.set=ANDROID_RESOURCE
 78.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_template_lines.xml
@@ -1210,7 +1210,7 @@ count=409
 408.set=ANDROID_RESOURCE
 391.set=ANDROID_RESOURCE
 35.set=ANDROID_RESOURCE
-119.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png
+119.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png
 29.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/x86/libgifimage.so
 209.set=NATIVE_RESOURCE
 30.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
@@ -1223,7 +1223,7 @@ count=409
 399.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
 12.set=ANDROID_RESOURCE
 229.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_
-246.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+246.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
 291.set=ANDROID_RESOURCE
 109.file=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_tab_indicator_material.xml
 110.base=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/res/resources-debug.ap_

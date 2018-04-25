@@ -1,4 +1,4 @@
-#Tue Apr 24 15:48:26 WIB 2018
+#Wed Apr 25 17:42:42 WIB 2018
 base.0=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

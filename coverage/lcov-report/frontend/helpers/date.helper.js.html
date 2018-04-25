@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">15.38% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>2/13</span>
+        <span class='fraction'>13/13</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>3/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/1</span>
+        <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">15.38% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>2/13</span>
+        <span class='fraction'>13/13</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -63,39 +63,39 @@
 <a name='L15'></a><a href='#L15'>15</a>
 <a name='L16'></a><a href='#L16'>16</a>
 <a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L18'></a><a href='#L18'>18</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
 &nbsp;
-export const dateDisplayFormater = <span class="fstat-no" title="function not covered" >(t</span>ime) =&gt; {
-<span class="cstat-no" title="statement not covered" >  time = new Date(time);</span>
-  var hours = <span class="cstat-no" title="statement not covered" >time.getHours();</span>
-  var minutes = <span class="cstat-no" title="statement not covered" >time.getMinutes();</span>
-  var ampm = <span class="cstat-no" title="statement not covered" >hours &gt;= 12 ? 'PM' : 'AM';</span>
-<span class="cstat-no" title="statement not covered" >  hours = hours % 12;</span>
-<span class="cstat-no" title="statement not covered" >  hours = hours ? hours : 12;</span>
-<span class="cstat-no" title="statement not covered" >  minutes = minutes &lt; 10 ? '0'+minutes : minutes;</span>
-  let curr_date = <span class="cstat-no" title="statement not covered" >time.getDate();</span>
-  let curr_month = <span class="cstat-no" title="statement not covered" >monthNames[time.getMonth()];</span> //Months are zero based
-  let curr_year = <span class="cstat-no" title="statement not covered" >time.getFullYear();</span>
-<span class="cstat-no" title="statement not covered" >  return `${hours}:${minutes} ${ampm}, ${curr_date} ${curr_month} ${curr_year}`</span>
+export const dateDisplayFormater = (time) =&gt; {
+  time = new Date(time);
+  var hours = time.getHours();
+  var minutes = time.getMinutes();
+  var ampm = hours &gt;= 12 ? 'PM' : <span class="branch-1 cbranch-no" title="branch not covered" >'AM';</span>
+  hours = hours % 12;
+  hours = hours ? hours : <span class="branch-1 cbranch-no" title="branch not covered" >12;</span>
+  minutes = minutes &lt; 10 ? <span class="branch-0 cbranch-no" title="branch not covered" >'0'+minutes </span>: minutes;
+  let curr_date = time.getDate();
+  let curr_month = monthNames[time.getMonth()]; //Months are zero based
+  let curr_year = time.getFullYear();
+  return `${hours}:${minutes} ${ampm}, ${curr_date} ${curr_month} ${curr_year}`
 }
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -103,7 +103,7 @@ export const dateDisplayFormater = <span class="fstat-no" title="function not co
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 25 2018 17:39:42 GMT+0700 (WIB)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 25 2018 17:41:51 GMT+0700 (WIB)
 </div>
 </div>
 <script src="../../prettify.js"></script>

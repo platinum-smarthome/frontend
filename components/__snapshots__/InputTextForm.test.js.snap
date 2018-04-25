@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<TextInput
+  allowFontScaling={true}
+  autoCapitalize="none"
+  keyboardType="default"
+  maxLength={undefined}
+  onChangeText={[Function]}
+  placeholder={undefined}
+  placeholderTextColor="white"
+  secureTextEntry={false}
+  style={
+    Object {
+      "borderBottomWidth": 0,
+      "color": "#fff",
+      "fontSize": 18,
+      "fontWeight": "200",
+      "height": 40,
+      "marginVertical": 8,
+      "width": 300,
+    }
+  }
+  underlineColorAndroid="silver"
+  value={undefined}
+/>
+`;

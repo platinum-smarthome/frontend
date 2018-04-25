@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<View
+  style={
+    Object {
+      "borderBottomColor": "#d3d3d3",
+      "borderBottomWidth": 1,
+      "flexDirection": "row",
+    }
+  }
+>
+  <View>
+    <Image
+      source={undefined}
+      style={
+        Object {
+          "height": 64,
+          "marginHorizontal": 15,
+          "marginVertical": 6,
+          "width": 64,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "column",
+        "paddingVertical": 4,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333333",
+          "fontSize": 22,
+          "fontWeight": "300",
+        }
+      }
+    >
+       
+       
+    </Text>
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "red",
+            "fontSize": 16,
+            "fontWeight": "300",
+          }
+        }
+      >
+         
+        Off
+         
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#d3d3d3",
+            "fontSize": 14,
+            "fontWeight": "300",
+          }
+        }
+      >
+         Unlock Main Door to enable switch 
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 20,
+        "paddingVertical": 20,
+        "position": "absolute",
+        "right": 0,
+      }
+    }
+  >
+    <RCTSwitch
+      disabled={true}
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onValueChange={[Function]}
+      style={
+        Array [
+          Object {
+            "height": 31,
+            "width": 51,
+          },
+          undefined,
+        ]
+      }
+      value={false}
+    />
+  </View>
+</View>
+`;

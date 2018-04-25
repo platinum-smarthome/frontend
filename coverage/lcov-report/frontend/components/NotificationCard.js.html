@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">20% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/5</span>
+        <span class='fraction'>5/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>1/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">20% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/5</span>
+        <span class='fraction'>5/5</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -122,22 +122,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -145,6 +138,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -187,23 +187,23 @@ import { dateDisplayFormater } from '../helpers/date.helper'
 import NotificationCardFooter from './NotificationCard.footer'
 &nbsp;
 export default class NotificationCard extends Component {
-<span class="fstat-no" title="function not covered" >  re</span>nder() {
-    let jpgRegex = <span class="cstat-no" title="statement not covered" >/(\.jpg)$/</span>
-    const { title, description, createdAt, id } = <span class="cstat-no" title="statement not covered" >this.props.data</span>
-<span class="cstat-no" title="statement not covered" >    return (</span>
+  render() {
+    let jpgRegex = /(\.jpg)$/
+    const { title, description, createdAt, id } = this.props.data
+    return (
       &lt;View style={styles.infoCard}&gt;
         &lt;View style={styles.titleBorder}&gt;
           &lt;Text style={styles.notifTitle}&gt;{ title }&lt;/Text&gt;
         &lt;/View&gt;
         &lt;Text style={styles.time}&gt;{ dateDisplayFormater(createdAt) }&lt;/Text&gt;
         { jpgRegex.test(this.props.data.imageUrl) &amp;&amp;
-          &lt;TouchableOpacity style={{alignItems: 'center'}} onPress={ this.props.press }&gt;
+<span class="branch-1 cbranch-no" title="branch not covered" >          &lt;TouchableOpacity style={{alignItems: 'center'}} onPress={ this.props.press }&gt;</span>
             &lt;Image style={{width: 120, height: 120}} source={{ uri: this.props.data.imageUrl }} /&gt;
           &lt;/TouchableOpacity&gt;
         }
         &lt;Text style={styles.descText}&gt;{ description }&lt;/Text&gt;
         &lt;NotificationCardFooter
-          onPress={ <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >notificationsDelete(id) </span>}
+          onPress={ () =&gt; notificationsDelete(id) }
         /&gt;
       &lt;/View&gt;
     )
@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 25 2018 17:39:42 GMT+0700 (WIB)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 25 2018 17:41:51 GMT+0700 (WIB)
 </div>
 </div>
 <script src="../../prettify.js"></script>
