@@ -5,11 +5,9 @@ import { connect } from 'react-redux'
 
 import CardTitle from '../components/CardTitle'
 import AlarmType from '../components/AlarmType'
-import MonitorType from '../components/MonitorType'
 import NewMonitor from '../components/NewMonitor'
 import TopCardTitle from '../components/TopCardTitle'
 import SwitchType from '../components/SwitchType'
-import Cctv from '../components/Cctv'
 import TouchAbleText from '../components/TouchAbleText'
 import Bell from '../components/Bell'
 

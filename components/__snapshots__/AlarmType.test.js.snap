@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  collapsable={undefined}
+  hasTVPreferredFocus={undefined}
+  hitSlop={undefined}
+  isTVSelectable={true}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+  testID={undefined}
+  tvParallaxProperties={undefined}
+>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#d3d3d3",
+        "borderBottomWidth": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View>
+      <Image
+        source={
+          Object {
+            "testUri": "../../../components/assets/access.png",
+          }
+        }
+        style={
+          Object {
+            "height": 64,
+            "marginHorizontal": 15,
+            "marginVertical": 6,
+            "width": 64,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingVertical": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#333333",
+            "fontSize": 24,
+            "fontWeight": "300",
+          }
+        }
+      >
+         
+         
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "red",
+            "fontSize": 16,
+            "fontWeight": "300",
+          }
+        }
+      >
+         Status: Unlocked 
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 25,
+          "paddingVertical": 20,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../components/assets/desbloqueado.png",
+          }
+        }
+        style={
+          Object {
+            "height": 30,
+            "width": 30,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

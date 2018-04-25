@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import { View, Image, Text, StyleSheet, Switch } from 'react-native'
-import CO2Status from './status/CO2Status'
-import GarageStatus from './status/GarageStatus'
-import DoorStatus from './status/DoorStatus'
 import { updateSensorStatus } from '../store/sensors/sensor.actions'
 import { connect } from 'react-redux'
 
