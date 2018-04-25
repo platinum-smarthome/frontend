@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
   box: {
     flexGrow: 1,
     paddingTop: 6,
-    textAlign: 'center',
   },
   logo: {
     flex: 1,

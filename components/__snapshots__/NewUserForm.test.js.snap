@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<View>
+  <TextInput
+    allowFontScaling={true}
+    autoCapitalize="none"
+    keyboardType="default"
+    maxLength={undefined}
+    onChangeText={[Function]}
+    placeholder="username"
+    placeholderTextColor="white"
+    secureTextEntry={false}
+    style={
+      Object {
+        "borderBottomWidth": 0,
+        "color": "#fff",
+        "fontSize": 18,
+        "fontWeight": "200",
+        "height": 40,
+        "marginVertical": 8,
+        "width": 300,
+      }
+    }
+    underlineColorAndroid="silver"
+    value=""
+  />
+  <TextInput
+    allowFontScaling={true}
+    autoCapitalize="none"
+    keyboardType="email-address"
+    maxLength={undefined}
+    onChangeText={[Function]}
+    placeholder="email"
+    placeholderTextColor="white"
+    secureTextEntry={false}
+    style={
+      Object {
+        "borderBottomWidth": 0,
+        "color": "#fff",
+        "fontSize": 18,
+        "fontWeight": "200",
+        "height": 40,
+        "marginVertical": 8,
+        "width": 300,
+      }
+    }
+    underlineColorAndroid="silver"
+    value=""
+  />
+  <TextInput
+    allowFontScaling={true}
+    autoCapitalize="none"
+    keyboardType="numeric"
+    maxLength={6}
+    onChangeText={[Function]}
+    placeholder="pin"
+    placeholderTextColor="white"
+    secureTextEntry={true}
+    style={
+      Object {
+        "borderBottomWidth": 0,
+        "color": "#fff",
+        "fontSize": 18,
+        "fontWeight": "200",
+        "height": 40,
+        "marginVertical": 8,
+        "width": 300,
+      }
+    }
+    underlineColorAndroid="silver"
+    value=""
+  />
+</View>
+`;

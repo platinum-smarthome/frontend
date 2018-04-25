@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "borderTopColor": "#d3d3d3",
+      "borderTopWidth": 1,
+      "justifyContent": "center",
+      "marginTop": 8,
+      "paddingBottom": 4,
+      "paddingTop": 10,
+    }
+  }
+>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "red",
+        "borderBottomColor": "#a80000",
+        "borderBottomWidth": 3,
+        "borderRadius": 3,
+        "borderRightColor": "#a80000",
+        "borderRightWidth": 3,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#fff",
+          "padding": 8,
+        }
+      }
+    >
+       DELETE LOGS 
+    </Text>
+  </View>
+</View>
+`;

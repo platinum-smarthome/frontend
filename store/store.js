@@ -5,7 +5,8 @@ import logger from 'redux-logger'
 
 const store = createStore(
   reducers,
-  applyMiddleware(thunk, logger)
+  applyMiddleware(thunk)
+  // applyMiddleware(thunk, logger)
 )
 
 export default store

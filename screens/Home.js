@@ -10,7 +10,6 @@ import { devicePinUpdate, userLogout } from '../store/data/data.actions'
 import PinText from '../components/PinText'
 import Keypad from '../components/Keypad'
 import Bullet from '../components/Bullet'
-import ForgotText from '../components/ForgotText'
 import TouchAbleText from '../components/TouchAbleText'
 import TouchAbleImage from '../components/TouchAbleImage'
 

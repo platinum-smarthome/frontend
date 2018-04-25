@@ -15,14 +15,3 @@ export const dateDisplayFormater = (time) => {
   let curr_year = time.getFullYear();
   return `${hours}:${minutes} ${ampm}, ${curr_date} ${curr_month} ${curr_year}`
 }
-
-const timeDifferenceFlag = (date1, date2) => {
-  //Date 1 = User Date
-  //Date 2 = Notification Date
-  let diff = Number(date1) -Number(date2)
-  if(diff > 0) {
-    return false
-  }
-  return true
-}
-
