@@ -14,13 +14,10 @@ class SwitchType extends Component {
           <Text style={styles.switchText}> { this.props.text } </Text>
           { this.props.sensors.loading ?
             <Text> </Text> :
+            /* istanbul ignore next */
             this.props.houseLock ?
             (<View>
-              {
-                this.props.status ?
-                <Text style={styles.locked}> On</Text> :
-                <Text style={styles.unlocked}> Off</Text>
-              }
+              <Text style={ this.props.status ? styles.locked : styles.unlocked}> {this.props.status ? 'On' : 'Off'} </Text>
               <Text style={styles.disabled}> Unlock Main Door to enable switch </Text>
             </View>) :
             this.props.status ? 
@@ -30,6 +27,7 @@ class SwitchType extends Component {
         </View>
         <View style={styles.switchPos}>
         { this.props.sensors.loading ?
+          /* istanbul ignore next */  
           ( <Image style={{width: 60, height: 60, marginTop: -16}} source={require('../components/assets/spinner.gif')} /> ) :
           ( <Switch onValueChange={(e) => this.props.updateSensorStatus({type: this.props.type, value: e })} value={ (this.props.status) ? true : false } disabled={this.props.houseLock}/> )
         }

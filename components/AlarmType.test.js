@@ -41,7 +41,7 @@ describe('<Image/> renders the correct image', () => {
     expect(wraptrue.find(<Image source={require('../components/assets/puerta.png')}/>)).toBeDefined()
     expect(wraptrue.find(<Image source={require('../components/assets/greyarrow.png')}/>)).toBeDefined()
   })
-  it('should render the proper image if status is true', () => {
+  it('should render the proper image if status is false', () => {
     let wrapfalse = shallow(<AlarmType status={false}/>)
     expect(wrapfalse.find(<Image source={ require('../components/assets/access.png')} />)).toBeDefined()
     expect(wrapfalse.find(<Image source={ require('../components/assets/desbloqueado.png')} />)).toBeDefined()

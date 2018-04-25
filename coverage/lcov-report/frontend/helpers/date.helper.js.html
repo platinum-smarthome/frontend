@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">16.67% </span>
+        <span class="strong">77.78% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>3/18</span>
+        <span class='fraction'>14/18</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">37.5% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>3/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>1/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">16.67% </span>
+        <span class="strong">77.78% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>3/18</span>
+        <span class='fraction'>14/18</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line medium'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -74,25 +74,25 @@
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -106,18 +106,18 @@
   "July", "August", "September", "October", "November", "December"
 ];
 &nbsp;
-export const dateDisplayFormater = <span class="fstat-no" title="function not covered" >(t</span>ime) =&gt; {
-<span class="cstat-no" title="statement not covered" >  time = new Date(time);</span>
-  var hours = <span class="cstat-no" title="statement not covered" >time.getHours();</span>
-  var minutes = <span class="cstat-no" title="statement not covered" >time.getMinutes();</span>
-  var ampm = <span class="cstat-no" title="statement not covered" >hours &gt;= 12 ? 'PM' : 'AM';</span>
-<span class="cstat-no" title="statement not covered" >  hours = hours % 12;</span>
-<span class="cstat-no" title="statement not covered" >  hours = hours ? hours : 12;</span>
-<span class="cstat-no" title="statement not covered" >  minutes = minutes &lt; 10 ? '0'+minutes : minutes;</span>
-  let curr_date = <span class="cstat-no" title="statement not covered" >time.getDate();</span>
-  let curr_month = <span class="cstat-no" title="statement not covered" >monthNames[time.getMonth()];</span> //Months are zero based
-  let curr_year = <span class="cstat-no" title="statement not covered" >time.getFullYear();</span>
-<span class="cstat-no" title="statement not covered" >  return `${hours}:${minutes} ${ampm}, ${curr_date} ${curr_month} ${curr_year}`</span>
+export const dateDisplayFormater = (time) =&gt; {
+  time = new Date(time);
+  var hours = time.getHours();
+  var minutes = time.getMinutes();
+  var ampm = hours &gt;= 12 ? 'PM' : <span class="branch-1 cbranch-no" title="branch not covered" >'AM';</span>
+  hours = hours % 12;
+  hours = hours ? hours : <span class="branch-1 cbranch-no" title="branch not covered" >12;</span>
+  minutes = minutes &lt; 10 ? <span class="branch-0 cbranch-no" title="branch not covered" >'0'+minutes </span>: minutes;
+  let curr_date = time.getDate();
+  let curr_month = monthNames[time.getMonth()]; //Months are zero based
+  let curr_year = time.getFullYear();
+  return `${hours}:${minutes} ${ampm}, ${curr_date} ${curr_month} ${curr_year}`
 }
 &nbsp;
 const timeDifferenceFlag = <span class="fstat-no" title="function not covered" >(d</span>ate1, date2) =&gt; {
@@ -136,7 +136,7 @@ const timeDifferenceFlag = <span class="fstat-no" title="function not covered" >
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 25 2018 11:03:25 GMT+0700 (WIB)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 25 2018 17:09:36 GMT+0700 (WIB)
 </div>
 </div>
 <script src="../../prettify.js"></script>

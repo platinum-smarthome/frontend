@@ -9,7 +9,6 @@ import NewMonitor from '../components/NewMonitor'
 import TopCardTitle from '../components/TopCardTitle'
 import SwitchType from '../components/SwitchType'
 import TouchAbleText from '../components/TouchAbleText'
-import Bell from '../components/Bell'
 
 import { getSensorStatus } from '../store/sensors/sensor.actions'
 import { loadHomePin, homeLock } from '../store/housePin/housePin.actions'

@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">7.69% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/13</span>
+        <span class='fraction'>13/13</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,21 +30,21 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/12</span>
+        <span class='fraction'>12/12</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">7.69% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/13</span>
+        <span class='fraction'>13/13</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -95,26 +95,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">31x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -137,21 +137,21 @@ import { View, Text, StyleSheet } from 'react-native'
 import { devicePinUpdate } from '../store/data/data.actions'
 &nbsp;
 class Keypad extends Component {
-<span class="fstat-no" title="function not covered" >  re</span>nder() {
-<span class="cstat-no" title="statement not covered" >    return (</span>
+  render() {
+    return (
       &lt;View style={ styles.keybox }&gt;
-          &lt;Text style={ styles.keypress } onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.press('1')}</span>&gt;1&lt;/Text&gt;
-          &lt;Text style={ styles.keypress } onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.press('2')}</span>&gt;2&lt;/Text&gt;
-          &lt;Text style={ styles.keypress } onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.press('3')}</span>&gt;3&lt;/Text&gt;
-          &lt;Text style={ styles.keypress } onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.press('4')}</span>&gt;4&lt;/Text&gt;
-          &lt;Text style={ styles.keypress } onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.press('5')}</span>&gt;5&lt;/Text&gt;
-          &lt;Text style={ styles.keypress } onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.press('6')}</span>&gt;6&lt;/Text&gt;
-          &lt;Text style={ styles.keypress } onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.press('7')}</span>&gt;7&lt;/Text&gt;
-          &lt;Text style={ styles.keypress } onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.press('8')}</span>&gt;8&lt;/Text&gt;
-          &lt;Text style={ styles.keypress } onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.press('9')}</span>&gt;9&lt;/Text&gt;
+          &lt;Text style={ styles.keypress } onPress={() =&gt; this.props.press('1')}&gt;1&lt;/Text&gt;
+          &lt;Text style={ styles.keypress } onPress={() =&gt; this.props.press('2')}&gt;2&lt;/Text&gt;
+          &lt;Text style={ styles.keypress } onPress={() =&gt; this.props.press('3')}&gt;3&lt;/Text&gt;
+          &lt;Text style={ styles.keypress } onPress={() =&gt; this.props.press('4')}&gt;4&lt;/Text&gt;
+          &lt;Text style={ styles.keypress } onPress={() =&gt; this.props.press('5')}&gt;5&lt;/Text&gt;
+          &lt;Text style={ styles.keypress } onPress={() =&gt; this.props.press('6')}&gt;6&lt;/Text&gt;
+          &lt;Text style={ styles.keypress } onPress={() =&gt; this.props.press('7')}&gt;7&lt;/Text&gt;
+          &lt;Text style={ styles.keypress } onPress={() =&gt; this.props.press('8')}&gt;8&lt;/Text&gt;
+          &lt;Text style={ styles.keypress } onPress={() =&gt; this.props.press('9')}&gt;9&lt;/Text&gt;
           &lt;Text style={ styles.keypress } &gt;&amp;nbsp;&lt;/Text&gt;
-          &lt;Text style={ styles.keypress } onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.press('0')}</span>&gt;0&lt;/Text&gt;
-          &lt;Text style={ styles.keypress } onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.remove() </span>}&gt;&amp;#8592;&lt;/Text&gt;
+          &lt;Text style={ styles.keypress } onPress={() =&gt; this.props.press('0')}&gt;0&lt;/Text&gt;
+          &lt;Text style={ styles.keypress } onPress={() =&gt; this.props.remove() }&gt;&amp;#8592;&lt;/Text&gt;
       &lt;/View&gt;
     )
   }
@@ -181,7 +181,7 @@ export default Keypad</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 25 2018 11:03:25 GMT+0700 (WIB)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 25 2018 17:09:36 GMT+0700 (WIB)
 </div>
 </div>
 <script src="../../prettify.js"></script>

@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import { View, Image, StyleSheet, Text, TouchableOpacity, TouchableHighlight } from 'react-native'
 import { connect } from 'react-redux'
 
-class Bell extends Component {
+export class Bell extends Component {
   newNotificationCounter = () => {
     let logs = this.props.logs
     let lastSeen = this.props.userlastSeen
     let newNotifCount = 0
     for(let i = 0; i<logs.length; i++) {
+      /* istanbul ignore next */
       if(logs[i].createdAt > lastSeen) {
         newNotifCount += 1
       } else {
@@ -40,14 +41,7 @@ function mapStateToProps (state) {
   }
 }
 
-function mapDispatchToProps (dispatch) {
-  return {
-    // getData: () => dispatch(getData()),
-    // fetchHomeData: () => dispatch(fetchHomeData())
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Bell)
+export default connect(mapStateToProps, null)(Bell)
 
 const styles = StyleSheet.create({
   img: {
