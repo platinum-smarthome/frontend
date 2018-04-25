@@ -7,21 +7,7 @@ import {
   USER_LOGIN_SUCCESS,
   USER_LOGOUT
 } from './data.actionType'
-import firebase from 'firebase'
 import Base64 from '../../helpers/hash.helper'
-import { database } from '../../firebase/firebase'
-
-export const getData = () => {
-  return dispatch => {
-    dispatch(getDataLoading())
-    database().ref(`/smarthome`).once('value', (snap) => {
-      let data = snap.val()
-      dispatch(getDataSuccess(data))
-    }, (err) => {
-      dispatch(getDataError())
-    })
-  }
-}
 
 export const devicePinUpdate = (payload) => {
   return dispatch => {
@@ -34,19 +20,6 @@ export const devicePinUpdate = (payload) => {
     }
   }
 }
-
-const getDataSuccess = (payload) => ({
-  type: GET_DATA_SUCCESS,
-  data: payload
-})
-
-const getDataLoading = () => ({
-  type: GET_DATA_LOADING,
-})
-
-const getDataError = () => ({
-  type: GET_DATA_ERROR
-})
 
 const devicePinUpdateSuccess = (payload) => ({
   type: DEVICE_PIN_INPUT_UPDATE,
@@ -61,6 +34,5 @@ const userLoginSuccess = (payload) => ({
 })
 
 export const userLogout = () => {
-  console.log('LOGOUT')
   return { type: USER_LOGOUT }
 }

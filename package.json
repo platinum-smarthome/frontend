@@ -19,7 +19,7 @@
   "jest": {
     "preset": "react-native",
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|react-navigation|react-native-push-notification|react-native-animatable|react-native-safe-area-view)/)"
+      "node_modules/(?!(firebase|react-native|react-navigation|react-native-push-notification|react-native-animatable|react-native-safe-area-view)/)"
     ]
   },
   "dependencies": {
