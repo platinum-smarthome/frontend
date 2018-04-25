@@ -6,7 +6,7 @@ import { userLogout } from '../store/data/data.actions'
 
 import TouchAbleText from '../components/TouchAbleText'
 
-class Home extends Component {
+class Logout extends Component {
   render () {
     return (
       <View style={styles.container}>
@@ -45,4 +45,4 @@ function mapDispatchToProps (dispatch) {
   }
 }
 
-export default connect(null, mapDispatchToProps)(Home)
+export default connect(null, mapDispatchToProps)(Logout)
