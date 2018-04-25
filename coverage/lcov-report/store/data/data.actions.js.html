@@ -20,6 +20,26 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
+<<<<<<< HEAD
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>16/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>13/13</span>
+=======
         <span class="strong">30% </span>
         <span class="quiet">Statements</span>
         <span class='fraction'>9/30</span>
@@ -38,13 +58,18 @@
         <span class="strong">37.5% </span>
         <span class="quiet">Lines</span>
         <span class='fraction'>9/24</span>
+>>>>>>> fa520e6eb2f67fd0ef0e464ef1bbf72a80b9d38d
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
+<<<<<<< HEAD
+  <div class='status-line high'></div>
+=======
   <div class='status-line low'></div>
+>>>>>>> fa520e6eb2f67fd0ef0e464ef1bbf72a80b9d38d
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -80,6 +105,9 @@
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
+<<<<<<< HEAD
+<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+=======
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
@@ -112,6 +140,7 @@
 <a name='L64'></a><a href='#L64'>64</a>
 <a name='L65'></a><a href='#L65'>65</a>
 <a name='L66'></a><a href='#L66'>66</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+>>>>>>> fa520e6eb2f67fd0ef0e464ef1bbf72a80b9d38d
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -119,10 +148,38 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<<<<<<< HEAD
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+=======
+>>>>>>> fa520e6eb2f67fd0ef0e464ef1bbf72a80b9d38d
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<<<<<<< HEAD
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
+=======
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -180,11 +237,24 @@
   GET_DATA_SUCCESS,
   GET_DATA_LOADING,
   GET_DATA_ERROR,
+>>>>>>> fa520e6eb2f67fd0ef0e464ef1bbf72a80b9d38d
   DEVICE_PIN_INPUT_UPDATE,
   DEVICE_PIN_INPUT_REMOVE,
   USER_LOGIN_SUCCESS,
   USER_LOGOUT
 } from './data.actionType'
+<<<<<<< HEAD
+import Base64 from '../../helpers/hash.helper'
+&nbsp;
+export const devicePinUpdate = (payload) =&gt; {
+  return dispatch =&gt; {
+    dispatch(devicePinUpdateSuccess(payload.input))
+    if (payload.input.join('') === Base64.decode(payload.userPin) &amp;&amp; payload.input.join('').length === 6) {
+      dispatch(devicePinRemove())
+      dispatch(userLoginSuccess())
+    } else if ( payload.input[5] ) {
+      dispatch(devicePinRemove())
+=======
 import firebase from 'firebase'
 import Base64 from '../../helpers/hash.helper'
 import { database } from '../../firebase/firebase'
@@ -209,10 +279,27 @@ export const devicePinUpdate = <span class="fstat-no" title="function not covere
 <span class="cstat-no" title="statement not covered" >      dispatch(userLoginSuccess())</span>
     } else <span class="cstat-no" title="statement not covered" >if ( payload.input[5]) {</span>
 <span class="cstat-no" title="statement not covered" >      dispatch(devicePinRemove())</span>
+>>>>>>> fa520e6eb2f67fd0ef0e464ef1bbf72a80b9d38d
     }
   }
 }
 &nbsp;
+<<<<<<< HEAD
+const devicePinUpdateSuccess = (payload) =&gt; ({
+  type: DEVICE_PIN_INPUT_UPDATE,
+  payload: payload
+})
+const devicePinRemove = (payload) =&gt; ({
+  type: DEVICE_PIN_INPUT_REMOVE,
+})
+&nbsp;
+const userLoginSuccess = (payload) =&gt; ({
+  type: USER_LOGIN_SUCCESS,
+})
+&nbsp;
+export const userLogout = () =&gt; {
+  return { type: USER_LOGOUT }
+=======
 const getDataSuccess = <span class="fstat-no" title="function not covered" >(p</span>ayload) =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
   type: GET_DATA_SUCCESS,
   data: payload
@@ -241,13 +328,18 @@ const userLoginSuccess = <span class="fstat-no" title="function not covered" >(p
 export const userLogout = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
 <span class="cstat-no" title="statement not covered" >  console.log('LOGOUT')</span>
 <span class="cstat-no" title="statement not covered" >  return { type: USER_LOGOUT }</span>
+>>>>>>> fa520e6eb2f67fd0ef0e464ef1bbf72a80b9d38d
 }</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
+<<<<<<< HEAD
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 25 2018 14:03:29 GMT+0700 (WIB)
+=======
   generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 25 2018 13:02:35 GMT+0700 (WIB)
+>>>>>>> fa520e6eb2f67fd0ef0e464ef1bbf72a80b9d38d
 </div>
 </div>
 <script src="../../prettify.js"></script>

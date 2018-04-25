@@ -23,7 +23,6 @@ export const createNewHome = (payload) => {
     key  = database().ref(`/smarthome`).push().key;
     payload.user.LastSeen = database.ServerValue.TIMESTAMP
     payload.user.pin = Base64.encode(payload.user.pin)
-    console.log('================', payload.user.pin)
     let newHome = {
       homeId: key,
       homeName: payload.homeName,

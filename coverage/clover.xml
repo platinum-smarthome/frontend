@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1524650976858" clover="3.2.0">
-  <project timestamp="1524650976858" name="All files">
-    <metrics statements="618" coveredstatements="281" conditionals="199" coveredconditionals="52" methods="249" coveredmethods="52" elements="1066" coveredelements="385" complexity="0" loc="618" ncloc="618" packages="18" files="85" classes="85">
+<coverage generated="1524652912146" clover="3.2.0">
+  <project timestamp="1524652912147" name="All files">
+    <metrics statements="596" coveredstatements="355" conditionals="195" coveredconditionals="86" methods="241" coveredmethods="106" elements="1032" coveredelements="547" complexity="0" loc="596" ncloc="596" packages="18" files="86" classes="86">
       <package name="frontend">
         <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
-        <file name="App.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/App.js">
+        <file name="App.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/App.js">
           <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
           <line num="20" count="1" type="stmt"/>
           <line num="29" count="1" type="stmt"/>
@@ -21,12 +21,12 @@
       </package>
       <package name="frontend.components">
         <metrics statements="68" coveredstatements="64" conditionals="32" coveredconditionals="28" methods="41" coveredmethods="38"/>
-        <file name="AlarmType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/AlarmType.js">
+        <file name="AlarmType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/AlarmType.js">
           <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
           <line num="7" count="10" type="stmt"/>
           <line num="24" count="2" type="stmt"/>
         </file>
-        <file name="Bell.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/Bell.js">
+        <file name="Bell.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/Bell.js">
           <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
           <line num="7" count="6" type="stmt"/>
           <line num="8" count="6" type="stmt"/>
@@ -38,35 +38,35 @@
           <line num="38" count="5" type="stmt"/>
           <line num="46" count="2" type="stmt"/>
         </file>
-        <file name="Bullet.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/Bullet.js">
+        <file name="Bullet.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/Bullet.js">
           <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
           <line num="7" count="3" type="stmt"/>
           <line num="9" count="18" type="cond" truecount="2" falsecount="0"/>
           <line num="18" count="2" type="stmt"/>
         </file>
-        <file name="CardTitle.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/CardTitle.js">
+        <file name="CardTitle.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/CardTitle.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="6" count="6" type="stmt"/>
           <line num="19" count="2" type="stmt"/>
         </file>
-        <file name="Drawer.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/Drawer.js">
+        <file name="Drawer.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/Drawer.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="6" count="4" type="stmt"/>
           <line num="14" count="2" type="stmt"/>
         </file>
-        <file name="InputErrorText.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/InputErrorText.js">
+        <file name="InputErrorText.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/InputErrorText.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="6" count="3" type="stmt"/>
           <line num="14" count="2" type="stmt"/>
         </file>
-        <file name="InputTextForm.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/InputTextForm.js">
+        <file name="InputTextForm.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/InputTextForm.js">
           <metrics statements="4" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="1"/>
           <line num="6" count="0" type="stmt"/>
           <line num="10" count="0" type="stmt"/>
           <line num="14" count="7" type="stmt"/>
           <line num="33" count="3" type="stmt"/>
         </file>
-        <file name="Keypad.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/Keypad.js">
+        <file name="Keypad.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/Keypad.js">
           <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="12"/>
           <line num="7" count="31" type="stmt"/>
           <line num="9" count="1" type="stmt"/>
@@ -82,34 +82,34 @@
           <line num="20" count="1" type="stmt"/>
           <line num="26" count="2" type="stmt"/>
         </file>
-        <file name="LogoHead.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/LogoHead.js">
+        <file name="LogoHead.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/LogoHead.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="6" count="6" type="stmt"/>
           <line num="14" count="2" type="stmt"/>
         </file>
-        <file name="Member.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/Member.js">
+        <file name="Member.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/Member.js">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="7" count="5" type="stmt"/>
           <line num="8" count="5" type="stmt"/>
           <line num="25" count="2" type="stmt"/>
         </file>
-        <file name="NewMonitor.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/NewMonitor.js">
+        <file name="NewMonitor.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/NewMonitor.js">
           <metrics statements="2" coveredstatements="2" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
           <line num="7" count="16" type="stmt"/>
           <line num="30" count="2" type="stmt"/>
         </file>
-        <file name="NewUserForm.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/NewUserForm.js">
+        <file name="NewUserForm.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/NewUserForm.js">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
           <line num="12" count="1" type="stmt"/>
           <line num="39" count="5" type="stmt"/>
           <line num="46" count="5" type="stmt"/>
         </file>
-        <file name="NotificationCard.footer.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/NotificationCard.footer.js">
+        <file name="NotificationCard.footer.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/NotificationCard.footer.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="6" count="6" type="stmt"/>
           <line num="19" count="3" type="stmt"/>
         </file>
-        <file name="NotificationCard.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/NotificationCard.js">
+        <file name="NotificationCard.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/NotificationCard.js">
           <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
           <line num="11" count="5" type="stmt"/>
           <line num="12" count="5" type="stmt"/>
@@ -117,12 +117,12 @@
           <line num="26" count="1" type="stmt"/>
           <line num="33" count="2" type="stmt"/>
         </file>
-        <file name="PinText.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/PinText.js">
+        <file name="PinText.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/PinText.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="6" count="5" type="stmt"/>
           <line num="14" count="2" type="stmt"/>
         </file>
-        <file name="SwitchType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/SwitchType.js">
+        <file name="SwitchType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/SwitchType.js">
           <metrics statements="6" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="3"/>
           <line num="8" count="1" type="stmt"/>
           <line num="32" count="0" type="cond" truecount="1" falsecount="1"/>
@@ -131,92 +131,96 @@
           <line num="92" count="5" type="stmt"/>
           <line num="93" count="0" type="stmt"/>
         </file>
-        <file name="TopCardTitle.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/TopCardTitle.js">
+        <file name="TopCardTitle.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/TopCardTitle.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="6" count="6" type="stmt"/>
           <line num="19" count="2" type="stmt"/>
         </file>
-        <file name="TouchAbleImage.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/TouchAbleImage.js">
+        <file name="TouchAbleImage.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/TouchAbleImage.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="6" count="6" type="stmt"/>
           <line num="18" count="2" type="stmt"/>
         </file>
-        <file name="TouchAbleText.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/TouchAbleText.js">
+        <file name="TouchAbleText.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/TouchAbleText.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="6" count="4" type="stmt"/>
           <line num="15" count="2" type="stmt"/>
         </file>
       </package>
       <package name="frontend.components.assets">
-        <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <file name="access.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/access.png">
+        <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="access.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/access.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="alarma.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/alarma.png">
+        <file name="alarma.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/alarma.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="controlar.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/controlar.png">
+        <file name="controlar.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/controlar.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="desbloqueado.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/desbloqueado.png">
+        <file name="desbloqueado.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/desbloqueado.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="dooropen.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/dooropen.png">
+        <file name="dooropen.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/dooropen.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="fortress_logo.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/fortress_logo.png">
+        <file name="fortaleza.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/fortaleza.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="greyarrow.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/greyarrow.png">
+        <file name="fortress_logo.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/fortress_logo.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="hombre.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/hombre.png">
+        <file name="greyarrow.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/greyarrow.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="info-2-16.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/info-2-16.png">
+        <file name="hombre.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/hombre.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="libros.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/libros.png">
+        <file name="info-2-16.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/info-2-16.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="menu.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/menu.png">
+        <file name="libros.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/libros.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="porto.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/porto.png">
+        <file name="menu.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/menu.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="puerta.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/puerta.png">
+        <file name="porto.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/porto.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="salida.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/salida.png">
+        <file name="puerta.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/puerta.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="singleusuario.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/singleusuario.png">
+        <file name="salida.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/salida.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
-        <file name="usuarios.png" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/assets/usuarios.png">
+        <file name="singleusuario.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/singleusuario.png">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+        <file name="usuarios.png" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/assets/usuarios.png">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
         </file>
       </package>
       <package name="frontend.components.status">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <file name="DoorStatus.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/components/status/DoorStatus.js">
+        <file name="DoorStatus.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/components/status/DoorStatus.js">
           <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
           <line num="6" count="1" type="stmt"/>
           <line num="19" count="2" type="stmt"/>
@@ -224,17 +228,17 @@
       </package>
       <package name="frontend.firebase">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <file name="firebase.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/firebase/firebase.js">
+        <file name="firebase.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/firebase/firebase.js">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="2" count="12" type="stmt"/>
-          <line num="10" count="12" type="stmt"/>
-          <line num="11" count="12" type="stmt"/>
+          <line num="2" count="15" type="stmt"/>
+          <line num="10" count="15" type="stmt"/>
+          <line num="11" count="15" type="stmt"/>
         </file>
       </package>
       <package name="frontend.helpers">
-        <metrics statements="42" coveredstatements="19" conditionals="40" coveredconditionals="3" methods="11" coveredmethods="1"/>
-        <file name="date.helper.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/helpers/date.helper.js">
-          <metrics statements="18" coveredstatements="14" conditionals="8" coveredconditionals="3" methods="2" coveredmethods="1"/>
+        <metrics statements="37" coveredstatements="19" conditionals="38" coveredconditionals="9" methods="10" coveredmethods="5"/>
+        <file name="date.helper.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/helpers/date.helper.js">
+          <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
           <line num="1" count="2" type="stmt"/>
           <line num="5" count="2" type="stmt"/>
           <line num="6" count="5" type="stmt"/>
@@ -248,13 +252,8 @@
           <line num="14" count="5" type="stmt"/>
           <line num="15" count="5" type="stmt"/>
           <line num="16" count="5" type="stmt"/>
-          <line num="19" count="2" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="24" count="0" type="stmt"/>
-          <line num="26" count="0" type="stmt"/>
         </file>
-        <file name="formInput.helper.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/helpers/formInput.helper.js">
+        <file name="formInput.helper.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/helpers/formInput.helper.js">
           <metrics statements="19" coveredstatements="3" conditionals="12" coveredconditionals="0" methods="3" coveredmethods="0"/>
           <line num="3" count="1" type="stmt"/>
           <line num="4" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -276,11 +275,11 @@
           <line num="36" count="0" type="stmt"/>
           <line num="37" count="0" type="stmt"/>
         </file>
-        <file name="hash.helper.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/helpers/hash.helper.js">
-          <metrics statements="1" coveredstatements="0" conditionals="20" coveredconditionals="0" methods="4" coveredmethods="0"/>
-          <line num="1" count="0" type="cond" truecount="0" falsecount="20"/>
+        <file name="hash.helper.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/helpers/hash.helper.js">
+          <metrics statements="1" coveredstatements="1" conditionals="20" coveredconditionals="6" methods="4" coveredmethods="4"/>
+          <line num="1" count="30" type="cond" truecount="6" falsecount="14"/>
         </file>
-        <file name="notification.helper.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/helpers/notification.helper.js">
+        <file name="notification.helper.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/helpers/notification.helper.js">
           <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
           <line num="1" count="2" type="stmt"/>
           <line num="3" count="2" type="stmt"/>
@@ -289,8 +288,8 @@
         </file>
       </package>
       <package name="frontend.screens">
-        <metrics statements="139" coveredstatements="15" conditionals="38" coveredconditionals="0" methods="75" coveredmethods="0"/>
-        <file name="About.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/screens/About.js">
+        <metrics statements="139" coveredstatements="22" conditionals="38" coveredconditionals="1" methods="75" coveredmethods="4"/>
+        <file name="About.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/screens/About.js">
           <metrics statements="9" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
           <line num="6" count="0" type="stmt"/>
           <line num="7" count="0" type="stmt"/>
@@ -302,7 +301,7 @@
           <line num="31" count="0" type="stmt"/>
           <line num="157" count="1" type="stmt"/>
         </file>
-        <file name="AddNewUser.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/screens/AddNewUser.js">
+        <file name="AddNewUser.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/screens/AddNewUser.js">
           <metrics statements="13" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
           <line num="15" count="0" type="stmt"/>
           <line num="23" count="0" type="stmt"/>
@@ -318,7 +317,7 @@
           <line num="94" count="0" type="stmt"/>
           <line num="103" count="1" type="stmt"/>
         </file>
-        <file name="CreateNewHome.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/screens/CreateNewHome.js">
+        <file name="CreateNewHome.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/screens/CreateNewHome.js">
           <metrics statements="13" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
           <line num="16" count="0" type="stmt"/>
           <line num="32" count="0" type="stmt"/>
@@ -334,7 +333,7 @@
           <line num="110" count="0" type="stmt"/>
           <line num="120" count="1" type="stmt"/>
         </file>
-        <file name="Dashboard.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/screens/Dashboard.js">
+        <file name="Dashboard.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/screens/Dashboard.js">
           <metrics statements="12" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="0"/>
           <line num="1" count="1" type="stmt"/>
           <line num="18" count="0" type="stmt"/>
@@ -349,13 +348,13 @@
           <line num="89" count="0" type="stmt"/>
           <line num="90" count="0" type="stmt"/>
         </file>
-        <file name="FullView.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/screens/FullView.js">
+        <file name="FullView.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/screens/FullView.js">
           <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
           <line num="7" count="0" type="stmt"/>
           <line num="8" count="0" type="stmt"/>
           <line num="31" count="1" type="stmt"/>
         </file>
-        <file name="Home.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/screens/Home.js">
+        <file name="Home.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/screens/Home.js">
           <metrics statements="29" coveredstatements="1" conditionals="10" coveredconditionals="0" methods="16" coveredmethods="0"/>
           <line num="20" count="0" type="stmt"/>
           <line num="21" count="0" type="stmt"/>
@@ -387,7 +386,7 @@
           <line num="131" count="0" type="stmt"/>
           <line num="132" count="0" type="stmt"/>
         </file>
-        <file name="HousePin.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/screens/HousePin.js">
+        <file name="HousePin.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/screens/HousePin.js">
           <metrics statements="26" coveredstatements="1" conditionals="12" coveredconditionals="0" methods="13" coveredmethods="0"/>
           <line num="12" count="0" type="stmt"/>
           <line num="13" count="0" type="stmt"/>
@@ -416,7 +415,7 @@
           <line num="107" count="0" type="stmt"/>
           <line num="108" count="0" type="stmt"/>
         </file>
-        <file name="Logout.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/screens/Logout.js">
+        <file name="Logout.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/screens/Logout.js">
           <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
           <line num="11" count="0" type="stmt"/>
           <line num="22" count="0" type="stmt"/>
@@ -425,7 +424,7 @@
           <line num="43" count="0" type="stmt"/>
           <line num="44" count="0" type="stmt"/>
         </file>
-        <file name="Members.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/screens/Members.js">
+        <file name="Members.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/screens/Members.js">
           <metrics statements="9" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
           <line num="11" count="0" type="stmt"/>
           <line num="14" count="0" type="stmt"/>
@@ -437,7 +436,7 @@
           <line num="42" count="1" type="stmt"/>
           <line num="61" count="0" type="stmt"/>
         </file>
-        <file name="Notify.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/screens/Notify.js">
+        <file name="Notify.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/screens/Notify.js">
           <metrics statements="10" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0"/>
           <line num="11" count="0" type="stmt"/>
           <line num="13" count="0" type="stmt"/>
@@ -450,106 +449,106 @@
           <line num="46" count="1" type="stmt"/>
           <line num="107" count="0" type="stmt"/>
         </file>
-        <file name="Splash.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/screens/Splash.js">
-          <metrics statements="9" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-          <line num="20" count="0" type="stmt"/>
-          <line num="34" count="0" type="stmt"/>
-          <line num="35" count="0" type="stmt"/>
-          <line num="36" count="0" type="stmt"/>
-          <line num="37" count="0" type="stmt"/>
-          <line num="38" count="0" type="stmt"/>
+        <file name="Splash.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/screens/Splash.js">
+          <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
+          <line num="35" count="1" type="stmt"/>
+          <line num="36" count="1" type="stmt"/>
+          <line num="37" count="1" type="stmt"/>
+          <line num="38" count="1" type="stmt"/>
           <line num="42" count="1" type="stmt"/>
-          <line num="58" count="0" type="stmt"/>
+          <line num="58" count="2" type="stmt"/>
           <line num="64" count="1" type="stmt"/>
         </file>
       </package>
       <package name="frontend.store">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <file name="rootReducer.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/rootReducer.js">
+        <file name="rootReducer.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/rootReducer.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="14" count="10" type="stmt"/>
         </file>
-        <file name="store.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/store.js">
+        <file name="store.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/store.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="6" count="10" type="stmt"/>
         </file>
       </package>
       <package name="frontend.store.addNewUser">
-        <metrics statements="29" coveredstatements="15" conditionals="7" coveredconditionals="2" methods="10" coveredmethods="1"/>
-        <file name="addNewUser.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/addNewUser/addNewUser.actionType.js">
+        <metrics statements="29" coveredstatements="27" conditionals="7" coveredconditionals="7" methods="10" coveredmethods="6"/>
+        <file name="addNewUser.actionType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/addNewUser/addNewUser.actionType.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="10" type="stmt"/>
-          <line num="2" count="10" type="stmt"/>
-          <line num="3" count="10" type="stmt"/>
-          <line num="4" count="10" type="stmt"/>
-          <line num="5" count="10" type="stmt"/>
+          <line num="1" count="12" type="stmt"/>
+          <line num="2" count="12" type="stmt"/>
+          <line num="3" count="12" type="stmt"/>
+          <line num="4" count="12" type="stmt"/>
+          <line num="5" count="12" type="stmt"/>
         </file>
-        <file name="addNewUser.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/addNewUser/addNewUser.actions.js">
-          <metrics statements="15" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="0"/>
-          <line num="13" count="2" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
-          <line num="20" count="2" type="stmt"/>
-          <line num="21" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="23" count="0" type="stmt"/>
-          <line num="24" count="0" type="stmt"/>
-          <line num="25" count="0" type="stmt"/>
+        <file name="addNewUser.actions.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/addNewUser/addNewUser.actions.js">
+          <metrics statements="15" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="5"/>
+          <line num="13" count="3" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="20" count="3" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
           <line num="27" count="0" type="stmt"/>
           <line num="29" count="0" type="stmt"/>
-          <line num="33" count="2" type="stmt"/>
-          <line num="34" count="0" type="stmt"/>
-          <line num="40" count="2" type="stmt"/>
-          <line num="44" count="2" type="stmt"/>
-          <line num="48" count="2" type="stmt"/>
+          <line num="33" count="3" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
+          <line num="40" count="3" type="stmt"/>
+          <line num="44" count="3" type="stmt"/>
+          <line num="48" count="3" type="stmt"/>
         </file>
-        <file name="addNewUser.reducers.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/addNewUser/addNewUser.reducers.js">
-          <metrics statements="9" coveredstatements="4" conditionals="7" coveredconditionals="2" methods="1" coveredmethods="1"/>
-          <line num="9" count="10" type="stmt"/>
-          <line num="19" count="10" type="cond" truecount="1" falsecount="0"/>
-          <line num="20" count="30" type="cond" truecount="1" falsecount="5"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="28" count="0" type="stmt"/>
-          <line num="33" count="0" type="stmt"/>
-          <line num="35" count="0" type="stmt"/>
-          <line num="41" count="0" type="stmt"/>
-          <line num="46" count="30" type="stmt"/>
+        <file name="addNewUser.reducers.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/addNewUser/addNewUser.reducers.js">
+          <metrics statements="9" coveredstatements="9" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+          <line num="9" count="12" type="stmt"/>
+          <line num="19" count="12" type="cond" truecount="1" falsecount="0"/>
+          <line num="20" count="43" type="cond" truecount="6" falsecount="0"/>
+          <line num="22" count="4" type="stmt"/>
+          <line num="28" count="1" type="stmt"/>
+          <line num="33" count="1" type="stmt"/>
+          <line num="35" count="1" type="stmt"/>
+          <line num="41" count="1" type="stmt"/>
+          <line num="46" count="35" type="stmt"/>
         </file>
       </package>
       <package name="frontend.store.alarms">
-        <metrics statements="20" coveredstatements="11" conditionals="5" coveredconditionals="2" methods="8" coveredmethods="1"/>
-        <file name="alarms.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/alarms/alarms.actionType.js">
+        <metrics statements="20" coveredstatements="17" conditionals="5" coveredconditionals="5" methods="8" coveredmethods="4"/>
+        <file name="alarms.actionType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/alarms/alarms.actionType.js">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="10" type="stmt"/>
-          <line num="2" count="10" type="stmt"/>
-          <line num="3" count="10" type="stmt"/>
+          <line num="1" count="12" type="stmt"/>
+          <line num="2" count="12" type="stmt"/>
+          <line num="3" count="12" type="stmt"/>
         </file>
-        <file name="alarms.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/alarms/alarms.actions.js">
-          <metrics statements="10" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
-          <line num="8" count="1" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
-          <line num="10" count="0" type="stmt"/>
-          <line num="11" count="0" type="stmt"/>
+        <file name="alarms.actions.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/alarms/alarms.actions.js">
+          <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="3"/>
+          <line num="8" count="2" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
           <line num="12" count="0" type="stmt"/>
           <line num="13" count="0" type="stmt"/>
           <line num="15" count="0" type="stmt"/>
-          <line num="20" count="1" type="stmt"/>
-          <line num="25" count="1" type="stmt"/>
-          <line num="29" count="1" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="25" count="2" type="stmt"/>
+          <line num="29" count="2" type="stmt"/>
         </file>
-        <file name="alarms.reducers.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/alarms/alarms.reducers.js">
-          <metrics statements="7" coveredstatements="4" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
-          <line num="7" count="10" type="stmt"/>
-          <line num="13" count="10" type="cond" truecount="1" falsecount="0"/>
-          <line num="14" count="30" type="cond" truecount="1" falsecount="3"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="27" count="0" type="stmt"/>
-          <line num="33" count="30" type="stmt"/>
+        <file name="alarms.reducers.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/alarms/alarms.reducers.js">
+          <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+          <line num="7" count="11" type="stmt"/>
+          <line num="13" count="11" type="cond" truecount="1" falsecount="0"/>
+          <line num="14" count="40" type="cond" truecount="4" falsecount="0"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="22" count="3" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
+          <line num="33" count="35" type="stmt"/>
         </file>
       </package>
       <package name="frontend.store.createNewHome">
-        <metrics statements="33" coveredstatements="15" conditionals="7" coveredconditionals="2" methods="10" coveredmethods="1"/>
-        <file name="createNewHome.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/createNewHome/createNewHome.actionType.js">
+        <metrics statements="32" coveredstatements="15" conditionals="7" coveredconditionals="2" methods="10" coveredmethods="1"/>
+        <file name="createNewHome.actionType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/createNewHome/createNewHome.actionType.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="10" type="stmt"/>
           <line num="2" count="10" type="stmt"/>
@@ -557,8 +556,8 @@
           <line num="4" count="10" type="stmt"/>
           <line num="5" count="10" type="stmt"/>
         </file>
-        <file name="createNewHome.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/createNewHome/createNewHome.actions.js">
-          <metrics statements="19" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="0"/>
+        <file name="createNewHome.actions.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/createNewHome/createNewHome.actions.js">
+          <metrics statements="18" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="0"/>
           <line num="13" count="1" type="stmt"/>
           <line num="14" count="0" type="stmt"/>
           <line num="20" count="1" type="stmt"/>
@@ -568,87 +567,69 @@
           <line num="24" count="0" type="stmt"/>
           <line num="25" count="0" type="stmt"/>
           <line num="26" count="0" type="stmt"/>
-          <line num="27" count="0" type="stmt"/>
-          <line num="47" count="0" type="stmt"/>
+          <line num="46" count="0" type="stmt"/>
+          <line num="48" count="0" type="stmt"/>
           <line num="49" count="0" type="stmt"/>
-          <line num="50" count="0" type="stmt"/>
-          <line num="52" count="0" type="stmt"/>
-          <line num="56" count="1" type="stmt"/>
-          <line num="57" count="0" type="stmt"/>
-          <line num="63" count="1" type="stmt"/>
-          <line num="67" count="1" type="stmt"/>
-          <line num="71" count="1" type="stmt"/>
+          <line num="51" count="0" type="stmt"/>
+          <line num="55" count="1" type="stmt"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="62" count="1" type="stmt"/>
+          <line num="66" count="1" type="stmt"/>
+          <line num="70" count="1" type="stmt"/>
         </file>
-        <file name="createNewHome.reducers.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/createNewHome/createNewHome.reducers.js">
+        <file name="createNewHome.reducers.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/createNewHome/createNewHome.reducers.js">
           <metrics statements="9" coveredstatements="4" conditionals="7" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="9" count="10" type="stmt"/>
           <line num="17" count="10" type="cond" truecount="1" falsecount="0"/>
-          <line num="18" count="30" type="cond" truecount="1" falsecount="5"/>
+          <line num="18" count="35" type="cond" truecount="1" falsecount="5"/>
           <line num="20" count="0" type="stmt"/>
           <line num="25" count="0" type="stmt"/>
           <line num="30" count="0" type="stmt"/>
           <line num="32" count="0" type="stmt"/>
           <line num="38" count="0" type="stmt"/>
-          <line num="43" count="30" type="stmt"/>
+          <line num="43" count="35" type="stmt"/>
         </file>
       </package>
       <package name="frontend.store.data">
-        <metrics statements="42" coveredstatements="21" conditionals="14" coveredconditionals="2" methods="14" coveredmethods="1"/>
-        <file name="data.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/data/data.actionType.js">
-          <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="11" type="stmt"/>
-          <line num="2" count="11" type="stmt"/>
-          <line num="3" count="11" type="stmt"/>
-          <line num="4" count="11" type="stmt"/>
-          <line num="5" count="11" type="stmt"/>
-          <line num="6" count="11" type="stmt"/>
-          <line num="7" count="11" type="stmt"/>
-          <line num="8" count="11" type="stmt"/>
+        <metrics statements="25" coveredstatements="25" conditionals="12" coveredconditionals="12" methods="7" coveredmethods="7"/>
+        <file name="data.actionType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/data/data.actionType.js">
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="13" type="stmt"/>
+          <line num="2" count="13" type="stmt"/>
+          <line num="3" count="13" type="stmt"/>
+          <line num="4" count="13" type="stmt"/>
         </file>
-        <file name="data.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/data/data.actions.js">
-          <metrics statements="24" coveredstatements="9" conditionals="6" coveredconditionals="0" methods="13" coveredmethods="0"/>
-          <line num="14" count="11" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="17" count="0" type="stmt"/>
-          <line num="18" count="0" type="stmt"/>
-          <line num="19" count="0" type="stmt"/>
-          <line num="21" count="0" type="stmt"/>
-          <line num="26" count="11" type="stmt"/>
-          <line num="27" count="0" type="stmt"/>
-          <line num="28" count="0" type="stmt"/>
-          <line num="29" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="30" count="0" type="stmt"/>
-          <line num="31" count="0" type="stmt"/>
-          <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="33" count="0" type="stmt"/>
-          <line num="38" count="11" type="stmt"/>
-          <line num="43" count="11" type="stmt"/>
-          <line num="47" count="11" type="stmt"/>
-          <line num="51" count="11" type="stmt"/>
-          <line num="55" count="11" type="stmt"/>
-          <line num="59" count="11" type="stmt"/>
-          <line num="63" count="11" type="stmt"/>
-          <line num="64" count="0" type="stmt"/>
-          <line num="65" count="0" type="stmt"/>
+        <file name="data.actions.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/data/data.actions.js">
+          <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+          <line num="9" count="13" type="stmt"/>
+          <line num="10" count="3" type="stmt"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="12" count="3" type="cond" truecount="4" falsecount="0"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="21" count="13" type="stmt"/>
+          <line num="25" count="13" type="stmt"/>
+          <line num="29" count="13" type="stmt"/>
+          <line num="33" count="13" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
         </file>
-        <file name="data.reducers.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/data/data.reducers.js">
-          <metrics statements="10" coveredstatements="4" conditionals="8" coveredconditionals="2" methods="1" coveredmethods="1"/>
-          <line num="11" count="10" type="stmt"/>
-          <line num="19" count="10" type="cond" truecount="1" falsecount="0"/>
-          <line num="20" count="30" type="cond" truecount="1" falsecount="6"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="28" count="0" type="stmt"/>
-          <line num="33" count="0" type="stmt"/>
-          <line num="38" count="0" type="stmt"/>
-          <line num="43" count="0" type="stmt"/>
-          <line num="48" count="0" type="stmt"/>
-          <line num="53" count="30" type="stmt"/>
+        <file name="data.reducers.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/data/data.reducers.js">
+          <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+          <line num="9" count="11" type="stmt"/>
+          <line num="14" count="11" type="cond" truecount="1" falsecount="0"/>
+          <line num="15" count="41" type="cond" truecount="5" falsecount="0"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="22" count="2" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="29" count="1" type="stmt"/>
+          <line num="34" count="36" type="stmt"/>
         </file>
       </package>
       <package name="frontend.store.homeData">
-        <metrics statements="42" coveredstatements="17" conditionals="8" coveredconditionals="2" methods="15" coveredmethods="1"/>
-        <file name="homeData.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/homeData/homeData.actionType.js">
+        <metrics statements="42" coveredstatements="21" conditionals="8" coveredconditionals="3" methods="15" coveredmethods="4"/>
+        <file name="homeData.actionType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/homeData/homeData.actionType.js">
           <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="10" type="stmt"/>
           <line num="2" count="10" type="stmt"/>
@@ -657,12 +638,12 @@
           <line num="5" count="10" type="stmt"/>
           <line num="6" count="10" type="stmt"/>
         </file>
-        <file name="homeData.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/homeData/homeData.actions.js">
-          <metrics statements="26" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="0"/>
+        <file name="homeData.actions.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/homeData/homeData.actions.js">
+          <metrics statements="26" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="3"/>
           <line num="15" count="1" type="stmt"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="17" count="0" type="stmt"/>
-          <line num="18" count="0" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
           <line num="19" count="0" type="stmt"/>
           <line num="20" count="0" type="stmt"/>
           <line num="21" count="0" type="stmt"/>
@@ -686,86 +667,86 @@
           <line num="61" count="1" type="stmt"/>
           <line num="65" count="1" type="stmt"/>
         </file>
-        <file name="homeData.reducers.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/homeData/homeData.reducers.js">
-          <metrics statements="10" coveredstatements="4" conditionals="8" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <file name="homeData.reducers.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/homeData/homeData.reducers.js">
+          <metrics statements="10" coveredstatements="5" conditionals="8" coveredconditionals="3" methods="1" coveredmethods="1"/>
           <line num="10" count="10" type="stmt"/>
           <line num="22" count="10" type="cond" truecount="1" falsecount="0"/>
-          <line num="23" count="30" type="cond" truecount="1" falsecount="6"/>
+          <line num="23" count="35" type="cond" truecount="2" falsecount="5"/>
           <line num="25" count="0" type="stmt"/>
           <line num="30" count="0" type="stmt"/>
           <line num="35" count="0" type="stmt"/>
           <line num="40" count="0" type="stmt"/>
-          <line num="45" count="0" type="stmt"/>
+          <line num="45" count="1" type="stmt"/>
           <line num="50" count="0" type="stmt"/>
-          <line num="56" count="30" type="stmt"/>
+          <line num="56" count="34" type="stmt"/>
         </file>
       </package>
       <package name="frontend.store.housePin">
-        <metrics statements="40" coveredstatements="18" conditionals="13" coveredconditionals="2" methods="14" coveredmethods="1"/>
-        <file name="housePin.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/housePin/housePin.actionType.js">
+        <metrics statements="40" coveredstatements="35" conditionals="13" coveredconditionals="7" methods="14" coveredmethods="14"/>
+        <file name="housePin.actionType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/housePin/housePin.actionType.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="10" type="stmt"/>
-          <line num="2" count="10" type="stmt"/>
-          <line num="3" count="10" type="stmt"/>
-          <line num="4" count="10" type="stmt"/>
-          <line num="5" count="10" type="stmt"/>
+          <line num="1" count="11" type="stmt"/>
+          <line num="2" count="11" type="stmt"/>
+          <line num="3" count="11" type="stmt"/>
+          <line num="4" count="11" type="stmt"/>
+          <line num="5" count="11" type="stmt"/>
         </file>
-        <file name="housePin.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/housePin/housePin.actions.js">
-          <metrics statements="26" coveredstatements="9" conditionals="6" coveredconditionals="0" methods="13" coveredmethods="0"/>
-          <line num="11" count="10" type="stmt"/>
-          <line num="12" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="17" count="10" type="stmt"/>
-          <line num="18" count="0" type="stmt"/>
-          <line num="19" count="0" type="stmt"/>
-          <line num="20" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="21" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="23" count="0" type="stmt"/>
-          <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="25" count="0" type="stmt"/>
-          <line num="30" count="10" type="stmt"/>
-          <line num="31" count="0" type="stmt"/>
-          <line num="32" count="0" type="stmt"/>
-          <line num="33" count="0" type="stmt"/>
-          <line num="37" count="10" type="stmt"/>
-          <line num="38" count="0" type="stmt"/>
-          <line num="39" count="0" type="stmt"/>
-          <line num="43" count="10" type="stmt"/>
-          <line num="44" count="0" type="stmt"/>
-          <line num="49" count="10" type="stmt"/>
-          <line num="50" count="0" type="stmt"/>
-          <line num="56" count="10" type="stmt"/>
-          <line num="60" count="10" type="stmt"/>
-          <line num="64" count="10" type="stmt"/>
+        <file name="housePin.actions.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/housePin/housePin.actions.js">
+          <metrics statements="26" coveredstatements="26" conditionals="6" coveredconditionals="5" methods="13" coveredmethods="13"/>
+          <line num="11" count="11" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="17" count="11" type="stmt"/>
+          <line num="18" count="2" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="20" count="2" type="cond" truecount="4" falsecount="0"/>
+          <line num="21" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="24" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="30" count="11" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+          <line num="32" count="1" type="stmt"/>
+          <line num="33" count="1" type="stmt"/>
+          <line num="37" count="11" type="stmt"/>
+          <line num="38" count="1" type="stmt"/>
+          <line num="39" count="1" type="stmt"/>
+          <line num="43" count="11" type="stmt"/>
+          <line num="44" count="1" type="stmt"/>
+          <line num="49" count="11" type="stmt"/>
+          <line num="50" count="2" type="stmt"/>
+          <line num="56" count="11" type="stmt"/>
+          <line num="60" count="11" type="stmt"/>
+          <line num="64" count="11" type="stmt"/>
         </file>
-        <file name="housePin.reducers.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/housePin/housePin.reducers.js">
+        <file name="housePin.reducers.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/housePin/housePin.reducers.js">
           <metrics statements="9" coveredstatements="4" conditionals="7" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="9" count="10" type="stmt"/>
           <line num="15" count="10" type="cond" truecount="1" falsecount="0"/>
-          <line num="16" count="30" type="cond" truecount="1" falsecount="5"/>
+          <line num="16" count="35" type="cond" truecount="1" falsecount="5"/>
           <line num="18" count="0" type="stmt"/>
           <line num="23" count="0" type="stmt"/>
           <line num="28" count="0" type="stmt"/>
           <line num="33" count="0" type="stmt"/>
           <line num="38" count="0" type="stmt"/>
-          <line num="43" count="30" type="stmt"/>
+          <line num="43" count="35" type="stmt"/>
         </file>
       </package>
       <package name="frontend.store.memberList">
-        <metrics statements="27" coveredstatements="11" conditionals="7" coveredconditionals="2" methods="8" coveredmethods="1"/>
-        <file name="memberList.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/memberList/memberList.actionType.js">
+        <metrics statements="27" coveredstatements="16" conditionals="7" coveredconditionals="3" methods="8" coveredmethods="4"/>
+        <file name="memberList.actionType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/memberList/memberList.actionType.js">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="10" type="stmt"/>
           <line num="2" count="10" type="stmt"/>
           <line num="3" count="10" type="stmt"/>
         </file>
-        <file name="memberList.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/memberList/memberList.actions.js">
-          <metrics statements="17" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <file name="memberList.actions.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/memberList/memberList.actions.js">
+          <metrics statements="17" coveredstatements="8" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="3"/>
           <line num="9" count="1" type="stmt"/>
-          <line num="10" count="0" type="stmt"/>
-          <line num="11" count="0" type="stmt"/>
-          <line num="12" count="0" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
           <line num="13" count="0" type="stmt"/>
           <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
           <line num="15" count="0" type="stmt"/>
@@ -776,36 +757,36 @@
           <line num="23" count="1" type="stmt"/>
           <line num="24" count="0" type="stmt"/>
           <line num="30" count="1" type="stmt"/>
-          <line num="31" count="0" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
           <line num="36" count="1" type="stmt"/>
           <line num="37" count="0" type="stmt"/>
         </file>
-        <file name="memberList.reducers.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/memberList/memberList.reducers.js">
-          <metrics statements="7" coveredstatements="4" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <file name="memberList.reducers.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/memberList/memberList.reducers.js">
+          <metrics statements="7" coveredstatements="5" conditionals="5" coveredconditionals="3" methods="1" coveredmethods="1"/>
           <line num="7" count="10" type="stmt"/>
           <line num="13" count="10" type="cond" truecount="1" falsecount="0"/>
-          <line num="14" count="30" type="cond" truecount="1" falsecount="3"/>
+          <line num="14" count="35" type="cond" truecount="2" falsecount="2"/>
           <line num="16" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
           <line num="27" count="0" type="stmt"/>
-          <line num="33" count="30" type="stmt"/>
+          <line num="33" count="34" type="stmt"/>
         </file>
       </package>
       <package name="frontend.store.notificationLogs">
-        <metrics statements="35" coveredstatements="15" conditionals="10" coveredconditionals="2" methods="10" coveredmethods="2"/>
-        <file name="notificationLogs.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/notificationLogs/notificationLogs.actionType.js">
+        <metrics statements="35" coveredstatements="19" conditionals="10" coveredconditionals="3" methods="10" coveredmethods="5"/>
+        <file name="notificationLogs.actionType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/notificationLogs/notificationLogs.actionType.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="11" type="stmt"/>
           <line num="2" count="11" type="stmt"/>
           <line num="3" count="11" type="stmt"/>
           <line num="4" count="11" type="stmt"/>
         </file>
-        <file name="notificationLogs.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/notificationLogs/notificationLogs.actions.js">
-          <metrics statements="23" coveredstatements="7" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="1"/>
+        <file name="notificationLogs.actions.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/notificationLogs/notificationLogs.actions.js">
+          <metrics statements="23" coveredstatements="10" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="4"/>
           <line num="21" count="2" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="23" count="0" type="stmt"/>
-          <line num="24" count="0" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
           <line num="25" count="0" type="stmt"/>
           <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
           <line num="27" count="0" type="stmt"/>
@@ -826,107 +807,107 @@
           <line num="72" count="2" type="stmt"/>
           <line num="73" count="0" type="stmt"/>
         </file>
-        <file name="notificationLogs.reducers.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/notificationLogs/notificationLogs.reducers.js">
-          <metrics statements="8" coveredstatements="4" conditionals="6" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <file name="notificationLogs.reducers.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/notificationLogs/notificationLogs.reducers.js">
+          <metrics statements="8" coveredstatements="5" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
           <line num="8" count="10" type="stmt"/>
           <line num="15" count="10" type="cond" truecount="1" falsecount="0"/>
-          <line num="16" count="30" type="cond" truecount="1" falsecount="4"/>
+          <line num="16" count="35" type="cond" truecount="2" falsecount="3"/>
           <line num="18" count="0" type="stmt"/>
-          <line num="24" count="0" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
           <line num="29" count="0" type="stmt"/>
           <line num="35" count="0" type="stmt"/>
-          <line num="41" count="30" type="stmt"/>
+          <line num="41" count="34" type="stmt"/>
         </file>
       </package>
       <package name="frontend.store.sensors">
-        <metrics statements="44" coveredstatements="18" conditionals="9" coveredconditionals="2" methods="19" coveredmethods="1"/>
-        <file name="sensor.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/sensors/sensor.actionType.js">
+        <metrics statements="44" coveredstatements="27" conditionals="9" coveredconditionals="3" methods="19" coveredmethods="7"/>
+        <file name="sensor.actionType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/sensors/sensor.actionType.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="10" type="stmt"/>
-          <line num="2" count="10" type="stmt"/>
-          <line num="3" count="10" type="stmt"/>
-          <line num="4" count="10" type="stmt"/>
-          <line num="5" count="10" type="stmt"/>
+          <line num="1" count="11" type="stmt"/>
+          <line num="2" count="11" type="stmt"/>
+          <line num="3" count="11" type="stmt"/>
+          <line num="4" count="11" type="stmt"/>
+          <line num="5" count="11" type="stmt"/>
         </file>
-        <file name="sensor.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/sensors/sensor.actions.js">
-          <metrics statements="30" coveredstatements="9" conditionals="2" coveredconditionals="0" methods="18" coveredmethods="0"/>
-          <line num="12" count="10" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
+        <file name="sensor.actions.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/sensors/sensor.actions.js">
+          <metrics statements="30" coveredstatements="17" conditionals="2" coveredconditionals="0" methods="18" coveredmethods="6"/>
+          <line num="12" count="11" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
           <line num="16" count="0" type="stmt"/>
           <line num="17" count="0" type="stmt"/>
           <line num="19" count="0" type="stmt"/>
-          <line num="24" count="10" type="stmt"/>
+          <line num="24" count="11" type="stmt"/>
           <line num="25" count="0" type="stmt"/>
           <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
           <line num="27" count="0" type="stmt"/>
           <line num="29" count="0" type="stmt"/>
           <line num="30" count="0" type="stmt"/>
-          <line num="36" count="10" type="stmt"/>
-          <line num="37" count="0" type="stmt"/>
+          <line num="36" count="11" type="stmt"/>
+          <line num="37" count="1" type="stmt"/>
           <line num="38" count="0" type="stmt"/>
           <line num="39" count="0" type="stmt"/>
           <line num="40" count="0" type="stmt"/>
           <line num="42" count="0" type="stmt"/>
-          <line num="47" count="10" type="stmt"/>
-          <line num="48" count="0" type="stmt"/>
-          <line num="49" count="0" type="stmt"/>
-          <line num="50" count="0" type="stmt"/>
-          <line num="51" count="0" type="stmt"/>
+          <line num="47" count="11" type="stmt"/>
+          <line num="48" count="1" type="stmt"/>
+          <line num="49" count="1" type="stmt"/>
+          <line num="50" count="1" type="stmt"/>
+          <line num="51" count="1" type="stmt"/>
           <line num="53" count="0" type="stmt"/>
-          <line num="58" count="10" type="stmt"/>
-          <line num="63" count="10" type="stmt"/>
-          <line num="67" count="10" type="stmt"/>
-          <line num="71" count="10" type="stmt"/>
-          <line num="75" count="10" type="stmt"/>
+          <line num="58" count="11" type="stmt"/>
+          <line num="63" count="11" type="stmt"/>
+          <line num="67" count="11" type="stmt"/>
+          <line num="71" count="11" type="stmt"/>
+          <line num="75" count="11" type="stmt"/>
         </file>
-        <file name="sensor.reducers.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/sensors/sensor.reducers.js">
-          <metrics statements="9" coveredstatements="4" conditionals="7" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <file name="sensor.reducers.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/sensors/sensor.reducers.js">
+          <metrics statements="9" coveredstatements="5" conditionals="7" coveredconditionals="3" methods="1" coveredmethods="1"/>
           <line num="10" count="10" type="stmt"/>
           <line num="15" count="10" type="cond" truecount="1" falsecount="0"/>
-          <line num="16" count="30" type="cond" truecount="1" falsecount="5"/>
+          <line num="16" count="35" type="cond" truecount="2" falsecount="4"/>
           <line num="18" count="0" type="stmt"/>
-          <line num="24" count="0" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
           <line num="29" count="0" type="stmt"/>
           <line num="33" count="0" type="stmt"/>
           <line num="37" count="0" type="stmt"/>
-          <line num="41" count="30" type="stmt"/>
+          <line num="41" count="34" type="stmt"/>
         </file>
       </package>
       <package name="frontend.store.userData">
-        <metrics statements="23" coveredstatements="12" conditionals="7" coveredconditionals="2" methods="8" coveredmethods="1"/>
-        <file name="userData.actionType.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/userData/userData.actionType.js">
+        <metrics statements="23" coveredstatements="17" conditionals="7" coveredconditionals="2" methods="8" coveredmethods="5"/>
+        <file name="userData.actionType.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/userData/userData.actionType.js">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="11" type="stmt"/>
-          <line num="2" count="11" type="stmt"/>
-          <line num="3" count="11" type="stmt"/>
+          <line num="1" count="12" type="stmt"/>
+          <line num="2" count="12" type="stmt"/>
+          <line num="3" count="12" type="stmt"/>
         </file>
-        <file name="userData.actions.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/userData/userData.actions.js">
-          <metrics statements="13" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0"/>
-          <line num="20" count="2" type="stmt"/>
-          <line num="21" count="0" type="stmt"/>
+        <file name="userData.actions.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/userData/userData.actions.js">
+          <metrics statements="13" coveredstatements="10" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="4"/>
+          <line num="9" count="3" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="1" type="cond" truecount="0" falsecount="2"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="21" count="3" type="stmt"/>
           <line num="22" count="0" type="stmt"/>
-          <line num="23" count="0" type="stmt"/>
-          <line num="24" count="0" type="stmt"/>
-          <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="25" count="3" type="stmt"/>
           <line num="26" count="0" type="stmt"/>
-          <line num="32" count="2" type="stmt"/>
-          <line num="33" count="0" type="stmt"/>
-          <line num="41" count="2" type="stmt"/>
-          <line num="42" count="0" type="stmt"/>
-          <line num="48" count="2" type="stmt"/>
-          <line num="52" count="2" type="stmt"/>
+          <line num="32" count="3" type="stmt"/>
+          <line num="36" count="3" type="stmt"/>
         </file>
-        <file name="userData.reducers.js" path="/Users/herby/Documents/Github/Hacktiv8/Phase3/Week4/frontend/store/userData/userData.reducers.js">
+        <file name="userData.reducers.js" path="/home/ervan/Documents/Hacktiv8/Phase_3/smartHome/frontend/store/userData/userData.reducers.js">
           <metrics statements="7" coveredstatements="4" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="7" count="10" type="stmt"/>
           <line num="17" count="10" type="cond" truecount="1" falsecount="0"/>
-          <line num="18" count="30" type="cond" truecount="1" falsecount="3"/>
+          <line num="18" count="35" type="cond" truecount="1" falsecount="3"/>
           <line num="20" count="0" type="stmt"/>
           <line num="26" count="0" type="stmt"/>
           <line num="31" count="0" type="stmt"/>
-          <line num="37" count="30" type="stmt"/>
+          <line num="37" count="35" type="stmt"/>
         </file>
       </package>
     </metrics>
