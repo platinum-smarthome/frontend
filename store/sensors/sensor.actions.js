@@ -57,7 +57,7 @@ export const enableSensors = () => {
 
 const getSensorStatusSuccess = (payload) => ({
   type: GET_SENSOR_STATUS_SUCCESS,
-  sensors: payload
+  payload: payload
 })
 
 const getSensorStatusLoading = () => ({

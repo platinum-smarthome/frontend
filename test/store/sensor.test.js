@@ -4,7 +4,7 @@ import configureStore from 'redux-mock-store';
 
 import sensorReducer from '../../store/sensors/sensor.reducers';
 
-const middlewares = [];
+const middlewares = {};
 const mockStore = configureStore(middlewares);
 const getSensorStatusSuccess = () => ({ type: 'GET_SENSOR_STATUS_SUCCESS' });
 const updateSensorStatusSuccess = () => ({ type: 'UPDATE_SENSOR_STATUS' });
@@ -53,7 +53,11 @@ describe('test reducer sensor', () => {
   it('reducers initialState', () => {
     let wrapper = sensorReducer(undefined, {})
     expect(wrapper).toEqual({ 
-      sensors: [],
+      sensors: {
+        gas: 1,
+        door: 1,
+        garage: 1
+      },
       loading: false
     })
   });
