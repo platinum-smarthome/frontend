@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignContent": "flex-start",
+      "borderBottomColor": "#d3d3d3",
+      "borderBottomWidth": 1,
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 18,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    <Image
+      source={undefined}
+      style={
+        Object {
+          "height": 25,
+          "width": 25,
+        }
+      }
+    />
+  </View>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#606060",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "justifyContent": "center",
+          "paddingVertical": 10,
+        }
+      }
+    >
+       
+       
+    </Text>
+  </View>
+</View>
+`;
