@@ -8,7 +8,11 @@ import {
 import { enableSensors } from './sensor.actions';
 
 const initialState = {
-  sensors: [],
+  sensors: {
+    gas: 1,
+    door: 1,
+    garage: 1
+  },
   loading: false
 }
 
@@ -17,7 +21,7 @@ const reducers = (state=initialState, action) => {
     case GET_SENSOR_STATUS_SUCCESS:
       return {
         ...state,
-        sensors: action.sensors,
+        sensors: action.payload,
         loading: false
       }
     case GET_SENSOR_STATUS_LOADING:
