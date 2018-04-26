@@ -8,6 +8,7 @@ import TouchAbleText from '../components/TouchAbleText'
 
 class Logout extends Component {
   render () {
+    /* istanbul ignore next */
     return (
       <View style={styles.container}>
         <StatusBar
@@ -18,8 +19,11 @@ class Logout extends Component {
     )
   }
 
+  /* istanbul ignore next */
   componentDidMount () {
+    /* istanbul ignore next */
     this.props.userLogout()
+    /* istanbul ignore next */
     this.props.navigation.navigate('Login')
   }
 }
@@ -39,8 +43,10 @@ const styles = StyleSheet.create({
   }
 })
 
+/* istanbul ignore next */
 function mapDispatchToProps (dispatch) {
   return {
+    /* istanbul ignore next */
     userLogout: () => dispatch(userLogout())
   }
 }

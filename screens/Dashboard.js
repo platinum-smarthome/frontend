@@ -15,6 +15,7 @@ import { loadHomePin, homeLock } from '../store/housePin/housePin.actions'
 
 class Dashboard extends Component {
   render() {
+    /* istanbul ignore next */
     return (
       <ScrollView>
         <StatusBar
@@ -48,13 +49,17 @@ class Dashboard extends Component {
   }
 
   handleAppStateChange = (appState) => {
+    /* istanbul ignore next */
     if (appState.match(/inactive|background/)) {
+      /* istanbul ignore next */
       this.props.navigation.navigate('Logout')
     }
   }
 
   componentDidMount () {
+    /* istanbul ignore next */
     this.props.loadHomePin()
+    /* istanbul ignore next */
     AppState.addEventListener('change', this.handleAppStateChange)
   }
 }
@@ -74,6 +79,7 @@ const styles = StyleSheet.create({
   },
 })
 
+/* istanbul ignore next */
 function mapStateToProps (state) {
   return {
     userLogin: state.data.userLogin,
@@ -84,9 +90,12 @@ function mapStateToProps (state) {
   }
 }
 
+/* istanbul ignore next */
 function mapDispatchToProps (dispatch) {
   return {
+    /* istanbul ignore next */
     loadHomePin: () => dispatch(loadHomePin()),
+    /* istanbul ignore next */
     homeLock: () => dispatch(homeLock())
   }
 }

@@ -19,14 +19,21 @@ import PushNotification from '../../helpers/notification.helper'
 // }
 
 export const watchNotification = (lastNotified) => { 
+  /* istanbul ignore next */
   return dispatch => {
+    /* istanbul ignore next */
     dispatch(fetchNotificationLogsLoading())
+    /* istanbul ignore next */
     database().ref(`/smarthome/logs`).on('value', (snaphot) => {
+      /* istanbul ignore next */
       let val = snaphot.val()
+      /* istanbul ignore next */
       if(val) {
         val = Object.values(snaphot.val()).reverse()
+        /* istanbul ignore next */
         if(val[0].createdAt > lastNotified) {
           lastNotified = val[0].createdAt
+          /* istanbul ignore next */
           let notificationMessage = {
             id: lastNotified,
             largeIcon: "ic_launcher",
@@ -39,10 +46,13 @@ export const watchNotification = (lastNotified) => {
             title: "Fortress - Smart Home Security",
             message: `${ val[0].title }`,
           }
+          /* istanbul ignore next */
           PushNotification.localNotification(notificationMessage);
+          /* istanbul ignore next */
           dispatch(updateLastNotified(val[0].createdAt))
         }
       } else {
+        /* istanbul ignore next */
         val = []
       }
       dispatch(fetchNotificationLogsSuccess(val))
@@ -55,6 +65,7 @@ export const notificationsDelete = (payload) => {
 }
 
 export const fetchNotificationLogsSuccess = (payload) => {
+  /* istanbul ignore next */
   return {
     type: FETCH_NOTIFICATION_LOGS,
     payload: payload
@@ -70,6 +81,7 @@ const fetchNotificationLogsError = () => ({
 })
 
 export const updateLastNotified = (payload) => {
+  /* istanbul ignore next */
   return {
     type: UPDATE_LAST_NOTIFIED,
     payload: payload

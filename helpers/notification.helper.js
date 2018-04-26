@@ -1,5 +1,6 @@
 var PushNotification = require('react-native-push-notification');
 
+/* istanbul ignore next */
 PushNotification.configure({
 
     // (optional) Called when Token is generated (iOS and Android)
